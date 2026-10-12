@@ -1,0 +1,5 @@
+import QubitAdditivity.FCPresentation
+
+#print axioms QubitHolevo.strong_additivity
+#print axioms QubitHolevo.power_additivity
+#print axioms QubitAdditivity.GeneralResult.generalQubitStrongAdditivity

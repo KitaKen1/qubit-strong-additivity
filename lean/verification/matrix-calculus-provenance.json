@@ -1,0 +1,22 @@
+{
+  "license": "Apache-2.0",
+  "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "original_file": "vendor/openai/OAI/InformationTheory/AmplitudeDamping/MatrixDifferentiation.lean",
+  "adapted_file": "QubitAdditivity/Imported/MatrixCalculus.lean",
+  "start_marker": "/-- The determinant as a continuous multilinear map",
+  "end_marker": "/-- Logarithmic norm differentiation",
+  "adapted_end_marker": "end QubitAdditivity.OpenAICalculus",
+  "proof_body_sha256": "808664a3bba87c782bd79f35d81d07eb6e3a6e94f1de4a72a3066ab1e22821f4",
+  "scope": "Six general finite-dimensional matrix calculus lemmas. Proof bodies unchanged; imports and namespace adapted.",
+  "additional_extracts": [
+    {
+      "original_file": "vendor/openai/OAI/InformationTheory/AmplitudeDamping/MatrixDifferentiation.lean",
+      "adapted_file": "QubitAdditivity/Imported/LogDetCalculus.lean",
+      "start_marker": "/-- Logarithmic norm differentiation",
+      "end_marker": "end GAD",
+      "adapted_end_marker": "end QubitAdditivity.OpenAICalculus",
+      "proof_body_sha256": "00ea1c1cb21d508b56c73cb91f3e5b1a66919f84b6eb085a66eadffa13bb315d",
+      "scope": "Two general log-norm/log-determinant derivatives; unchanged proof bodies"
+    }
+  ]
+}

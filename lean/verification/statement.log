@@ -1,0 +1,7 @@
+challenge: ComparatorChallenges.QubitHolevoAdditivity
+solution: QubitAdditivity.FCPresentation
+QubitHolevo.strong_additivity: statement matches; 5 separately declared constants compared; axioms #[Classical.choice, Quot.sound, propext]
+  compared: #[QubitHolevo.IsKraus, QubitHolevo.entropy, QubitHolevo.entropy._proof_1, QubitHolevo.holevo, QubitHolevo.tensorKraus]
+QubitHolevo.power_additivity: statement matches; 5 separately declared constants compared; axioms #[Classical.choice, Quot.sound, propext]
+  compared: #[QubitHolevo.IsKraus, QubitHolevo.entropy, QubitHolevo.entropy._proof_1, QubitHolevo.holevo, QubitHolevo.powerKraus]
+Local statement comparison passed.

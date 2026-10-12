@@ -1,0 +1,11 @@
+Strong Holevo Additivity for Qubit Channels
+Lean formalization and publication packaging, 2026.
+
+Includes source from Physlib, commit a4ef46125b32bb2599ab42d9c3a95e1d88ca75ff,
+and OpenAI math, commit fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb.
+Original source notices and Apache-2.0 licenses are preserved in lean/vendor/.
+Adapted excerpts identify their sources in lean/QubitAdditivity/Imported/.
+The complete generated Lean4Web edition preserves those notices and documents
+its packaging changes in its header and lean4web/sources.json.
+
+The repository layout follows KitaKen1/bapat-lal-q-permanent-lean.

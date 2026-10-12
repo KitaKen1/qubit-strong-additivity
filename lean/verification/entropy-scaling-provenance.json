@@ -1,0 +1,11 @@
+{
+  "license": "Apache-2.0",
+  "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "original_file": "vendor/openai/OAI/InformationTheory/AmplitudeDamping/ZeroBlockEntropy.lean",
+  "adapted_file": "QubitAdditivity/Imported/EntropyScaling.lean",
+  "start_marker": "theorem entropy_smul (a : ℝ)",
+  "end_marker": "omit [DecidableEq κ]",
+  "adapted_end_marker": "end QubitAdditivity.OpenAIEntropy",
+  "proof_body_sha256": "b18700b68f3a485998f3c02f6568b5c7ebaa0e9b8495231ef4eb9927ac4b84c2",
+  "scope": "One general entropy-scaling theorem. The proof body is unchanged; imports and namespace adapted. Separate from the eight calculus lemmas."
+}

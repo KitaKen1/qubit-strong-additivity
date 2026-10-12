@@ -1,0 +1,6 @@
+.lake/
+*.olean
+*.ilean
+*.c
+__pycache__/
+verification-run.log

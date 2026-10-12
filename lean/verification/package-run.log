@@ -1,0 +1,2501 @@
+⚠ [3278/3295] Replayed QubitAdditivity.BetaCore
+warning: QubitAdditivity/BetaCore.lean:23:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaCore.stationaryGram_identity`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3282/3363] Replayed QubitAdditivity.Entropy
+warning: QubitAdditivity/Entropy.lean:16:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3289/3363] Replayed QubitAdditivity.Partner
+warning: QubitAdditivity/Partner.lean:46:0: automatically included section variable(s) unused in theorem `QubitAdditivity.of_kraus_vecMulVec`:
+  [Fintype dOut]
+  [DecidableEq dIn]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype dOut] [DecidableEq dIn] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/Partner.lean:88:33: This simp argument is unused:
+  LinearMap.coe_sum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [MatrixMap.of_kraus, Finset.sum_apply, LinearMap.coe_mk, AddHom.coe_mk, Fintype.sum_sum_type,
+    Fintype.univ_punit, Finset.sum_singleton, kraus, rows_conj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/Partner.lean:88:52: This simp argument is unused:
+  Finset.sum_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [MatrixMap.of_kraus, LinearMap.coe_sum, LinearMap.coe_mk, AddHom.coe_mk, Fintype.sum_sum_type,
+    Fintype.univ_punit, Finset.sum_singleton, kraus, rows_conj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/Partner.lean:88:70: This simp argument is unused:
+  LinearMap.coe_mk
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [MatrixMap.of_kraus, LinearMap.coe_sum, Finset.sum_apply, AddHom.coe_mk, Fintype.sum_sum_type,
+    Fintype.univ_punit, Finset.sum_singleton, kraus, rows_conj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/Partner.lean:89:4: This simp argument is unused:
+  AddHom.coe_mk
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [MatrixMap.of_kraus, LinearMap.coe_sum, Finset.sum_apply, LinearMap.coe_mk, Fintype.sum_sum_type,
+    Fintype.univ_punit, Finset.sum_singleton, kraus, rows_conj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/Partner.lean:175:0: automatically included section variable(s) unused in theorem `QubitAdditivity.QubitNormalForm.jointColumns_eq`:
+  [DecidableEq dB]
+  [Fintype eB]
+  [DecidableEq eB]
+  [Fintype κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq dB] [Fintype eB] [DecidableEq eB] [Fintype κ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/Partner.lean:182:56: This simp argument is unused:
+  Finset.mul_sum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [krausColumns, jointKraus, tc4At, tc4Matrix, rowEquiv, colEquiv, blockA, blockB, blockC, blockD,
+    branchBlock, branch, kraus, rows_zero, rows_one, mulVec, dotProduct, Matrix.kroneckerMap_apply,
+    Fintype.sum_prod_type]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/Partner.lean:187:0: automatically included section variable(s) unused in theorem `QubitAdditivity.QubitNormalForm.jointKraus_eq_kron`:
+  [DecidableEq eB]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq eB] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/Partner.lean:215:0: automatically included section variable(s) unused in theorem `QubitAdditivity.vecMass_nonneg`:
+  [DecidableEq dB]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq dB] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/Partner.lean:225:18: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+warning: QubitAdditivity/Partner.lean:248:0: automatically included section variable(s) unused in theorem `QubitAdditivity.branchBlock_gram`:
+  [DecidableEq eB]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq eB] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/Partner.lean:347:0: automatically included section variable(s) unused in theorem `QubitAdditivity.sum_branch_outer`:
+  [DecidableEq dB]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq dB] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3290/3363] Replayed QubitAdditivity.BetaOperators
+warning: QubitAdditivity/BetaOperators.lean:51:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaOperators.left_conjTranspose`:
+  [Fintype n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaOperators.lean:54:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaOperators.right_conjTranspose`:
+  [Fintype n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaOperators.lean:69:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaOperators.generator_add_scalar`:
+  [Fintype n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaOperators.lean:81:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaOperators.coordinateInclusion_compression`:
+  [Fintype m]
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype m] [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaOperators.lean:107:8: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaOperators.blockCoordinates_inl`:
+  [Fintype r]
+  [Fintype s]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaOperators.lean:110:8: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaOperators.blockCoordinates_inr`:
+  [Fintype r]
+  [Fintype s]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaOperators.lean:135:8: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [blockGenerator, generator, left, right]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaOperators.lean:139:8: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [blockGenerator, generator, left, right]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3291/3363] Replayed QubitAdditivity.BetaOrder
+warning: QubitAdditivity/BetaOrder.lean:18:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: QubitAdditivity/BetaOrder.lean:30:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: QubitAdditivity/BetaOrder.lean:44:37: This simp argument is unused:
+  fromRows_mul_fromCols
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [conjTranspose_fromRows_eq_fromCols_conjTranspose, conjTranspose_zero, conjTranspose_one,
+    fromRows_mul, Matrix.zero_mul, Matrix.mul_zero, Matrix.mul_one, Matrix.one_mul] at hn
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaOrder.lean:45:4: This simp argument is unused:
+  Matrix.mul_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [conjTranspose_fromRows_eq_fromCols_conjTranspose, conjTranspose_zero, conjTranspose_one,
+    fromRows_mul, fromRows_mul_fromCols, Matrix.zero_mul, Matrix.mul_one, Matrix.one_mul] at hn
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaOrder.lean:45:21: This simp argument is unused:
+  Matrix.mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [conjTranspose_fromRows_eq_fromCols_conjTranspose, conjTranspose_zero, conjTranspose_one,
+    fromRows_mul, fromRows_mul_fromCols, Matrix.zero_mul, Matrix.mul_zero, Matrix.one_mul] at hn
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3292/3363] Replayed QubitAdditivity.BetaPowers
+warning: QubitAdditivity/BetaPowers.lean:147:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaPowers.hasDerivAt_kronecker`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaPowers.lean:157:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaPowers.hasDerivAt_transpose`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaPowers.lean:175:65: This simp argument is unused:
+  Matrix.mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [left, right, ← mul_kronecker_mul, Matrix.one_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3293/3363] Replayed QubitAdditivity.BetaBridge
+warning: QubitAdditivity/BetaBridge.lean:32:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: QubitAdditivity/BetaBridge.lean:56:8: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBridge.compressionCLM_apply`:
+  [Fintype m]
+  [DecidableEq m]
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype m] [DecidableEq m] [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaBridge.lean:59:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBridge.isometry_mulVec_injective`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaBridge.lean:123:8: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBridge.diagonalBlocksCLM_apply`:
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaBridge.lean:149:15: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [blockPW, diagonalBlocksCLM_apply, blockGenerator, Matrix.fromBlocks_multiply, Matrix.zero_mul,
+    Matrix.mul_zero, add_zero, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaBridge.lean:148:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QubitAdditivity/BetaBridge.lean:189:16: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: QubitAdditivity/BetaBridge.lean:189:6: Unused tactic linter: `all_goals rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: QubitAdditivity/BetaBridge.lean:233:15: This simp argument is unused:
+  curve
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [curveFirst, blockInclusion, Matrix.mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaBridge.lean:234:12: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: QubitAdditivity/BetaBridge.lean:232:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QubitAdditivity/BetaBridge.lean:234:2: Unused tactic linter: `all_goals rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: QubitAdditivity/BetaBridge.lean:249:15: This simp argument is unused:
+  curveFirst
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [curveSecond, blockInclusion, Function.comp_def, Matrix.mul_zero, add_zero, Matrix.mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaBridge.lean:249:56: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [curveFirst, curveSecond, blockInclusion, Matrix.mul_zero, add_zero, Matrix.mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaBridge.lean:319:16: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: QubitAdditivity/BetaBridge.lean:322:16: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: QubitAdditivity/BetaBridge.lean:319:6: Unused tactic linter: `all_goals rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: QubitAdditivity/BetaBridge.lean:322:6: Unused tactic linter: `all_goals rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3297/3363] Replayed QubitAdditivity.BetaComparison
+warning: QubitAdditivity/BetaComparison.lean:28:20: This simp argument is unused:
+  Matrix.mul_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.neg_mul, Matrix.mul_neg, Matrix.one_mul, Matrix.mul_one, Matrix.add_mul, neg_neg]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaComparison.lean:28:36: This simp argument is unused:
+  neg_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.neg_mul, Matrix.mul_neg, Matrix.one_mul, Matrix.mul_one, Matrix.add_mul, Matrix.mul_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaComparison.lean:74:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.posSemidef_of_quadratic`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaComparison.lean:80:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.quadratic_nonneg`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaComparison.lean:83:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.quadratic_pos`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaComparison.lean:87:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.hasDerivAt_pairing`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaComparison.lean:102:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.quadratic_sub`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaComparison.lean:106:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.quadratic_smul`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaComparison.lean:110:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.quadratic_smul_vector`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: QubitAdditivity/BetaComparison.lean:159:4: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: QubitAdditivity/BetaComparison.lean:236:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.pairing_mulVec_left`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaComparison.lean:240:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.pairing_mulVec_right`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaComparison.lean:244:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.pairing_smul_left`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaComparison.lean:248:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.pairing_smul_right`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaComparison.lean:252:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.pairing_sub`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaComparison.lean:256:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.pairing_add`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaComparison.lean:260:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.pairing_smul_matrix`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaComparison.lean:275:11: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3298/3363] Replayed QubitAdditivity.BetaBarrier
+warning: QubitAdditivity/BetaBarrier.lean:71:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: QubitAdditivity/BetaBarrier.lean:48:26: This simp argument is unused:
+  smul_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [B₁, C, B, Matrix.add_mul, Matrix.smul_mul, Matrix.mul_smul, Matrix.one_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaBarrier.lean:53:26: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QubitAdditivity/BetaBarrier.lean:53:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QubitAdditivity/BetaBarrier.lean:56:26: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3299/3363] Replayed QubitAdditivity.BetaBlocks
+warning: QubitAdditivity/BetaBlocks.lean:27:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: QubitAdditivity/BetaBlocks.lean:95:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [3300/3363] Replayed QubitAdditivity.BetaStrict
+warning: QubitAdditivity/BetaStrict.lean:15:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaStrict.posDef_of_le`:
+  [Fintype n]
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaStrict.lean:27:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: QubitAdditivity/BetaStrict.lean:32:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [3301/3363] Replayed QubitAdditivity.BetaEndpoints
+warning: QubitAdditivity/BetaEndpoints.lean:59:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaEndpoints.gap_blocks_posDef`:
+  [Fintype r]
+  [Fintype s]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3304/3363] Replayed QubitAdditivity.BetaResolvent
+warning: QubitAdditivity/BetaResolvent.lean:20:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: QubitAdditivity/BetaResolvent.lean:21:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: QubitAdditivity/BetaResolvent.lean:22:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: QubitAdditivity/BetaResolvent.lean:40:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaResolvent.shift_posDef`:
+  [Fintype n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaResolvent.lean:47:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaResolvent.shift_sub`:
+  [Fintype n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3312/3363] Replayed QubitAdditivity.BetaKM
+warning: QubitAdditivity/BetaKM.lean:40:12: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: QubitAdditivity/BetaKM.lean:40:2: Unused tactic linter: `all_goals rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3314/3363] Replayed QubitAdditivity.BetaLog
+warning: QubitAdditivity/BetaLog.lean:31:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: QubitAdditivity/BetaLog.lean:32:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: QubitAdditivity/BetaLog.lean:33:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: QubitAdditivity/BetaLog.lean:106:89: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QubitAdditivity/BetaLog.lean:126:78: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QubitAdditivity/BetaLog.lean:126:87: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QubitAdditivity/BetaLog.lean:148:38: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+warning: QubitAdditivity/BetaLog.lean:150:9: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+warning: QubitAdditivity/BetaLog.lean:192:19: This simp argument is unused:
+  Matrix.smul_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [segment]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaLog.lean:193:12: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: QubitAdditivity/BetaLog.lean:193:2: Unused tactic linter: `all_goals exact BetaPowers.continuousOn_spectrum _ _` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: QubitAdditivity/BetaLog.lean:266:38: `ContinuousLinearMap.add_apply` has been deprecated: Use `_root_.add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `_root_.add_apply x`).
+warning: QubitAdditivity/BetaLog.lean:267:6: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
+warning: QubitAdditivity/BetaLog.lean:267:38: `ContinuousLinearMap.neg_apply` has been deprecated: Use `_root_.neg_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.neg_apply` to `_root_.neg_apply x`).
+warning: QubitAdditivity/BetaLog.lean:268:6: This simp argument is unused:
+  hp.unit_spec
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hu, kernelDeriv_apply, ContinuousLinearMap.add_apply, ContinuousLinearMap.comp_apply,
+    ContinuousLinearMap.smul_apply, ContinuousLinearMap.neg_apply, ContinuousLinearMap.mulLeftRight_apply,
+    ← Matrix.nonsing_inv_eq_ringInverse, L, inclusion_apply, Function.comp_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaLog.lean:274:47: This simp argument is unused:
+  Matrix.neg_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.mul_smul, Matrix.smul_mul, Matrix.mul_neg, Matrix.mul_assoc] at hh ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaLog.lean:388:12: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: QubitAdditivity/BetaLog.lean:388:2: Unused tactic linter: `all_goals exact BetaPowers.continuousOn_spectrum _ _` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: QubitAdditivity/BetaLog.lean:433:58: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QubitAdditivity/BetaLog.lean:438:58: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QubitAdditivity/BetaLog.lean:477:29: `ContinuousLinearMap.neg_apply` has been deprecated: Use `_root_.neg_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.neg_apply` to `_root_.neg_apply x`).
+warning: QubitAdditivity/BetaLog.lean:486:28: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: QubitAdditivity/BetaLog.lean:486:28: Unused tactic linter: `exact BetaPowers.continuousOn_spectrum _ _` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: QubitAdditivity/BetaLog.lean:505:15: `ContinuousLinearMap.neg_apply` has been deprecated: Use `_root_.neg_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.neg_apply` to `_root_.neg_apply x`).
+warning: QubitAdditivity/BetaLog.lean:506:6: `ContinuousLinearMap.add_apply` has been deprecated: Use `_root_.add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `_root_.add_apply x`).
+⚠ [3315/3363] Replayed QubitAdditivity.BetaLogMean
+warning: QubitAdditivity/BetaLogMean.lean:23:33: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QubitAdditivity/BetaLogMean.lean:23:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3316/3363] Replayed QubitAdditivity.BetaLogKM
+warning: QubitAdditivity/BetaLogKM.lean:44:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: QubitAdditivity/BetaLogKM.lean:45:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: QubitAdditivity/BetaLogKM.lean:46:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: QubitAdditivity/BetaLogKM.lean:71:22: This simp argument is unused:
+  Unitary.conjStarAlgAut_symm_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [coordinates, Matrix.mul_smul, Matrix.smul_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaLogKM.lean:71:56: This simp argument is unused:
+  Matrix.mul_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [coordinates, Unitary.conjStarAlgAut_symm_apply, Matrix.smul_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaLogKM.lean:71:72: This simp argument is unused:
+  Matrix.smul_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [coordinates, Unitary.conjStarAlgAut_symm_apply, Matrix.mul_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaLogKM.lean:197:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3317/3363] Replayed QubitAdditivity.BetaEntropy
+warning: QubitAdditivity/BetaEntropy.lean:63:33: `ContinuousLinearMap.coe_comp'` has been deprecated: Use `ContinuousLinearMap.coe_comp` instead
+warning: QubitAdditivity/BetaEntropy.lean:63:33: This simp argument is unused:
+  ContinuousLinearMap.coe_comp'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [psiGradient_apply, Function.comp_apply, ContinuousLinearMap.mulLeftRight_apply, Matrix.mul_one,
+    BetaLog.traceRe_apply, L]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaEntropy.lean:66:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaEntropy.trace_mul_eq_vector_pairing`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3319/3363] Replayed QubitAdditivity.BetaDual
+warning: QubitAdditivity/BetaDual.lean:41:8: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDual.diagonal_mat`:
+  [Fintype r]
+  [Fintype s]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaDual.lean:70:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDual.trace_diagonal_mul`:
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaDual.lean:144:38: This simp argument is unused:
+  Matrix.mul_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.mul_sub, Matrix.mul_add, Matrix.mul_one, Matrix.trace_sub, Matrix.trace_add, Matrix.trace_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaDual.lean:144:54: This simp argument is unused:
+  Matrix.mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.mul_sub, Matrix.mul_add, Matrix.mul_smul, Matrix.trace_sub, Matrix.trace_add, Matrix.trace_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaDual.lean:152:22: `ContinuousLinearMap.sub_apply` has been deprecated: Use `_root_.sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `_root_.sub_apply x`).
+warning: QubitAdditivity/BetaDual.lean:152:52: `ContinuousLinearMap.add_apply` has been deprecated: Use `_root_.add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `_root_.add_apply x`).
+warning: QubitAdditivity/BetaDual.lean:182:28: `ContinuousLinearMap.zero_apply` has been deprecated: Use `_root_.zero_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.zero_apply` to `_root_.zero_apply x`).
+warning: QubitAdditivity/BetaDual.lean:242:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDual.total_gap_posDef`:
+  [Fintype r]
+  [Fintype s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaDual.lean:269:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDual.diagonal_injective`:
+  [Fintype r]
+  [Fintype s]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaDual.lean:296:22: `ContinuousLinearMap.sub_apply` has been deprecated: Use `_root_.sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `_root_.sub_apply x`).
+warning: QubitAdditivity/BetaDual.lean:296:52: `ContinuousLinearMap.add_apply` has been deprecated: Use `_root_.add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `_root_.add_apply x`).
+warning: QubitAdditivity/BetaDual.lean:321:33: `ContinuousLinearMap.sub_apply` has been deprecated: Use `_root_.sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `_root_.sub_apply x`).
+⚠ [3320/3363] Replayed QubitAdditivity.BetaDualConvex
+warning: QubitAdditivity/BetaDualConvex.lean:45:64: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3321/3363] Replayed QubitAdditivity.BetaDualExistence
+warning: QubitAdditivity/BetaDualExistence.lean:54:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDualExistence.isClosed_positiveCone`:
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaDualExistence.lean:69:35: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QubitAdditivity/BetaDualExistence.lean:103:63: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QubitAdditivity/BetaDualExistence.lean:145:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDualExistence.diagonal_posSemidef`:
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaDualExistence.lean:161:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDualExistence.trace_diagonal`:
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaDualExistence.lean:164:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDualExistence.blockTrace_nonneg`:
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaDualExistence.lean:223:81: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3322/3363] Replayed QubitAdditivity.BetaBoundaryEntropy
+warning: QubitAdditivity/BetaBoundaryEntropy.lean:44:66: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QubitAdditivity/BetaBoundaryEntropy.lean:92:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [3323/3363] Replayed QubitAdditivity.BetaDualInterior
+warning: QubitAdditivity/BetaDualInterior.lean:68:59: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QubitAdditivity/BetaDualInterior.lean:95:59: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3325/3363] Replayed QubitAdditivity.BetaDualDerivative
+warning: QubitAdditivity/BetaDualDerivative.lean:164:10: This simp argument is unused:
+  inner_add_left
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3326/3363] Replayed QubitAdditivity.BetaMinimizer
+warning: QubitAdditivity/BetaMinimizer.lean:112:74: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3328/3363] Replayed QubitAdditivity.BetaValueHessian
+warning: QubitAdditivity/BetaValueHessian.lean:66:50: This simp argument is unused:
+  Fintype.sum_prod_type
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [blockInclusion, coordinateInclusion, Matrix.mulVec, dotProduct, Matrix.one_apply, blockCoordinates,
+    Matrix.conjTranspose_apply, ite_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaValueHessian.lean:66:72: This simp argument is unused:
+  ite_and
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [blockInclusion, coordinateInclusion, Matrix.mulVec, dotProduct, Matrix.one_apply, blockCoordinates,
+    Matrix.conjTranspose_apply, Fintype.sum_prod_type]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaValueHessian.lean:88:8: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaValueHessian.vector_add`:
+  [Fintype n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaValueHessian.lean:89:8: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaValueHessian.blockVector_sub`:
+  [Fintype r]
+  [Fintype s]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3329/3363] Replayed QubitAdditivity.BetaDualConcave
+warning: QubitAdditivity/BetaDualConcave.lean:59:64: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3330/3363] Replayed QubitAdditivity.BetaDualBoundary
+warning: QubitAdditivity/BetaDualBoundary.lean:206:29: This simp argument is unused:
+  HermitianMat.mat_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hz, zero_sub, Matrix.trace_zero, Complex.zero_re, mul_zero, add_zero, sub_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaDualBoundary.lean:206:51: This simp argument is unused:
+  Matrix.trace_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hz, zero_sub, HermitianMat.mat_zero, Complex.zero_re, mul_zero, add_zero, sub_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaDualBoundary.lean:206:69: This simp argument is unused:
+  Complex.zero_re
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hz, zero_sub, HermitianMat.mat_zero, Matrix.trace_zero, mul_zero, add_zero, sub_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaDualBoundary.lean:207:8: This simp argument is unused:
+  mul_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hz, zero_sub, HermitianMat.mat_zero, Matrix.trace_zero, Complex.zero_re, add_zero, sub_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaDualBoundary.lean:207:17: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hz, zero_sub, HermitianMat.mat_zero, Matrix.trace_zero, Complex.zero_re, mul_zero, sub_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaDualBoundary.lean:207:26: This simp argument is unused:
+  sub_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hz, zero_sub, HermitianMat.mat_zero, Matrix.trace_zero, Complex.zero_re, mul_zero, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaDualBoundary.lean:249:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDualBoundary.regularization_posDef`:
+  [Fintype k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3331/3363] Replayed QubitAdditivity.BetaTC4Convex
+warning: QubitAdditivity/BetaTC4Convex.lean:44:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Convex.convex_positiveCone`:
+  [Fintype r]
+  [Fintype s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3332/3363] Replayed QubitAdditivity.BetaTC4Structure
+warning: QubitAdditivity/BetaTC4Structure.lean:59:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Structure.trace_diagonal`:
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaTC4Structure.lean:75:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Structure.smul_mem_positiveCone`:
+  [Fintype r]
+  [Fintype s]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaTC4Structure.lean:151:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Structure.sum_posSemidef`:
+  [Fintype r]
+  [Fintype s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3333/3363] Replayed QubitAdditivity.BetaTC4Unitary
+warning: QubitAdditivity/BetaTC4Unitary.lean:71:10: This simp argument is unused:
+  pinchLeft
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [HermitianMat.conj_apply_mat, blockUnitary, Matrix.submatrix_apply, Matrix.mul_apply,
+    Fintype.sum_sum_type, Matrix.fromBlocks, Matrix.conjTranspose_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaTC4Unitary.lean:71:20: This simp argument is unused:
+  HermitianMat.conj_apply_mat
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [pinchLeft, blockUnitary, Matrix.submatrix_apply, Matrix.mul_apply, Fintype.sum_sum_type,
+    Matrix.fromBlocks, Matrix.conjTranspose_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaTC4Unitary.lean:78:10: This simp argument is unused:
+  pinchRight
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [HermitianMat.conj_apply_mat, blockUnitary, Matrix.submatrix_apply, Matrix.mul_apply,
+    Fintype.sum_sum_type, Matrix.fromBlocks, Matrix.conjTranspose_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaTC4Unitary.lean:78:21: This simp argument is unused:
+  HermitianMat.conj_apply_mat
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [pinchRight, blockUnitary, Matrix.submatrix_apply, Matrix.mul_apply, Fintype.sum_sum_type,
+    Matrix.fromBlocks, Matrix.conjTranspose_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3334/3363] Replayed QubitAdditivity.BetaSignFrame
+warning: QubitAdditivity/BetaSignFrame.lean:56:8: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSignFrame.flip_apply_same`:
+  [Fintype n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaSignFrame.lean:59:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSignFrame.flip_apply_ne`:
+  [Fintype n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaSignFrame.lean:139:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSignFrame.imageFrame_gram`:
+  [Fintype m]
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype m] [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3335/3363] Replayed QubitAdditivity.BetaGramSplit
+warning: QubitAdditivity/BetaGramSplit.lean:51:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.outer_posSemidef`:
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaGramSplit.lean:54:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.outer_rank_le_one`:
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaGramSplit.lean:62:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.sum_outer_columns`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaGramSplit.lean:78:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.rightGram_trace`:
+  [DecidableEq n]
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaGramSplit.lean:102:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.rightGram_pairing`:
+  [DecidableEq n]
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaGramSplit.lean:134:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.outer_trace`:
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaGramSplit.lean:166:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.outer_sqrt_smul`:
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaGramSplit.lean:219:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.gramPair_trace`:
+  [DecidableEq n]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3336/3363] Replayed QubitAdditivity.BetaLogOrder
+warning: QubitAdditivity/BetaLogOrder.lean:104:66: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3337/3363] Replayed QubitAdditivity.BetaScalarMinimum
+warning: QubitAdditivity/BetaScalarMinimum.lean:42:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: QubitAdditivity/BetaScalarMinimum.lean:43:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: QubitAdditivity/BetaScalarMinimum.lean:44:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [3338/3363] Replayed QubitAdditivity.BetaScalarValue
+warning: QubitAdditivity/BetaScalarValue.lean:47:69: This simp argument is unused:
+  Fin.sum_univ_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [scalarBlock, Matrix.trace, Matrix.smul_apply, Complex.real_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaScalarValue.lean:53:57: This simp argument is unused:
+  Fin.sum_univ_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.trace, Matrix.smul_apply, Complex.real_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3340/3363] Replayed QubitAdditivity.BetaTC4Gram
+warning: QubitAdditivity/BetaTC4Gram.lean:51:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Gram.gram_posSemidef`:
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaTC4Gram.lean:54:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Gram.gram_trace`:
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaTC4Gram.lean:88:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Gram.gramPair_posSemidef`:
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaTC4Gram.lean:91:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Gram.pinchLeft_gramPair`:
+  [Fintype r]
+  [Fintype s]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaTC4Gram.lean:97:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Gram.pinchRight_gramPair`:
+  [Fintype r]
+  [Fintype s]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaTC4Gram.lean:108:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Gram.tc4Matrix_eq_fromCols`:
+  [Fintype r]
+  [Fintype s]
+  [Fintype k]
+  [Fintype l]
+  [Fintype t]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [Fintype k] [Fintype l] [Fintype t] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3342/3363] Replayed QubitAdditivity.BetaIsometryEntropy
+warning: QubitAdditivity/BetaIsometryEntropy.lean:27:8: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaIsometryEntropy.embeddingHom_apply`:
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaIsometryEntropy.lean:42:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaIsometryEntropy.trace_isometry`:
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3344/3363] Replayed QubitAdditivity.BetaReflection
+warning: QubitAdditivity/BetaReflection.lean:82:34: This simp argument is unused:
+  smul_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.sub_mul, Matrix.mul_sub, Matrix.smul_mul, Matrix.mul_smul, Matrix.one_mul, Matrix.mul_one,
+    Matrix.mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3345/3363] Replayed QubitAdditivity.BetaBlockIsometry
+warning: QubitAdditivity/BetaBlockIsometry.lean:50:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBlockIsometry.blockEmbedding_isometry`:
+  [Fintype a]
+  [Fintype b]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype a] [Fintype b] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaBlockIsometry.lean:63:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBlockIsometry.diagonal_embedBlocks`:
+  [Fintype r]
+  [Fintype s]
+  [DecidableEq r]
+  [DecidableEq s]
+  [DecidableEq a]
+  [DecidableEq b]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] [DecidableEq a] [DecidableEq b] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaBlockIsometry.lean:69:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBlockIsometry.embedBlocks_mem_positiveCone`:
+  [DecidableEq r]
+  [DecidableEq s]
+  [DecidableEq a]
+  [DecidableEq b]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] [DecidableEq a] [DecidableEq b] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaBlockIsometry.lean:73:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBlockIsometry.compressBlocks_mem_positiveCone`:
+  [DecidableEq r]
+  [DecidableEq s]
+  [DecidableEq a]
+  [DecidableEq b]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] [DecidableEq a] [DecidableEq b] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3346/3363] Replayed QubitAdditivity.NormalForm
+warning: QubitAdditivity/NormalForm.lean:29:6: This simp argument is unused:
+  Complex.star_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [rotU, Matrix.mul_apply, Fin.sum_univ_two, Matrix.conjTranspose_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/NormalForm.lean:134:71: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QubitAdditivity/NormalForm.lean:137:74: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3347/3363] Replayed QubitAdditivity.NormalSchur
+warning: QubitAdditivity/NormalSchur.lean:41:55: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [scalarMatrix, Complex.real_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/NormalSchur.lean:41:16: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QubitAdditivity/NormalSchur.lean:41:32: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QubitAdditivity/NormalSchur.lean:49:38: This simp argument is unused:
+  Fin.sum_univ_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [scalarMatrix, Matrix.mul_apply, Matrix.one_apply, Complex.ofReal_ne_zero.mpr hd]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/NormalSchur.lean:49:55: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [scalarMatrix, Matrix.mul_apply, Fin.sum_univ_one, Complex.ofReal_ne_zero.mpr hd]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/NormalSchur.lean:48:14: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QubitAdditivity/NormalSchur.lean:55:14: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QubitAdditivity/NormalSchur.lean:67:0: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalSchur.column_scalar_sandwich`:
+  [Fintype n]
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/NormalSchur.lean:71:4: This simp argument is unused:
+  Fin.sum_univ_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [vectorColumn, scalarMatrix, outerM, Matrix.mul_apply, Matrix.conjTranspose_apply,
+    Matrix.vecMulVec_apply, Complex.real_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/NormalSchur.lean:77:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: QubitAdditivity/NormalSchur.lean:85:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: QubitAdditivity/NormalSchur.lean:91:0: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalSchur.outer_sandwich`:
+  [Fintype m]
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype m] [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/NormalSchur.lean:103:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: QubitAdditivity/NormalSchur.lean:113:0: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalSchur.outerM_smul`:
+  [Fintype n]
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/NormalSchur.lean:115:65: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QubitAdditivity/NormalSchur.lean:117:0: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalSchur.cross_scaled_inverse_sqrt`:
+  [Fintype n]
+  [Fintype m]
+  [DecidableEq n]
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] [Fintype m] [DecidableEq n] [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3348/3363] Replayed QubitAdditivity.NormalCommonBranch
+warning: QubitAdditivity/NormalCommonBranch.lean:43:0: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalCommonBranch.posDef_add_identity`:
+  [Fintype n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/NormalCommonBranch.lean:48:0: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalCommonBranch.fromBlocks_add_identity`:
+  [Fintype n]
+  [Fintype m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] [Fintype m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3349/3363] Replayed QubitAdditivity.NormalKraus
+warning: QubitAdditivity/NormalKraus.lean:20:0: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalKraus.sum_outer_columns`:
+  [Fintype n]
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3350/3363] Replayed QubitAdditivity.NormalChannel
+warning: QubitAdditivity/NormalChannel.lean:19:0: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalChannel.bform_trace_outer`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/NormalChannel.lean:72:52: This simp argument is unused:
+  Matrix.zero_vecMulVec
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [outerM, star_zero, Matrix.vecMulVec_zero, add_zero, zero_add, Finset.sum_const_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/NormalChannel.lean:81:22: This simp argument is unused:
+  sum_bform_trace
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.mul_add, Matrix.trace_add, Matrix.conjTranspose_vecMulVec, star_star, bform_trace_outer,
+    crossMat, massMat, outerM, Matrix.mul_sum, Matrix.trace_sum]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/NormalChannel.lean:81:38: This simp argument is unused:
+  crossMat
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.mul_add, Matrix.trace_add, Matrix.conjTranspose_vecMulVec, star_star, bform_trace_outer,
+    sum_bform_trace, massMat, outerM, Matrix.mul_sum, Matrix.trace_sum]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3351/3363] Replayed QubitAdditivity.RotationInvariant
+warning: QubitAdditivity/RotationInvariant.lean:42:0: automatically included section variable(s) unused in theorem `QubitAdditivity.RotationInvariant.prod_compose`:
+  [DecidableEq h]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq h] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3352/3363] Replayed QubitAdditivity.BetaSupport
+warning: QubitAdditivity/BetaSupport.lean:53:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSupport.rangeProjection_sq`:
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaSupport.lean:58:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSupport.rangeProjection_mul`:
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaSupport.lean:85:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSupport.complementBlocks_mem_positiveCone`:
+  [DecidableEq a]
+  [DecidableEq b]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq a] [DecidableEq b] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaSupport.lean:89:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSupport.block_complement_eq`:
+  [Fintype r]
+  [Fintype s]
+  [DecidableEq a]
+  [DecidableEq b]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [DecidableEq a] [DecidableEq b] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3353/3363] Replayed QubitAdditivity.BetaSupportMinimum
+warning: QubitAdditivity/BetaSupportMinimum.lean:55:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSupportMinimum.embed_compress_eq`:
+  [DecidableEq r]
+  [DecidableEq s]
+  [DecidableEq a]
+  [DecidableEq b]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] [DecidableEq a] [DecidableEq b] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3354/3363] Replayed QubitAdditivity.BetaNormalizedOuter
+warning: QubitAdditivity/BetaNormalizedOuter.lean:49:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaNormalizedOuter.vecMass_star_dotProduct`:
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaNormalizedOuter.lean:52:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaNormalizedOuter.vecMass_zero_iff`:
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaNormalizedOuter.lean:77:13: This simp argument is unused:
+  star_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [star_trivial, Complex.real_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaNormalizedOuter.lean:77:23: This simp argument is unused:
+  star_trivial
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [star_smul, Complex.real_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaNormalizedOuter.lean:92:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaNormalizedOuter.normalizedColumn_mul_sqrt`:
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaNormalizedOuter.lean:96:50: This simp argument is unused:
+  Fin.sum_univ_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [normalizedColumn, Matrix.mulVec, dotProduct, Complex.real_smul, Complex.ofReal_inv, mul_comm,
+    mul_left_comm, mul_assoc, hs]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaNormalizedOuter.lean:97:13: This simp argument is unused:
+  mul_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [normalizedColumn, Matrix.mulVec, dotProduct, Fin.sum_univ_one, Complex.real_smul, Complex.ofReal_inv,
+    mul_comm, mul_assoc, hs]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaNormalizedOuter.lean:97:27: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [normalizedColumn, Matrix.mulVec, dotProduct, Fin.sum_univ_one, Complex.real_smul, Complex.ofReal_inv,
+    mul_comm, mul_left_comm, hs]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaNormalizedOuter.lean:99:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaNormalizedOuter.outer_conj`:
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaNormalizedOuter.lean:112:47: Variable name `hx` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hx
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: QubitAdditivity/BetaNormalizedOuter.lean:112:60: Variable name `hz` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hz
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: QubitAdditivity/BetaNormalizedOuter.lean:121:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaNormalizedOuter.pinchLeft_outer`:
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaNormalizedOuter.lean:125:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaNormalizedOuter.pinchRight_outer`:
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3355/3363] Replayed QubitAdditivity.BetaBalancedValue
+warning: QubitAdditivity/BetaBalancedValue.lean:51:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBalancedValue.outer_zero`:
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaBalancedValue.lean:104:39: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: QubitAdditivity/BetaBalancedValue.lean:104:39: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3357/3363] Replayed QubitAdditivity.BetaTC4Regularization
+warning: QubitAdditivity/BetaTC4Regularization.lean:60:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Regularization.rowEmbedding_mul`:
+  [Fintype k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaTC4Regularization.lean:70:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Regularization.blockMass_regularized`:
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaTC4Regularization.lean:73:4: This simp argument is unused:
+  Fin.sum_univ_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [regularized, blockMass_eq_sum_normSq, Matrix.fromBlocks, Fintype.sum_sum_type, Matrix.one_apply,
+    Complex.real_smul, Complex.normSq_ofReal, pow_two]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaTC4Regularization.lean:75:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Regularization.gram_fromCols_zero`:
+  [Fintype r]
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaTC4Regularization.lean:82:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Regularization.gram_mul`:
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaTC4Regularization.lean:99:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Regularization.continuous_regularized`:
+  [Fintype r]
+  [Fintype k]
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype k] [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QubitAdditivity/BetaTC4Regularization.lean:123:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: QubitAdditivity/BetaTC4Regularization.lean:202:79: This simp argument is unused:
+  Matrix.cons_val_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [tc4ScalarMatrix, Matrix.of_apply, Matrix.cons_val_one, Matrix.cons_val_fin_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaTC4Regularization.lean:203:6: This simp argument is unused:
+  Matrix.cons_val_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [tc4ScalarMatrix, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_fin_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QubitAdditivity/BetaTC4Regularization.lean:203:26: This simp argument is unused:
+  Matrix.cons_val_fin_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [tc4ScalarMatrix, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (3363 jobs).
+⚠ [3097/3098] Replayed ComparatorChallenges.QubitHolevoAdditivity
+warning: ComparatorChallenges/QubitHolevoAdditivity.lean:50:8: declaration uses `sorry`
+warning: ComparatorChallenges/QubitHolevoAdditivity.lean:58:8: declaration uses `sorry`
+Build completed successfully (3098 jobs).
+'QubitAdditivity.blockMass_eq_sum_normSq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.blockMass_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.tc4Matrix_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.tc4_scalar_determinant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.tc4_scalar_determinant_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.channel_mix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.holevoValue_le_log_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.productEnsemble_mix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.holevoValue_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.holevoValue_reindex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.matrix_isState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.entropy_eq_openai' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.entropy_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.holevoValues_bddAbove' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.zero_mem_holevoValues' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.holevoValues_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.holevo_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.holevo_le_log_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.holevoValue_le_holevo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.sum_mem_product_holevoValues' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.holevo_product_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.OpenAIEntropy.trace_unitary_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.OpenAIEntropy.trace_cfc_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.OpenAIEntropy.entropy_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.OpenAIEntropy.entropy_unitary_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.OpenAIEntropy.entropy_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.OpenAIEntropy.trace_reindex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.OpenAIEntropy.entropy_reindex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.OpenAIEntropy.entropy_kronecker' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.OpenAIEntropy.entropy_kronecker_state' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.scalarFactor_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.tc4ScalarMatrix_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.tc4ScalarMatrix_isState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.weightedBlockEntropy_zero_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.strongAdditivity_iff_upperBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.matrixMap_eq_sum_single' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.sum_diag_single_of_tracePreserving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.kron_traceRight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.kron_traceLeft' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.prod_apply_traceRight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.prod_apply_traceLeft' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.entropy_prod_channel_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.entropy_eq_neg_trace_mul_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.mix_M' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.entropy_mix_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.sigmaEnsemble_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.sigmaEnsemble_mix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.avgOutputEntropy_reindex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.traceRight_mix_m' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.traceLeft_mix_m' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.splitBelow_mix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.mixedInputBound_of_pure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.holevoValue_prod_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.holevo_prod_le_of_mixedInputBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.holevo_prod_eq_of_pureInputBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.strongAdditivity_of_qubitPureInputBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.OpenAIEntropy.entropy_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.OpenAIEntropy.entropy_le_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.OpenAIEntropy.concaveOn_entropy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.star_bform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.bform_gram_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.bform_cross_of_det_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.entropy_eq_of_trace_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.posSemidef_of_fin_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.dirMat_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.exists_dir' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.quad_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.exists_two_expectation_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.QubitNormalForm.act_isHermitian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.QubitNormalForm.act_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.QubitNormalForm.act_det_of_det_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.QubitNormalForm.entropy_act_of_det_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.QubitNormalForm.scalar_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.kraus_sum_eq_one_of_TP' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.exists_kraus_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.of_kraus_vecMulVec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.QubitNormalForm.act_eq_of_kraus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.QubitNormalForm.toCPTP_m' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.pure_m' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.QubitNormalForm.jointColumns_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.QubitNormalForm.joint_output_m' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.vecMass_smul_vecState_m' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.branchBlock_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.blockMass_branchBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.weightedBlockEntropy_branchBlock_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.vecMass_branch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.sum_branch_outer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.QubitNormalForm.complete_entry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.QubitNormalForm.traceLeft_pure_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.QubitNormalForm.branches_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.QubitNormalForm.mass_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.entropy_submatrix_equiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.QubitNormalForm.pureInputBound_of_TC4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaCore.stationaryGram_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaCore.stationaryGram_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaCore.woodbury_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaCore.eliminatedHessian_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaOperators.left_mulVec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaOperators.right_mulVec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaOperators.left_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaOperators.right_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaOperators.left_right_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaOperators.left_conjTranspose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaOperators.right_conjTranspose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaOperators.generator_isHermitian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaOperators.left_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaOperators.right_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaOperators.generator_add_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaOperators.coordinateInclusion_compression' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaOperators.coordinateInclusion_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaOperators.blockCoordinates_inl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaOperators.blockCoordinates_inr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaOperators.blockInclusion_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaOperators.generator_compression' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaOperators.generator_compression_of_stationarity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaOperators.stationaryGram_of_blockStationarity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaOrder.gram_schur_residual_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaOrder.inverse_compression_residual_posSemidef' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaOrder.eliminatedHessian_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.OpenAICalculus.det_linearDeriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.OpenAICalculus.hasDerivAt_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.OpenAICalculus.hasDerivAt_matrix_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.OpenAICalculus.hasDerivAt_updateRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.OpenAICalculus.differentiableAt_adjugate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.OpenAICalculus.hasDerivAt_matrix_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.continuousOn_spectrum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.cfc_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.power_logarithm_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.power_isHermitian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.logarithm_isHermitian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.power_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.power_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.pw_eq_kronecker' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.pw_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.pw_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.pw_generator_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.hasDerivAt_cfc_parameter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.power_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.hasDerivAt_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.continuous_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.pw_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.power_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.hasDerivAt_kronecker' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.hasDerivAt_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.hasDerivAt_pw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.hasDerivAt_pw_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.continuous_pw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.intervalIntegrable_pw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPowers.pw_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBridge.compressionCLM_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBridge.isometry_mulVec_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBridge.hasDerivAt_coordinateCompression' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBridge.compression_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBridge.intervalIntegral_mono_on' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBridge.km_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBridge.km_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBridge.diagonalBlocksCLM_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBridge.blockPW_generator_commute' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBridge.hasDerivAt_blockPW' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBridge.hasDerivAt_blockPW_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBridge.continuous_blockPW' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBridge.intervalIntegrable_blockPW' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBridge.blockKM_eq_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBridge.stationaryGram_pw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBridge.hasDerivAt_curve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBridge.hasDerivAt_curveFirst' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBridge.curve_posDef_of_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBridge.curveFirst_isHermitian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBridge.curve_riccati_of_stationarity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBridge.km_of_pw' depends on axioms: [propext, Classical.choice, Quot.sound]
+def QubitAdditivity.GeneralQubitStrongAdditivity : Prop :=
+∀ (Φ : CPTPMap (Fin 2) (Fin 2) ℂ) (n m : ℕ) (Ω : CPTPMap (Fin (n + 1)) (Fin (m + 1)) ℂ),
+  QubitAdditivity.holevo (Φ⊗ᶜᵖΩ) = QubitAdditivity.holevo Φ + QubitAdditivity.holevo Ω
+def QubitAdditivity.GeneralQubitUpperBound : Prop :=
+∀ (Φ : CPTPMap (Fin 2) (Fin 2) ℂ) (n m : ℕ) (Ω : CPTPMap (Fin (n + 1)) (Fin (m + 1)) ℂ),
+  QubitAdditivity.holevo (Φ⊗ᶜᵖΩ) ≤ QubitAdditivity.holevo Φ + QubitAdditivity.holevo Ω
+def QubitAdditivity.TC4Bound : Prop :=
+∀ {R S Kc L T : Type} [inst : Fintype R] [inst_1 : DecidableEq R] [inst_2 : Fintype S] [inst_3 : DecidableEq S]
+  [inst_4 : Fintype Kc] [inst_5 : Fintype L] [inst_6 : Fintype T] (A : Matrix R Kc ℂ) (B : Matrix R L ℂ)
+  (C : Matrix S Kc ℂ) (D : Matrix S T ℂ),
+  QubitAdditivity.blockMass A + QubitAdditivity.blockMass B + QubitAdditivity.blockMass C +
+        QubitAdditivity.blockMass D =
+      1 →
+    QubitAdditivity.OpenAIEntropy.entropy
+                (QubitAdditivity.tc4ScalarMatrix (QubitAdditivity.blockMass A) (QubitAdditivity.blockMass B)
+                  (QubitAdditivity.blockMass C) (QubitAdditivity.blockMass D)) +
+              QubitAdditivity.weightedBlockEntropy A +
+            QubitAdditivity.weightedBlockEntropy B +
+          QubitAdditivity.weightedBlockEntropy C +
+        QubitAdditivity.weightedBlockEntropy D ≤
+      QubitAdditivity.OpenAIEntropy.entropy
+        (QubitAdditivity.tc4Matrix A B C D * (QubitAdditivity.tc4Matrix A B C D).conjTranspose)
+def QubitAdditivity.QubitPureInputBound : Prop :=
+∀ (Φ : CPTPMap (Fin 2) (Fin 2) ℂ) (n m : ℕ) (Ω : CPTPMap (Fin (n + 1)) (Fin (m + 1)) ℂ),
+  QubitAdditivity.PureInputBound Φ Ω
+'QubitAdditivity.BetaBlocks.cfc_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBlocks.power_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBlocks.pw_diagonal_compression' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBlocks.pw_diagonal_reduces' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBlocks.pw_diagonal_residual_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBlocks.diagonal_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaStrict.posDef_of_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaStrict.power_sub_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaStrict.pw_sub_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaStrict.residual_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaStrict.curve_posDef_of_positive_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaStrict.stationaryGram_of_positive_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaStrict.curve_riccati_of_positive_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaComparison.gram_completion_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaComparison.contact_second_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaComparison.second_nonneg_of_localMin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaComparison.posSemidef_of_quadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaComparison.quadratic_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaComparison.quadratic_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaComparison.hasDerivAt_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaComparison.quadratic_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaComparison.quadratic_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaComparison.quadratic_smul_vector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaComparison.le_of_quadratic_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaComparison.affine_trial_second' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaComparison.exists_contact_of_not_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaComparison.pairing_mulVec_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaComparison.pairing_mulVec_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaComparison.pairing_smul_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaComparison.pairing_smul_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaComparison.pairing_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaComparison.pairing_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaComparison.pairing_smul_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaComparison.affine_second_eq_quadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaComparison.quadratic_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaComparison.le_of_strict_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBarrier.hasDerivAt_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBarrier.le_of_exponential' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaEndpoints.left_compression' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaEndpoints.right_compression' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaEndpoints.blockPW_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaEndpoints.blockPW_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaEndpoints.curve_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaEndpoints.curve_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaEndpoints.gap_blocks_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPWBound.pw_of_stationarity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPWBound.km_of_stationarity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.OpenAICalculus.hasDerivAt_log_norm_of_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.OpenAICalculus.hasDerivAt_logNormDet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaKM.quadraticCLM_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaKM.quadratic_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaKM.integral_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaKM.km_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaKM.blockKM_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaKM.continuous_pw_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaKM.residual_eq_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaKM.residual_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaKM.residual_compression' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaResolvent.inverse_compression_strict_posDef' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaResolvent.inv_sub_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaResolvent.shift_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaResolvent.resolvent_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaResolvent.shift_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaResolvent.resolvent_sub_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaResolvent.hasDerivAt_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaResolvent.hasDerivAt_logNormDet_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaResolvent.hasDerivAt_resolvent_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaHessian.gapKM_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaHessian.compression_gap_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaHessian.curvature_nonpos_of_stationarity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaHessian.curvature_quadratic_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaHessian.inverseKM_compression_gap_posDef' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaHessian.eliminated_expression_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.inclusion_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.sandwich_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.kernelDeriv_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.segment_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.segment_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.segment_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.continuousOn_inverseSegment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.continuousOn_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.continuousOn_kernelDeriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.scalar_log_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.scalar_inverse_square_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.eventually_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.scalar_segment_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.segment_eq_cfc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.kernel_eq_cfc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.integral_cfc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.logarithm_eq_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.hasFDerivAt_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.continuousAt_inverseSegment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.hasFDerivAt_logarithm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.logDeriv_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.logDeriv_isHermitian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.normalization_eq_cfc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.normalization_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.traceRe_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.trace_mul_logDeriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.entropyGradient_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.entropy_eq_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLog.hasFDerivAt_entropy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogMean.mean_mul_log_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogMean.inverseMean_mul_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogMean.mean_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogMean.self_mul_inverseMean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogMean.mean_mul_inverseMean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogKM.coordinates_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogKM.coordinates_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogKM.coordinates_cfc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogKM.coordinateCLM_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogKM.coordinates_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogKM.inverseSegment_eq_cfc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogKM.coordinates_inverseSegment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogKM.operatorCoordinateCLM_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogKM.pw_mulVec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogKM.pw_spectral_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogKM.coordinates_kmApply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogKM.sandwich_spectral_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogKM.coordinates_logDeriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogKM.kmApply_logDeriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogKM.logDeriv_eq_inverseKM' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogKM.logDeriv_eq_inverseKM_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogKM.inverseKM_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogKM.logDeriv_eq_inverseKM_clm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogKM.hasFDerivAt_logarithm_inverseKM' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogKM.inverseKM_isHermitian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaEntropy.psi_eq_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaEntropy.psiGradient_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaEntropy.hasFDerivAt_psi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaEntropy.psiHessianRow_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaEntropy.hasFDerivAt_psiGradient_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaEntropy.trace_mul_eq_vector_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaEntropy.psiHessianRow_eq_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaEntropy.psiHessianRow_self_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaEntropy.psiHessianRow_self_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaKMOrder.km_sub_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaKMOrder.inverseKM_sub_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaKMOrder.psiHessian_gap_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.diagonal_mat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.diagonalCLM_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.traceHerm_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.trace_diagonal_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.logarithm_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.psi_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.objective_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.linearPenalty_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.hasFDerivAt_objective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.trace_mul_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.gradient_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.gradient_eq_zero_of_localMin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.stationaryResidual_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.stationarity_of_localMin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.positiveCone_mem_nhds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.stationarity_of_minOn_positiveCone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.real_smul_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.log_stationarity_of_residual_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.total_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.total_gap_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.km_of_minOn_positiveCone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.curvature_nonpos_of_minOn_positiveCone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDual.diagonal_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.psiGradient_diagonal_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.gradient_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.hessianRow_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.hasFDerivAt_gradient_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDual.hessianRow_self_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualConvex.posDef_convex_combination' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualConvex.convex_positiveInterior' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualConvex.continuous_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualConvex.hasDerivAt_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualConvex.hasDerivAt_objective_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualConvex.hasDerivAt_deriv_objective_line' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualConvex.line_mem_positiveInterior' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualConvex.strictConvexOn_objective_line' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualConvex.strictConvexOn_objective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualConvex.eq_of_minOn_positiveCone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualExistence.continuous_psi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualExistence.continuous_objective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualExistence.isClosed_positiveCone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualExistence.convex_psi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualExistence.norm_le_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualExistence.psi_increment_le_gradient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualExistence.hermLog_le_log_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualExistence.psiGradient_le_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualExistence.psi_increment_le_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualExistence.diagonal_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualExistence.continuous_blockTrace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualExistence.trace_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualExistence.blockTrace_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualExistence.norm_le_blockTrace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualExistence.isCompact_traceSublevel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualExistence.objective_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualExistence.tendsto_scalar_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualExistence.objective_eventually_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualExistence.tendsto_objective_cocompact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualExistence.exists_minOn_positiveCone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBoundaryEntropy.psi_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBoundaryEntropy.psi_shift_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBoundaryEntropy.scalar_increment_div_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBoundaryEntropy.psi_shift_div_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBoundaryEntropy.tendsto_psi_shift_div_atBot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaBoundaryEntropy.exists_boundary_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualInterior.objective_eq_correction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualInterior.hasFDerivAt_correction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualInterior.total_posDef_on_cone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualInterior.left_posDef_of_minOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualInterior.right_posDef_of_minOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualInterior.positiveInterior_of_minOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualInterior.existsUnique_minOn_positiveCone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualInterior.stationarity_of_minOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualInterior.km_of_minOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualInterior.curvature_nonpos_of_minOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogRegularity.continuousAt_kernelDeriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogRegularity.continuousAt_logDeriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogRegularity.hasStrictFDerivAt_logarithm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaLogRegularity.hasStrictFDerivAt_logarithm_inverseKM' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualDerivative.hermitianPart_mat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualDerivative.logHermDeriv_mat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualDerivative.hasStrictFDerivAt_hermLog' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualDerivative.pinchCLM_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualDerivative.hasStrictFDerivAt_blockLog' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualDerivative.hasStrictFDerivAt_stationaryResidual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualDerivative.hasStrictFDerivAt_jointResidual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualDerivative.blockPairing_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualDerivative.gradient_eq_blockPairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualDerivative.hasStrictFDerivAt_gradient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualDerivative.residualDerivative_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualDerivative.residualDerivative_self_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualDerivative.residualDerivative_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualDerivative.residualDerivative_isInvertible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualDerivative.jointDerivative_comp_inr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualDerivative.jointDerivative_comp_inl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaMinimizer.isMinOn_interior_of_stationary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaMinimizer.eq_of_stationary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaMinimizer.minimizer_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaMinimizer.minimizer_positiveInterior' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaMinimizer.minimizer_stationary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaMinimizer.hasStrictFDerivAt_minimizer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaMinimizer.continuousAt_minimizer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualValue.hasFDerivAt_jointObjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualValue.hasFDerivAt_minimumValue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualValue.continuousAt_minimumValue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualValue.hasFDerivAt_minimumValueGradient_row' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualValue.pinching_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualValue.hasFDerivAt_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualValue.hasFDerivAt_valueGradient_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualValue.continuousAt_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaValueHessian.vector_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaValueHessian.vector_pinch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaValueHessian.vector_logHermDeriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaValueHessian.blockKM_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaValueHessian.vector_blockLogDeriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaValueHessian.vector_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaValueHessian.blockVector_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaValueHessian.logHermDeriv_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaValueHessian.vector_residualDerivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaValueHessian.minimizerDerivative_equation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaValueHessian.vector_minimizerDerivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaValueHessian.vector_totalDerivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaValueHessian.vector_pinching' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaValueHessian.pinched_psiHessianRow_eq_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaValueHessian.gapKM_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaValueHessian.valueHessianRow_eq_eliminated_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaValueHessian.valueHessianRow_self_nonpos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualConcave.convex_positiveInputs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualConcave.continuous_inputLine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualConcave.hasDerivAt_inputLine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualConcave.inputLine_mem_positiveInputs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualConcave.hasDerivAt_value_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualConcave.hasDerivAt_deriv_value_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualConcave.concaveOn_value_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualConcave.concaveOn_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualBoundary.eq_zero_of_trace_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualBoundary.objective_lower_bound_psd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualBoundary.objective_uniform_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualBoundary.exists_uniform_trace_threshold' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualBoundary.objective_eventually_ge_psd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualBoundary.exists_minOn_positiveCone_psd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualBoundary.minimizer_spec_psd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualBoundary.continuous_jointObjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualBoundary.continuousWithinAt_minimumValue_psd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualBoundary.continuousOn_minimumValue_psd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualBoundary.continuousWithinAt_value_psd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualBoundary.continuousOn_value_psd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualBoundary.regularization_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaDualBoundary.tendsto_value_regularization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaDualBoundary.concaveOn_value_psd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Convex.convex_positiveCone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Convex.convexOn_objective_psd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Convex.convexOn_objective_line_psd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Convex.isMinOn_positiveCone_of_stationary_psd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaTC4Convex.minimumValue_eq_of_isMinOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Convex.value_le_primal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Structure.psi_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Structure.psi_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Structure.trace_pinching' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Structure.trace_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Structure.objective_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Structure.smul_mem_positiveCone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Structure.isMinOn_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Structure.minimumValue_smul_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Structure.value_smul_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Structure.objective_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Structure.isMinOn_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Structure.minimumValue_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Structure.value_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Structure.value_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Structure.value_add_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Structure.sum_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Structure.sum_value_le_value_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Unitary.diagonal_conjugateBlocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Unitary.pinching_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Unitary.psi_conj_unitary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Unitary.trace_conj_unitary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Unitary.conjugateBlocks_mem_positiveCone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaTC4Unitary.conjugateBlocks_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Unitary.objective_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Unitary.isMinOn_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Unitary.minimumValue_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Unitary.value_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSignFrame.star_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSignFrame.sign_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSignFrame.sign_not' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSignFrame.flip_apply_same' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSignFrame.flip_apply_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSignFrame.sum_sign_mul_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSignFrame.sum_sign_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSignFrame.signMatrix_mul_conjTranspose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSignFrame.signMatrix_quadratic_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSignFrame.spectralFrame_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSignFrame.spectralFrame_column' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSignFrame.spectralFrame_quadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSignFrame.spectralFrame_quadratic_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSignFrame.imageFrame_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaGramSplit.outer_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaGramSplit.outer_rank_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaGramSplit.mat_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaGramSplit.sum_outer_columns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaGramSplit.sum_image_outer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaGramSplit.rightGram_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaGramSplit.balanceMatrix_trace_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaGramSplit.rightGram_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaGramSplit.imageFrame_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaGramSplit.balancedAtom_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaGramSplit.balancedAtom_rank_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaGramSplit.outer_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaGramSplit.balancedAtom_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaGramSplit.sum_balancedAtom' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaGramSplit.outer_sqrt_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaGramSplit.decomposition_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaGramSplit.decomposition_rank_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaGramSplit.decomposition_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaGramSplit.sum_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaGramSplit.decomposition_sum_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaGramSplit.gramPair_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaGramSplit.value_gramPair_ge_of_rank_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.OpenAIEntropy.entropy_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogOrder.diagonalEval_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogOrder.diagonal_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogOrder.sandwich_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogOrder.continuousOn_diagonal_sandwich' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogOrder.logDeriv_diagonal_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogOrder.logDeriv_diagonal_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogOrder.hasDerivAt_log_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaLogOrder.logarithm_diagonal_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarMinimum.rankOne_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarMinimum.rankOne_left_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarMinimum.rankOne_right_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarMinimum.scalarBlock_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarMinimum.candidate_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarMinimum.diagonal_candidate_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarMinimum.comparison_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarMinimum.logarithm_scalarBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarMinimum.log_candidate_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarMinimum.log_candidate_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarMinimum.lambdaLeft_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarMinimum.lambdaRight_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarMinimum.candidate_stationary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarMinimum.candidate_isMinOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarMinimum.minimumValue_eq_candidate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarValue.scalarBlock_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarValue.psi_scalarBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarValue.pinchLeft_rankOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarValue.pinchRight_rankOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarValue.psi_pinching_rankOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarValue.penalty_candidate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarValue.value_rankOne_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarValue.scalar_primal_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarValue.comparison_reindex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarValue.psi_comparison_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaScalarValue.scalarDifference_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaOuterReduction.decomposition_eq_outer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaOuterReduction.value_gramPair_ge_of_outer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaTC4Gram.gram_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Gram.gram_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Gram.gram_zero_of_mass_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Gram.weightedBlockEntropy_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Gram.gramBlocks_mem_positiveCone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Gram.gramPair_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Gram.pinchLeft_gramPair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Gram.pinchRight_gramPair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Gram.psi_pinching_gramPair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Gram.tc4Matrix_eq_fromCols' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Gram.gram_tc4Matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Bridge.tc4_of_dual_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Bridge.tc4_of_outer_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaIsometryEntropy.embeddingHom_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaIsometryEntropy.cfc_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaIsometryEntropy.trace_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaIsometryEntropy.entropy_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaIsometryEntropy.psi_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaOrthogonalEntropy.psi_cfc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaOrthogonalEntropy.psi_add_of_mul_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaReflection.reflection_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaReflection.reflection_isHermitian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaReflection.reflection_fix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaReflection.reflection_average' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBlockIsometry.blockEmbedding_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBlockIsometry.diagonal_embedBlocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBlockIsometry.embedBlocks_mem_positiveCone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaBlockIsometry.compressBlocks_mem_positiveCone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaBlockIsometry.pinching_embed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBlockIsometry.psi_pinching_embed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBlockIsometry.objective_embed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSupport.rangeProjection_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSupport.rangeProjection_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSupport.adjoint_complement_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSupport.embedded_orthogonal_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSupport.psi_embedded_add_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSupport.complementBlocks_mem_positiveCone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaSupport.block_complement_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSupport.diagonal_complementBlocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSupport.objective_support_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSupportMinimum.reflection_mul_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSupportMinimum.embed_compress_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSupportMinimum.block_reflection_fix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSupportMinimum.block_reflection_average' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSupportMinimum.objective_average_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSupportMinimum.linearPenalty_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSupportMinimum.objective_compression_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSupportMinimum.minimumValue_embed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaSupportMinimum.value_embed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaNormalizedOuter.vecMass_star_dotProduct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaNormalizedOuter.vecMass_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaNormalizedOuter.outer_trace_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaNormalizedOuter.normalizedColumn_isometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaNormalizedOuter.normalizedColumn_mul_sqrt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaNormalizedOuter.outer_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaNormalizedOuter.outer_embed_rankOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaNormalizedOuter.rankOne_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaNormalizedOuter.pinchLeft_outer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaNormalizedOuter.pinchRight_outer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBalancedValue.outer_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBalancedValue.outer_sum_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBalancedValue.value_outer_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBalancedValue.value_outer_ratio_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaBalancedValue.balanced_outer_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaPositiveTC4.tc4_positive_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Regularization.rowEmbedding_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Regularization.rowEmbedding_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Regularization.regularized_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Regularization.blockMass_regularized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Regularization.gram_fromCols_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Regularization.gram_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Regularization.gram_regularized_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Regularization.weighted_regularized_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaTC4Regularization.continuous_regularized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaTC4Regularization.continuous_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Regularization.continuous_gram_regularized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaTC4Regularization.continuous_weighted_regularized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaTC4Regularization.gramPair_regularized_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaTC4Regularization.gram_tc4_regularized_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaTC4Regularization.entropy_tc4_regularized_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaTC4Regularization.continuous_gram_tc4_regularized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaTC4Regularization.continuous_entropy_tc4_regularized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaTC4Regularization.continuous_scalar_entropy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaTC4Regularization.continuous_scalar_entropy_regularized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.BetaTC4Boundary.tc4_all_masses' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.BetaTC4Boundary.tc4Bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.QubitNormalForm.pureInputBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.QubitNormalForm.strongHolevoAdditivity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.rotU_mul_conjTranspose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.rotU_mem_unitary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.rotU_mul_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.crossMat_rot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.eval_quarticPoly' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.coeff_four_quarticPoly' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.exists_unit_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.exists_outer_of_det_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.exists_rotation_cross_det_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.exists_rotated_outer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalSchur.inverseMass_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalSchur.inverseMass_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalSchur.scalarMatrix_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalSchur.scalarMatrix_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalSchur.column_sandwich' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalSchur.column_scalar_sandwich' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalSchur.left_residual_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalSchur.outer_sandwich' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalSchur.right_residual_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalSchur.outerM_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalSchur.cross_scaled_inverse_sqrt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalSchur.exists_common_branch_of_posDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalCommonBranch.norm_bound_of_residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalCommonBranch.posDef_add_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalCommonBranch.fromBlocks_add_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalCommonBranch.exists_common_branch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalKraus.sum_outer_columns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalKraus.exists_outer_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalKraus.gramBlocks_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalKraus.crossMat_conjTranspose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalKraus.exists_common_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalKraus.exists_normal_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalKraus.exists_rotated_normal_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalChannel.bform_trace_outer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalChannel.sum_bform_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalChannel.rows_adjoint_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalChannel.rows_family_complete_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalChannel.rows_family_action' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalChannel.rows_family_action_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalChannel.normal_kraus_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalChannel.normal_action_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalChannel.complete_of_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalChannel.action_eq_of_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalChannel.unitary_kraus_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalChannel.unitary_kraus_action' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.NormalChannel.exists_normal_channel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.RotationInvariant.entropy_output_unitary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.RotationInvariant.holevoValue_output_unitary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.RotationInvariant.holevo_output_unitary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.RotationInvariant.prod_compose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.RotationInvariant.unitary_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.RotationInvariant.unitary_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.RotationInvariant.prod_output_unitary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.RotationInvariant.holevo_prod_output_unitary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'QubitAdditivity.GeneralResult.strongHolevoAdditivity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.GeneralResult.generalQubitStrongAdditivity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.GeneralResult.generalQubitUpperBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.entropy_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.isState_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.of_kraus_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.channel_m' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.entropy_channel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.exists_channel_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.toMEnsemble_mix_m' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.holevoValue_toMEnsemble' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.ensembleValue_ofMEnsemble' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.holevoValues_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.holevo_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.ensembleValues_bddAbove' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.ensembleValues_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.isKraus_tensor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.channel_tensor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.strong_additivity_kraus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.holevoValue_compose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.holevoValues_compose_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.ofEquiv_comp_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.holevo_input_equiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.holevoValue_output_equiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.holevo_output_equiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.isKraus_reindex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.channel_reindex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.holevo_reindex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.powerKraus_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.isKraus_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.holevo_power_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.holevo_power_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.Presentation.power_additivity_kraus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitHolevo.strong_additivity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitHolevo.power_additivity' depends on axioms: [propext, Classical.choice, Quot.sound]
+challenge: ComparatorChallenges.QubitHolevoAdditivity
+solution: QubitAdditivity.FCPresentation
+QubitHolevo.strong_additivity: statement matches; 5 separately declared constants compared; axioms #[Classical.choice, Quot.sound, propext]
+  compared: #[QubitHolevo.IsKraus, QubitHolevo.entropy, QubitHolevo.entropy._proof_1, QubitHolevo.holevo, QubitHolevo.tensorKraus]
+QubitHolevo.power_additivity: statement matches; 5 separately declared constants compared; axioms #[Classical.choice, Quot.sound, propext]
+  compared: #[QubitHolevo.IsKraus, QubitHolevo.entropy, QubitHolevo.entropy._proof_1, QubitHolevo.holevo, QubitHolevo.powerKraus]
+Local statement comparison passed.
+Verified build and 741 transitive axiom reports. The exact frozen target propositions and the Mathlib-only Kraus statements are proved.

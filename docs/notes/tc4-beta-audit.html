@@ -1,0 +1,120 @@
+<!-- Publication copy: links to unbundled working notes removed; retained source/evidence links adjusted. -->
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TC4 βルート — 核心監査</title>
+<style>
+*{box-sizing:border-box}body{margin:0;color:#203040;background:#f5f7fa;font:15px/1.85 -apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif}main{max-width:1080px;padding:36px 24px 60px;margin:auto}h1{font-size:32px;line-height:1.4}h2{font-size:22px;margin:34px 0 14px}h3{font-size:18px}a{color:#255ba2}.verdict{padding:20px 24px;background:#edf7ef;border-left:5px solid #28714b;border-radius:0 12px 12px 0}.formula,pre{padding:18px 20px;background:white;border:1px solid #dce5eb;border-radius:10px;overflow-x:auto}.formula{font-family:ui-monospace,monospace;font-size:14px;white-space:pre-wrap}pre{font:13px/1.8 ui-monospace,monospace}.table-wrap{overflow-x:auto}table{border-collapse:collapse;background:white;width:100%;font-size:14px}th,td{border:1px solid #dce5eb;text-align:left;padding:12px;vertical-align:top}th{background:#eaf0f5}.small{font-size:13px;color:#526574}li{margin:9px 0}@media(max-width:700px){main{padding:22px 16px}h1{font-size:27px}table{min-width:650px}}
+</style></head><body><main><div class="note"><strong>最新状況：2026-10-12 02:12 JST、458補題の全体検証に成功。</strong><p>新60補題で実最小点の厳密微分・値関数HessianとKM Schur式の一致・正定値内部の凹性、新15補題で特異PSDJの最小点存在・最小値連続性・PSD錐全体の凹性を追加。λ₀,λ₁&lt;0。TC4、一般qubit正規形・主定理は未完成。残り約70–180実作業時間。PSD境界の実装 / 最後までの工程表。以下は各日時の記録です。</p></div>
+<p class="small">2026-10-11 · 工程表 · αルートの判定</p>
+<h1>TC4 βルートの核心監査<br>解析の接続は通過、代数部分をLeanへ</h1>
+<div class="verdict"><strong>✅ 核心の解析監査を完了。βルートを継続します。</strong><p>行列曲線比較、停留Gram、固定した双対係数での値関数Hessianを再導出しました。重大な論理的破綻は見つかっていません。曲線比較を直接の最大値原理に置き換えて短くし、Gram・Woodbury・Hessianの代数部分を4つのLean補題にしました。空の行次元の境界処理には零行の追加を補足しました。</p><p>解析部分全体、PW/KM、TC4のLean証明はまだ残っています。今回の4補題は、明記した作用素恒等式や可逆性を仮定する代数的な部品です。</p></div>
+
+<h2>監査の結果</h2>
+<div class="table-wrap"><table><thead><tr><th>核心</th><th>今回の結果</th><th>形式化の状態</th></tr></thead><tbody>
+<tr><td>行列曲線比較</td><td>✅ 格子・一様Taylor余項を使わない直接の最大値原理を導出。以下に次元に依存しない証明を記載。</td><td>解析証明を監査済み。Lean未実装。</td></tr>
+<tr><td>停留Gram恒等式</td><td>✅ 包含・生成子圧縮・非可換な積の順序を確認。</td><td>Gram恒等式とそのPSD帰結をLeanで証明。</td></tr>
+<tr><td>双対Hessian</td><td>✅ Schur補で最小点を消去し、Woodburyの符号と圧縮逆行列の方向を確認。</td><td>WoodburyとHessianの2つの代数式の一致をLeanで証明。微分・非正性は解析段階。</td></tr>
+<tr><td>最小点・スカラー化</td><td>✅ coercivity、内点性、厳密凸性、滑らかさ、質量を保つ階数低下、双対係数の選択を照合。</td><td>Lean未実装。</td></tr>
+<tr><td>零質量・空の次元</td><td>✅ 重み付きエントロピーの連続性を確認。零列に加えて零行の追加を明記。</td><td>paddingと極限のLean補題が必要。</td></tr>
+</tbody></table></div>
+
+<h2>1. 行列曲線比較の短い証明</h2>
+<p>正定値のC²曲線Fが F″−F′F⁻¹F′ ≥ 0 を満たすとします。結論は F(t) ≤ F(0)#ₜF(1) です。定数の合同変換でF(0)=Iに正規化し、B=F(1)、C=(log B)/2とします。</p>
+<p>ε&gt;0に対して E(t)=exp(−εt(1−t))F(t) と置きます。積の微分から正確に</p>
+<div class="formula">E″−E′E⁻¹E′ = exp(−εt(1−t))·(F″−F′F⁻¹F′+2εF) ≥ 2εE</div>
+<p>が成り立ちます。R(t)=exp(tC)、S(t)=R(t)⁻¹E(t)R(t)⁻¹と置くとS(0)=S(1)=Iです。Sの最大固有値の区間全体での最大をαとします。有限次元と連続性から最大が存在します。</p>
+<p>α&gt;1なら最大は内点t₀で達成され、単位ベクトルvを S(t₀)v=αv と選べます。全てのtでS(t)≤αIなので、固定したvによる実数関数 ⟨v,S(t)v⟩ はt₀で最大を取り、⟨v,S″(t₀)v⟩≤0です。</p>
+<p>以下の量を全てt₀で評価します。</p>
+<div class="formula">Δ = R⁻¹(E″−E′E⁻¹E′)R⁻¹ ≥ 2εS
+a = S′v,   c = Cv,   Sv = αv
+
+⟨v,S″v⟩ = ⟨v,Δv⟩
+          + ⟨a+(αI−S)c, S⁻¹(a+(αI−S)c)⟩
+          + 2⟨c,(αI−S)c⟩</div>
+<p>この等式は次の積の微分を展開してSv=αvを代入するだけです。非可換な積の順序を保っています。</p>
+<div class="formula">R⁻¹E′R⁻¹ = S′+CS+SC
+R⁻¹E″R⁻¹ = S″+2(CS′+S′C)+C²S+2CSC+SC²</div>
+<p>具体的にはq=a+(S+αI)cと置くと、右辺の二階項から ⟨q,S⁻¹q⟩−4 Re⟨c,a⟩−2α‖c‖²−2⟨c,Sc⟩ を得ます。q=[a+(αI−S)c]+2Scを代入して平方完成すると上の恒等式になります。この計算は任意の有限次元で同じです。</p>
+<p>S⁻¹&gt;0、αI−S≥0より、最後の2項は非負です。従って ⟨v,S″v⟩≥2εα&gt;0となり、最大点の二階微分の符号と矛盾します。よってα≤1、E(t)≤Bᵗです。ε↓0と最初の合同変換を戻すことで結論を得ます。</p>
+<p><strong>この証明には幾何平均の順序単調性、一様格子、Taylor余項の形式化が不要です。</strong>有限次元の最大固有値と、行列指数関数の微分・平方完成が必要です。2×2の一般の複素Hermitian成分による平方完成の例もSymPyで厳密に残差0を確認しましたが、全次元の根拠は上の代数的導出です。</p>
+
+<h2>2. 停留GramとPW/KM</h2>
+<p>複素Hilbert–Schmidt空間H=Mᵣ₊ₛ(ℂ)、ブロック代数𝓑=Mᵣ⊕Mₛ、等長包含V:𝓑→H、Γ=V*とします。前提は</p>
+<div class="formula">T &gt; W &gt; 0,   W∈𝓑,
+log W = Γ(log T)+Λ,   Λ=λ₀Iᵣ⊕λ₁Iₛ,
+P = Γ(T)−W &gt; 0</div>
+<p>Λがブロック代数の中心にあるため、ブロック行列Hと交換します。従って生成子圧縮が成り立ちます。</p>
+<div class="formula">K = L_(log T)−R_(log T),    k = (L_(log W)−R_(log W))|𝓑
+V*KV = k</div>
+<p>Cₜ=Q_T(t)=L_TᵗR_T¹⁻ᵗ、Bₜ=Q_W(t)|𝓑、Fₜ=V*CₜV−Bₜとします。左・右乗算は可換なので Cₜ′=CₜK、Bₜ′=Bₜk です。</p>
+<p>0≤t≤1における正作用素の冪の順序性からQ_T(t)−Q_W(t)&gt;0です。Q_Wが対角・非対角ブロック空間を保存することも使うと、Dₜ=Cₜ−VBₜV*&gt;0です。</p>
+<div class="formula">[[F,F′],[F′,F″]] = [V,KV]* · D · [V,KV] ≥ 0</div>
+<p>右辺の4ブロックは順に、V*CV−B、V*CKV−Bk、V*CKV−Bk、V*CK²V−kBkです。K,Cおよびk,Bの可換性とV*KV=kを使えば、左辺の微分と一致します。圧縮と冪を交換する仮定は使いません。</p>
+<p>Schur補からF″−F′F⁻¹F′≥0。前節の曲線比較、F(0)=R_P|𝓑、F(1)=L_P|𝓑と左・右乗算の可換性よりF(t)≤Q_P(t)|𝓑です。これがPW、積分するとKMです。</p>
+<div class="formula">PW: V*Q_T(t)V ≤ Q_P(t)|𝓑 + Q_W(t)|𝓑
+KM: V*Ω_TV ≤ Ω_P|𝓑 + Ω_W|𝓑,
+    Ω_X = ∫₀¹ Q_X(t)dt</div>
+<p class="small">GramのLean補題ではC,K,B,k,Vと各恒等式・DのPSDを明示した引数にしています。行列冪の順序性、CFC微分、停留条件からそれらの引数を供給する解析的な接続はまだLeanに入っていません。</p>
+
+<h2>3. 双対最小化とHessianの符号</h2>
+<p>Ψ(X)=Tr(X log X)、固定したλ₀,λ₁&lt;0に対して</p>
+<div class="formula">f_J(W) = Ψ(W)−Ψ(J+W)−Tr(ΛW),   W∈𝓑, W≥0
+G_Λ(J) = Ψ(ΓJ)+min_W f_J(W)</div>
+<p>とします。R=Tr W、b=Tr J、a=min(−λ₀,−λ₁)&gt;0と置くと、logの順序性から f_J(W)≥aR−b(1+log(R+b+1))→∞です。これはJがコンパクト集合を動くときも一様であり、最小値の存在と連続性を得ます。</p>
+<p>J&gt;0では境界のWにε倍の核射影を足すとε log εの項が他のO(ε)項を上回って目的を減らすため、最小点はW&gt;0です。またD log X=Ω_X⁻¹とΩ_(J+W)&gt;Ω_WからWのHessianは厳密に正となり、最小点は一意です。陰関数定理でJに関して滑らかになります。</p>
+<p>T=J+W、P=ΓJ、A=Ω_T、B=Ω_W|𝓑、C=Ω_P|𝓑、E=B⁻¹−V*A⁻¹V&gt;0として、全目的関数のHessianは</p>
+<div class="formula">[[VC⁻¹V*−A⁻¹, −A⁻¹V],
+ [−V*A⁻¹,       E]]</div>
+<p>です。最小点を微分してW方向を消去するとSchur補になり、Woodburyを使って</p>
+<div class="formula">D²G_Λ = VC⁻¹V*−A⁻¹−A⁻¹VE⁻¹V*A⁻¹
+       = VC⁻¹V*−(A−VBV*)⁻¹</div>
+<p>となります。<strong>このマイナス符号と2つの式の一致はLeanで確認しました。</strong></p>
+<p>Z=A−VBV*&gt;0と置くと、KMからV*ZV≤Cです。Z¹ᐟ²V(V*ZV)⁻¹ᐟ²は等長写像なので、その像への射影≤IをZ⁻¹ᐟ²で合同変換すれば Z⁻¹≥V(V*ZV)⁻¹V*。逆行列の順序反転も使うと</p>
+<div class="formula">Z⁻¹ ≥ V(V*ZV)⁻¹V* ≥ VC⁻¹V* ⇒ D²G_Λ ≤ 0</div>
+<p>です。線分への制限でJ&gt;0上の凹性を得て、最小値の連続性でPSD境界まで延長します。Ω_Xは随伴操作を保存します（tと1−tの積分対称性）。その逆も保存するため、この複素作用素の式を実Hermitian方向のHessianへ制限できます。</p>
+<p><strong>固定するのはΛです。</strong>外側のトレースy,wを固定した別の値関数の凹性や、αルートの4行列の同時凹性R2は使用していません。</p>
+
+<h2>4. スカラー化とTC4への符号</h2>
+<p>J≥0で2つのブロックトレースをx,z&gt;0に固定します。rank J=q≥2なら、support上のHermitian行列の実次元q²&gt;2に対して2本のトレース制約を課しても非零方向Hが残ります。Tr H=0なのでHは不定です。J+tHがPSDでいられる区間の両端でrankが落ち、Jを両端の凸結合に分解できます。有限回の再帰で、同じx,zを持つrank1の有限分解を得ます。</p>
+<p>rank1では独立なブロックユニタリで2つの活性方向へ移し、Wを補空間への符号反転で平均します。f_Jの凸性から平均は目的を増やさず、残る補空間ではΨが相殺して−Tr ΛW≥0だけになります。よって補空間の最小値は0です。</p>
+<p>j=[[x,√xz],[√xz,z]]、L=j+diag(y,w)、y,w&gt;0とし、λ₀=log y−(log L)₀₀、λ₁=log w−(log L)₁₁を選びます。rank1更新の逆行列公式とlogの積分表示から両係数は厳密に負です。スカラー目的の勾配がこのΛに一致し、凸性から(y,w)が全域の最小点です。</p>
+<p>凹性によるrank1下界と、最小値の定義による任意Wでの上界を合わせ、Tr ΛW=λ₀y+λ₁wを相殺します。</p>
+<div class="formula">Ψ(AA*)+Ψ(BB*)+Ψ(CC*)+Ψ(DD*)−Ψ(MM*)
+  ≥ x log x+y log y+z log z+w log w−Ψ(L)</div>
+<p>Ψ(R)=a log a−aS(R/a)、Tr MM*=Tr L=1を代入すると、所望のTC4の向きになります。rank1還元で用いる凹性の向きもG(J)≥平均G(rank1)で一致しています。</p>
+
+<h2>5. 境界の補足：空の行次元も含める</h2>
+<p>原稿は零列の追加を記載していますが、LeanのTC4Boundは空の行添字も許します。全4ブロックを非零にする摂動を行う前に、<strong>必要な行空間にも零行を追加</strong>します。共通列・左右の外側列にも必要なら零列を追加します。</p>
+<p>埋め込んだGram行列は、元のGram行列に零固有値を加えたものに並べ替えで一致します。質量とエントロピーは変わりません。全次元を正にしてから4ブロックに小さな非零摂動を与え、全Frobenius質量で正規化し、極限を取れます。</p>
+<div class="formula">aS(R/a) = a log a−Ψ(R) → 0   (R→0)</div>
+<p>従って零質量・空の行・空の列を含むTC4の型へ戻れます。このpadding・再添字・連続性のLean接続は未実装です。</p>
+
+<h2>6. 再計算の結果</h2>
+<p>補助診断として複素停留配置24例×5指数を調べました。Gramの最大相対残差は1.13×10⁻¹⁵、Woodburyの最大相対残差は3.82×10⁻¹⁵。PW/KMの最小固有値とHessianの最大固有値の符号の揺れは10⁻¹⁴程度の浮動小数点精度内でした。</p>
+<p>独立に外側の最小化を解き直す検査では、固定Λ=(−1/2,−3/4)、有理数の中央行列と方向を使いました。80桁の計算で解析的な方向Hessianは−0.012373008113210640134526250567…です。</p>
+<div class="table-wrap"><table><thead><tr><th>差分刻み</th><th>再最小化した二階差分との絶対誤差</th><th>停留条件の残差</th></tr></thead><tbody>
+<tr><td>0.01</td><td>6.37×10⁻⁹</td><td>7.38×10⁻⁸¹</td></tr>
+<tr><td>0.001</td><td>6.37×10⁻¹¹</td><td>7.38×10⁻⁸¹</td></tr>
+<tr><td>0.0001</td><td>6.37×10⁻¹³</td><td>7.38×10⁻⁸¹</td></tr>
+</tbody></table></div>
+<p class="small">これらは解析式の検算を補助する数値診断であり、全称不等式や最小値の存在の証明ではありません。行列固有値のクリップは使わず、非有限値を明示的に拒否しています。</p>
+
+<h2>7. Leanに入れた4補題と残るAPI</h2>
+<ul>
+<li><code>BetaCore.stationaryGram_identity</code>：全複素行列のGram恒等式。</li>
+<li><code>BetaCore.stationaryGram_posSemidef</code>：因子DのPSDからブロックGramのPSDを導く。</li>
+<li><code>BetaCore.woodbury_sub</code>：マイナス符号を持つWoodbury公式。</li>
+<li><code>BetaCore.eliminatedHessian_eq</code>：消去後Hessianの2式の代数的な一致。</li>
+</ul>
+<p><strong>2026-10-11 21:20 JST：全体ビルドと、新4補題を含む97補題の推移的公理監査に成功しました。</strong>標準公理propext・Classical.choice・Quot.soundの範囲内で、sorryAx・追加公理はありません。原本ハッシュ照合と自作モジュールのproof hole検査にも成功しました。</p>
+<p>次の形式化は、Hilbert–Schmidt作用素の表現を固定し、左・右乗算、Q_X(t)、Ω_X、Γ、中心性からのV*KV=kを接続することです。続いて曲線比較、logの微分、双対最小点、質量保存分解、零paddingと極限を実装し、TC4Boundを閉じます。</p>
+<p>この監査だけから残り工数を縮める実測根拠はまだありません。TC4工程の100〜280実作業時間は仮見積りとして据え置きます。</p>
+
+<h2>続報：CFC・実際の曲線と積分の接続</h2><p>2026-10-11 22:57 JST、新45補題を含む170補題の全体ビルド・推移的公理監査に成功。実際のCFC行列冪の可換性・微分・正性を供給し、F,F′,F″のGramとSchur補、PW比較を前提としたKM積分まで接続しました。Dₛ&gt;0と曲線比較、端点から無条件PWを供給する証明は残ります。</p><p>今回の接続・前提・残る仕事 / 全体工程表。</p>
+<h2>保存先と再現</h2>
+<pre>python3 -B 監査_TC4β/audit_beta.py
+cd lean
+python3 scripts/verify.py</pre>
+<p><a href="../../lean/QubitAdditivity/BetaCore.lean">4補題のLeanソース</a> · <a href="../../lean/verification/result.json">全体検証結果</a> · <a href="../../lean/verification/axioms.log">公理監査</a> · 補助診断コード · 補助診断結果 · 監査した原稿</p>
+<p class="small">根拠は原稿§§1〜6の再導出、上記の次元に依存しない解析的な説明、Leanの4代数補題、および補助診断です。外部の専門家による独立査読や、TC4全体のLean検証を意味しません。</p>
+</main></body></html>

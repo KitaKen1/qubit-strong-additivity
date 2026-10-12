@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "--run",
+    "scripts/Replay.lean"
+  ],
+  "exec_session_id": 30727,
+  "workspace": "/private/tmp/qubit-clean-20261012-lm267rte/lean",
+  "lean_threads": 2,
+  "scope": "Replay every constant imported and defined by QubitAdditivity into a fresh empty environment using the installed Lean kernel. The replay body is exactly the Lean 4.34.1 LeanChecker.lean replayFromFresh body, with progress messages added and file enumeration omitted. Not an independently implemented external verifier. The earlier CLI attempts were interrupted, not passed.",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "replay_script_sha256": "ed8c2d4c1927d4156f5336d2af1e42f90fe53807292a2bf170b32a34c49f53ac",
+  "started_utc": "2026-10-11T19:59:24.005446+00:00",
+  "exit_code": 0,
+  "completed_utc": "2026-10-11T20:03:26.278961+00:00",
+  "root_module": "QubitAdditivity",
+  "replayed_declarations": 443753,
+  "import_closure_replayed": true,
+  "log_sha256": "2e9c36d86101c8344ec506c5df61515317908d94f348ea92ed29d7d9cebaa861"
+}

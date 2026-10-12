@@ -1,0 +1,147 @@
+# LOCAL CANDIDATE: run privately first, then on public main; archive only after public success.
+# Checks the mathematical body of a proposed FC draft, not a submitted upstream FC file.
+name: Qubit Holevo additivity proposed FC target verification
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: qubit-fc-${{ github.ref }}
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    outputs:
+      ready: ${{ steps.build.outputs.ready }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - run: python3 comparator/check-inputs.py --receipt-dir build-receipt
+      - run: bash comparator/prepare-runner.sh && bash comparator/add-swap.sh 4 20
+      - run: lake exe cache get
+        working-directory: lean
+      - id: build_cache
+        uses: actions/cache/restore@v4
+        with:
+          path: lean/.lake/build
+          key: qubit-fc-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: qubit-fc-${{ github.sha }}-
+      - id: build
+        run: bash ../comparator/build-proof.sh
+        working-directory: lean
+      - name: Save complete or partial proof build
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: lean/.lake/build
+          key: qubit-fc-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+      - if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: build-${{ github.run_id }}-${{ github.run_attempt }}
+          path: build-receipt/
+          retention-days: 90
+          if-no-files-found: error
+
+  comparator:
+    needs: build
+    if: needs.build.outputs.ready == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - run: python3 comparator/check-inputs.py --receipt-dir comparator-receipt
+      - run: bash comparator/prepare-runner.sh && bash comparator/add-swap.sh 8 4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+      - run: lake exe cache get
+        working-directory: lean
+      - name: Build trusted mathematical challenge before restoring solution products
+        working-directory: lean
+        run: |
+          lake build ComparatorChallenges
+          mkdir -p "$RUNNER_TEMP/trusted-challenge"
+          find .lake/build -type f -path '*ComparatorChallenges*' -print0 | tar --null -T - -cf "$RUNNER_TEMP/trusted-challenge/files.tar"
+      - name: Install pinned tools in fresh checker job
+        env:
+          COMPARATOR_TOOLS: ${{ runner.temp }}/comparator-tools
+        run: bash comparator/install-tools.sh
+      - uses: actions/cache/restore@v4
+        with:
+          path: lean/.lake/build
+          key: qubit-fc-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          fail-on-cache-miss: true
+      - name: Restore the separately compiled trusted challenge
+        working-directory: lean
+        run: tar -xf "$RUNNER_TEMP/trusted-challenge/files.tar"
+      - name: Compare targets, audit all target axioms, replay built-in kernel
+        env:
+          COMPARATOR_TOOLS: ${{ runner.temp }}/comparator-tools
+        run: bash comparator/run-check.sh
+      - if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: comparator-${{ github.run_id }}-${{ github.run_attempt }}
+          path: comparator-receipt/
+          retention-days: 90
+          if-no-files-found: error
+
+  replay:
+    needs: build
+    if: needs.build.outputs.ready == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - run: bash comparator/prepare-runner.sh && bash comparator/add-swap.sh 16 3
+      - run: lake exe cache get
+        working-directory: lean
+      - uses: actions/cache/restore@v4
+        with:
+          path: lean/.lake/build
+          key: qubit-fc-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          fail-on-cache-miss: true
+      - name: Fresh replay of the whole proof environment
+        working-directory: lean
+        run: |
+          mkdir -p ../replay-receipt
+          /usr/bin/time -v lake env leanchecker --fresh QubitAdditivity > ../replay-receipt/replay.log 2> ../replay-receipt/time.log
+          grep -q 'Exit status: 0' ../replay-receipt/time.log
+          printf 'PASS\n' > ../replay-receipt/status.txt
+      - if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: replay-${{ github.run_id }}-${{ github.run_attempt }}
+          path: replay-receipt/
+          retention-days: 90
+          if-no-files-found: warn
+
+  verification_status:
+    needs: [build, comparator, replay]
+    if: always()
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Require completed build, Comparator and fresh replay
+        env:
+          READY: ${{ needs.build.outputs.ready }}
+          COMPARE: ${{ needs.comparator.result }}
+          REPLAY: ${{ needs.replay.result }}
+        run: |
+          test "$READY" = true
+          test "$COMPARE" = success
+          test "$REPLAY" = success

@@ -1,0 +1,37 @@
+{
+  "started_utc": "2026-10-12T11:36:15.469987+00:00",
+  "completed_utc": "2026-10-12T12:42:34.982097+00:00",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "QubitStrongAdditivityLean4Web.lean"
+  ],
+  "exit_code": 0,
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "source_sha256": "29f5aa533d8f8eba2e0487e8ae640442174ea88fd3b73c8b34895017849e28a0",
+  "scope": "Full source elaboration and kernel checking of the generated single file, using only the pinned Mathlib dependency environment; no compiled project or Physlib module imports. Hosted Lean4Web not tested.",
+  "axiom_audit": {
+    "QubitAdditivity.GeneralResult.generalQubitStrongAdditivity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QubitAdditivity.GeneralResult.generalQubitUpperBound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QubitHolevo.strong_additivity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QubitHolevo.power_additivity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "status": "passed"
+}

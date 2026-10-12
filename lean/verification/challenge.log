@@ -1,0 +1,4 @@
+⚠ [3097/3098] Replayed ComparatorChallenges.QubitHolevoAdditivity
+warning: ComparatorChallenges/QubitHolevoAdditivity.lean:50:8: declaration uses `sorry`
+warning: ComparatorChallenges/QubitHolevoAdditivity.lean:58:8: declaration uses `sorry`
+Build completed successfully (3098 jobs).

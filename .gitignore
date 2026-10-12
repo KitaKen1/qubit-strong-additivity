@@ -1,0 +1,19 @@
+.DS_Store
+**/.lake/
+**/__pycache__/
+*.pyc
+.tools/
+*.olean
+*.ilean
+*.trace
+*.hash
+*.tar.gz
+*.zip
+!ComparatorLog*/**
+
+# Disposable verification products; permanent archives are included.
+comparator-receipt/
+build-receipt/
+replay-receipt/
+input-receipt/
+local-precheck-receipt/

@@ -1,0 +1,9 @@
+{
+  "purpose": "Freeze the original target and upper-bound channel scope; this is a source-level guard, not lean-eval/comparator/nanoda.",
+  "target_file": "QubitAdditivity/Target.lean",
+  "sha256": "dae55f3daa13fb39ef70b340ba907656ac88438b1cee2aaeb3e24d1c5619a014",
+  "declarations": [
+    "QubitAdditivity.GeneralQubitStrongAdditivity",
+    "QubitAdditivity.GeneralQubitUpperBound"
+  ]
+}

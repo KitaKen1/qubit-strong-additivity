@@ -1,0 +1,1441 @@
+{
+  "root_module": "QubitAdditivity",
+  "module_count": 131,
+  "line_count": 39396,
+  "external_imports_encountered": [
+    "Aesop.Frontend.Command",
+    "Mathlib.Algebra.Algebra.Spectrum.Quasispectrum",
+    "Mathlib.Algebra.BigOperators.Group.List.Basic",
+    "Mathlib.Algebra.BigOperators.Ring.Finset",
+    "Mathlib.Algebra.BigOperators.Ring.List",
+    "Mathlib.Algebra.Group.Action.Defs",
+    "Mathlib.Algebra.Group.Center",
+    "Mathlib.Algebra.Group.Commute.Basic",
+    "Mathlib.Algebra.Group.Commute.Hom",
+    "Mathlib.Algebra.Group.Commute.Units",
+    "Mathlib.Algebra.Group.Invertible.Basic",
+    "Mathlib.Algebra.Group.Opposite",
+    "Mathlib.Algebra.Group.Pi.Lemmas",
+    "Mathlib.Algebra.Group.Prod",
+    "Mathlib.Algebra.GroupWithZero.Commute",
+    "Mathlib.Algebra.GroupWithZero.Semiconj",
+    "Mathlib.Algebra.Module.LinearMap.Basic",
+    "Mathlib.Algebra.Order.Group.Pointwise.CompleteLattice",
+    "Mathlib.Algebra.Polynomial.Basic",
+    "Mathlib.Algebra.Ring.Commute",
+    "Mathlib.Algebra.Ring.Nat",
+    "Mathlib.Algebra.Star.SelfAdjoint",
+    "Mathlib.Algebra.Star.UnitaryStarAlgAut",
+    "Mathlib.Analysis.CStarAlgebra.CStarMatrix",
+    "Mathlib.Analysis.CStarAlgebra.Classes",
+    "Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Commute",
+    "Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Continuity",
+    "Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Order",
+    "Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Pi",
+    "Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Unique",
+    "Mathlib.Analysis.CStarAlgebra.ContinuousLinearMap",
+    "Mathlib.Analysis.CStarAlgebra.Matrix",
+    "Mathlib.Analysis.CStarAlgebra.Unitary.Span",
+    "Mathlib.Analysis.Calculus.Deriv.Add",
+    "Mathlib.Analysis.Calculus.Deriv.Inv",
+    "Mathlib.Analysis.Calculus.Deriv.Mul",
+    "Mathlib.Analysis.Calculus.Deriv.Prod",
+    "Mathlib.Analysis.Calculus.Deriv.Slope",
+    "Mathlib.Analysis.Calculus.Deriv.Star",
+    "Mathlib.Analysis.Calculus.DerivativeTest",
+    "Mathlib.Analysis.Calculus.FDeriv.ContinuousMultilinearMap",
+    "Mathlib.Analysis.Calculus.FDeriv.Mul",
+    "Mathlib.Analysis.Calculus.FDeriv.Star",
+    "Mathlib.Analysis.Calculus.ImplicitFunction.ProdDomain",
+    "Mathlib.Analysis.Calculus.LocalExtr.Basic",
+    "Mathlib.Analysis.Calculus.MeanValue",
+    "Mathlib.Analysis.Calculus.ParametricIntervalIntegral",
+    "Mathlib.Analysis.Complex.Order",
+    "Mathlib.Analysis.Complex.Polynomial.Basic",
+    "Mathlib.Analysis.Convex.Basic",
+    "Mathlib.Analysis.Convex.Combination",
+    "Mathlib.Analysis.Convex.Continuous",
+    "Mathlib.Analysis.Convex.Contractible",
+    "Mathlib.Analysis.Convex.Deriv",
+    "Mathlib.Analysis.InnerProductSpace.JointEigenspace",
+    "Mathlib.Analysis.InnerProductSpace.PiL2",
+    "Mathlib.Analysis.InnerProductSpace.Positive",
+    "Mathlib.Analysis.InnerProductSpace.Spectrum",
+    "Mathlib.Analysis.InnerProductSpace.StarOrder",
+    "Mathlib.Analysis.InnerProductSpace.Trace",
+    "Mathlib.Analysis.Matrix.Hermitian",
+    "Mathlib.Analysis.Matrix.Normed",
+    "Mathlib.Analysis.Matrix.Order",
+    "Mathlib.Analysis.Normed.Lp.PiLp",
+    "Mathlib.Analysis.Normed.Module.FiniteDimension",
+    "Mathlib.Analysis.RCLike.Basic",
+    "Mathlib.Analysis.SpecialFunctions.Bernstein",
+    "Mathlib.Analysis.SpecialFunctions.BinaryEntropy",
+    "Mathlib.Analysis.SpecialFunctions.ContinuousFunctionalCalculus.PosPart.Basic",
+    "Mathlib.Analysis.SpecialFunctions.ContinuousFunctionalCalculus.Rpow.IntegralRepresentation",
+    "Mathlib.Analysis.SpecialFunctions.ContinuousFunctionalCalculus.Rpow.Order",
+    "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals",
+    "Mathlib.Analysis.SpecialFunctions.Log.Basic",
+    "Mathlib.Analysis.SpecialFunctions.Log.Deriv",
+    "Mathlib.Analysis.SpecialFunctions.Log.ENNRealLog",
+    "Mathlib.Analysis.SpecialFunctions.Log.NegMulLog",
+    "Mathlib.Analysis.SpecialFunctions.Pow.Deriv",
+    "Mathlib.Analysis.SpecialFunctions.Pow.NNReal",
+    "Mathlib.Analysis.SpecialFunctions.Sqrt",
+    "Mathlib.Analysis.SpecificLimits.Basic",
+    "Mathlib.Basic.Complex.BigOperators",
+    "Mathlib.Basic.NNReal.Basic",
+    "Mathlib.Data.EReal.Basic",
+    "Mathlib.Data.Int.Cast.Lemmas",
+    "Mathlib.Data.Matrix.Basic",
+    "Mathlib.Data.Matrix.ColumnRowPartitioned",
+    "Mathlib.Data.Multiset.Functor",
+    "Mathlib.Data.Nat.Cast.Commute",
+    "Mathlib.Data.Rat.Cast.Defs",
+    "Mathlib.Data.Set.Card",
+    "Mathlib.Data.Set.PowersetCard",
+    "Mathlib.GroupTheory.GroupAction.Ring",
+    "Mathlib.LinearAlgebra.Complex.FiniteDimensional",
+    "Mathlib.LinearAlgebra.FiniteDimensional.Lemmas",
+    "Mathlib.LinearAlgebra.Lagrange",
+    "Mathlib.LinearAlgebra.Matrix.Adjugate",
+    "Mathlib.LinearAlgebra.Matrix.Bilinear",
+    "Mathlib.LinearAlgebra.Matrix.ConjTranspose",
+    "Mathlib.LinearAlgebra.Matrix.IsDiag",
+    "Mathlib.LinearAlgebra.Matrix.Kronecker",
+    "Mathlib.LinearAlgebra.Matrix.NonsingularInverse",
+    "Mathlib.LinearAlgebra.Matrix.Notation",
+    "Mathlib.LinearAlgebra.Matrix.Permutation",
+    "Mathlib.LinearAlgebra.Matrix.PosDef",
+    "Mathlib.LinearAlgebra.Matrix.ToLin",
+    "Mathlib.LinearAlgebra.Matrix.Trace",
+    "Mathlib.LinearAlgebra.Matrix.ZPow",
+    "Mathlib.LinearAlgebra.PiTensorProduct.Basic",
+    "Mathlib.LinearAlgebra.PiTensorProduct.Basis",
+    "Mathlib.LinearAlgebra.Trace",
+    "Mathlib.Logic.Equiv.Basic",
+    "Mathlib.Logic.Equiv.Bool",
+    "Mathlib.Logic.Equiv.Fin.Basic",
+    "Mathlib.MeasureTheory.Integral.DominatedConvergence",
+    "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic",
+    "Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus",
+    "Mathlib.Order.CompletePartialOrder",
+    "Mathlib.Tactic.Abel",
+    "Mathlib.Tactic.Bound",
+    "Mathlib.Tactic.Cases",
+    "Mathlib.Tactic.Convert",
+    "Mathlib.Tactic.FinCases",
+    "Mathlib.Tactic.Finiteness",
+    "Mathlib.Tactic.FunProp",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.LinearCombinationPrime",
+    "Mathlib.Tactic.Module",
+    "Mathlib.Tactic.NoncommRing",
+    "Mathlib.Tactic.NormNum.GCD",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Topology.Algebra.Module.FiniteDimension",
+    "Mathlib.Topology.MetricSpace.ProperSpace",
+    "Mathlib.Topology.Order.Compact",
+    "Mathlib.Topology.Order.Hom.Basic",
+    "Mathlib.Topology.Sequences",
+    "Mathlib.Topology.TietzeExtension",
+    "Mathlib.Topology.UnitInterval"
+  ],
+  "output_imports": [
+    "Aesop.Frontend.Command",
+    "Mathlib.Algebra.Algebra.Spectrum.Quasispectrum",
+    "Mathlib.Algebra.BigOperators.Group.List.Basic",
+    "Mathlib.Algebra.BigOperators.Ring.Finset",
+    "Mathlib.Algebra.BigOperators.Ring.List",
+    "Mathlib.Algebra.Group.Action.Defs",
+    "Mathlib.Algebra.Group.Center",
+    "Mathlib.Algebra.Group.Commute.Basic",
+    "Mathlib.Algebra.Group.Commute.Hom",
+    "Mathlib.Algebra.Group.Commute.Units",
+    "Mathlib.Algebra.Group.Invertible.Basic",
+    "Mathlib.Algebra.Group.Opposite",
+    "Mathlib.Algebra.Group.Pi.Lemmas",
+    "Mathlib.Algebra.Group.Prod",
+    "Mathlib.Algebra.GroupWithZero.Commute",
+    "Mathlib.Algebra.GroupWithZero.Semiconj",
+    "Mathlib.Algebra.Module.LinearMap.Basic",
+    "Mathlib.Algebra.Order.Group.Pointwise.CompleteLattice",
+    "Mathlib.Algebra.Polynomial.Basic",
+    "Mathlib.Algebra.Ring.Commute",
+    "Mathlib.Algebra.Ring.Nat",
+    "Mathlib.Algebra.Star.SelfAdjoint",
+    "Mathlib.Algebra.Star.UnitaryStarAlgAut",
+    "Mathlib.Analysis.CStarAlgebra.CStarMatrix",
+    "Mathlib.Analysis.CStarAlgebra.Classes",
+    "Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Commute",
+    "Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Continuity",
+    "Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Order",
+    "Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Pi",
+    "Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Unique",
+    "Mathlib.Analysis.CStarAlgebra.ContinuousLinearMap",
+    "Mathlib.Analysis.CStarAlgebra.Matrix",
+    "Mathlib.Analysis.CStarAlgebra.Unitary.Span",
+    "Mathlib.Analysis.Calculus.Deriv.Add",
+    "Mathlib.Analysis.Calculus.Deriv.Inv",
+    "Mathlib.Analysis.Calculus.Deriv.Mul",
+    "Mathlib.Analysis.Calculus.Deriv.Prod",
+    "Mathlib.Analysis.Calculus.Deriv.Slope",
+    "Mathlib.Analysis.Calculus.Deriv.Star",
+    "Mathlib.Analysis.Calculus.DerivativeTest",
+    "Mathlib.Analysis.Calculus.FDeriv.ContinuousMultilinearMap",
+    "Mathlib.Analysis.Calculus.FDeriv.Mul",
+    "Mathlib.Analysis.Calculus.FDeriv.Star",
+    "Mathlib.Analysis.Calculus.ImplicitFunction.ProdDomain",
+    "Mathlib.Analysis.Calculus.LocalExtr.Basic",
+    "Mathlib.Analysis.Calculus.MeanValue",
+    "Mathlib.Analysis.Calculus.ParametricIntervalIntegral",
+    "Mathlib.Analysis.Complex.Order",
+    "Mathlib.Analysis.Complex.Polynomial.Basic",
+    "Mathlib.Analysis.Convex.Basic",
+    "Mathlib.Analysis.Convex.Combination",
+    "Mathlib.Analysis.Convex.Continuous",
+    "Mathlib.Analysis.Convex.Contractible",
+    "Mathlib.Analysis.Convex.Deriv",
+    "Mathlib.Analysis.InnerProductSpace.JointEigenspace",
+    "Mathlib.Analysis.InnerProductSpace.PiL2",
+    "Mathlib.Analysis.InnerProductSpace.Positive",
+    "Mathlib.Analysis.InnerProductSpace.Spectrum",
+    "Mathlib.Analysis.InnerProductSpace.StarOrder",
+    "Mathlib.Analysis.InnerProductSpace.Trace",
+    "Mathlib.Analysis.Matrix.Hermitian",
+    "Mathlib.Analysis.Matrix.Normed",
+    "Mathlib.Analysis.Matrix.Order",
+    "Mathlib.Analysis.Normed.Lp.PiLp",
+    "Mathlib.Analysis.Normed.Module.FiniteDimension",
+    "Mathlib.Analysis.RCLike.Basic",
+    "Mathlib.Analysis.SpecialFunctions.Bernstein",
+    "Mathlib.Analysis.SpecialFunctions.BinaryEntropy",
+    "Mathlib.Analysis.SpecialFunctions.ContinuousFunctionalCalculus.PosPart.Basic",
+    "Mathlib.Analysis.SpecialFunctions.ContinuousFunctionalCalculus.Rpow.IntegralRepresentation",
+    "Mathlib.Analysis.SpecialFunctions.ContinuousFunctionalCalculus.Rpow.Order",
+    "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals",
+    "Mathlib.Analysis.SpecialFunctions.Log.Basic",
+    "Mathlib.Analysis.SpecialFunctions.Log.Deriv",
+    "Mathlib.Analysis.SpecialFunctions.Log.ENNRealLog",
+    "Mathlib.Analysis.SpecialFunctions.Log.NegMulLog",
+    "Mathlib.Analysis.SpecialFunctions.Pow.Deriv",
+    "Mathlib.Analysis.SpecialFunctions.Pow.NNReal",
+    "Mathlib.Analysis.SpecialFunctions.Sqrt",
+    "Mathlib.Analysis.SpecificLimits.Basic",
+    "Mathlib.Basic.Complex.BigOperators",
+    "Mathlib.Basic.NNReal.Basic",
+    "Mathlib.Data.EReal.Basic",
+    "Mathlib.Data.Int.Cast.Lemmas",
+    "Mathlib.Data.Matrix.Basic",
+    "Mathlib.Data.Matrix.ColumnRowPartitioned",
+    "Mathlib.Data.Multiset.Functor",
+    "Mathlib.Data.Nat.Cast.Commute",
+    "Mathlib.Data.Rat.Cast.Defs",
+    "Mathlib.Data.Set.Card",
+    "Mathlib.Data.Set.PowersetCard",
+    "Mathlib.GroupTheory.GroupAction.Ring",
+    "Mathlib.LinearAlgebra.Complex.FiniteDimensional",
+    "Mathlib.LinearAlgebra.FiniteDimensional.Lemmas",
+    "Mathlib.LinearAlgebra.Lagrange",
+    "Mathlib.LinearAlgebra.Matrix.Adjugate",
+    "Mathlib.LinearAlgebra.Matrix.Bilinear",
+    "Mathlib.LinearAlgebra.Matrix.ConjTranspose",
+    "Mathlib.LinearAlgebra.Matrix.IsDiag",
+    "Mathlib.LinearAlgebra.Matrix.Kronecker",
+    "Mathlib.LinearAlgebra.Matrix.NonsingularInverse",
+    "Mathlib.LinearAlgebra.Matrix.Notation",
+    "Mathlib.LinearAlgebra.Matrix.Permutation",
+    "Mathlib.LinearAlgebra.Matrix.PosDef",
+    "Mathlib.LinearAlgebra.Matrix.ToLin",
+    "Mathlib.LinearAlgebra.Matrix.Trace",
+    "Mathlib.LinearAlgebra.Matrix.ZPow",
+    "Mathlib.LinearAlgebra.PiTensorProduct.Basic",
+    "Mathlib.LinearAlgebra.PiTensorProduct.Basis",
+    "Mathlib.LinearAlgebra.Trace",
+    "Mathlib.Logic.Equiv.Basic",
+    "Mathlib.Logic.Equiv.Bool",
+    "Mathlib.Logic.Equiv.Fin.Basic",
+    "Mathlib.MeasureTheory.Integral.DominatedConvergence",
+    "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic",
+    "Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus",
+    "Mathlib.Order.CompletePartialOrder",
+    "Mathlib.Tactic.Abel",
+    "Mathlib.Tactic.Bound",
+    "Mathlib.Tactic.Cases",
+    "Mathlib.Tactic.Convert",
+    "Mathlib.Tactic.FinCases",
+    "Mathlib.Tactic.Finiteness",
+    "Mathlib.Tactic.FunProp",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.LinearCombinationPrime",
+    "Mathlib.Tactic.Module",
+    "Mathlib.Tactic.NoncommRing",
+    "Mathlib.Tactic.NormNum.GCD",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Topology.Algebra.Module.FiniteDimension",
+    "Mathlib.Topology.MetricSpace.ProperSpace",
+    "Mathlib.Topology.Order.Compact",
+    "Mathlib.Topology.Order.Hom.Basic",
+    "Mathlib.Topology.Sequences",
+    "Mathlib.Topology.TietzeExtension",
+    "Mathlib.Topology.UnitInterval"
+  ],
+  "tactic_packaging": "Commutes rules are added to the initialized builtin Aesop set; commutes disables default rules without redundantly activating builtin. Definitional-equality transparency is relaxed and Matrix multiplication's default-instance priority is raised to handle Matrix/CStarMatrix aliases when all imports are present. Recursion depth is bounded at 2048. The default heartbeat budget is 2000000 and source budgets of 0 (unlimited) are capped at 2000000 to prevent excessively long speculative searches; original finite budgets are retained. Qualified, root-qualified and short private-helper references are renamed consistently. No mathematical definitions, statements or axioms are added by these adjustments.",
+  "output": "lean4web/QubitStrongAdditivityLean4Web.lean",
+  "output_sha256": "29f5aa533d8f8eba2e0487e8ae640442174ea88fd3b73c8b34895017849e28a0",
+  "sources": [
+    {
+      "module": "QuantumInfo.ForMathlib.ContinuousLinearMap",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/ContinuousLinearMap.lean",
+      "source_sha256": "8272207b3986a880d5243300acfb96309b6ea7439794b50b49dc47e4ab451739",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.Misc",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/Misc.lean",
+      "source_sha256": "6169add0d2ef1828cfecdcb436b725c2485cb613714847143fb92135ae5dc3de",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.Matrix",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/Matrix.lean",
+      "source_sha256": "568e3c4dca334576f531571ce79f95c13659fb971c1a6410ad72f7113ff8e9cd",
+      "private_renames": {
+        "spectrum_prod_complex": "spectrum_prod_complex_lean4web_2",
+        "spectrum_prod_le": "spectrum_prod_le_lean4web_2"
+      },
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.Tactic.Commutes.Attribute",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/Tactic/Commutes/Attribute.lean",
+      "source_sha256": "50ab045414d5e77b2e3c88ab884cac5002a511365cc3b42a0c77c7e06779d176",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.Tactic.Commutes",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/Tactic/Commutes.lean",
+      "source_sha256": "d6f5179ef33f623a933f0e87ffb6e0ed9e3f8ef024b9088071fb1e088cb29169",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HermitianMat.Basic",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HermitianMat/Basic.lean",
+      "source_sha256": "619d0d17681061f851062e404578e6aa8be8a00504d2bd4fcd4243db47b1aebe",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.LinearEquiv",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/LinearEquiv.lean",
+      "source_sha256": "d0aa6962742af883de721a15114489b0c6432479546963319bb411157a2fde07",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HermitianMat.Reindex",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HermitianMat/Reindex.lean",
+      "source_sha256": "cc0c1606562a6192ac6719938063272be278c65992f9a46b3d06c2f292a7cf24",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.IsMaximalSelfAdjoint",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/IsMaximalSelfAdjoint.lean",
+      "source_sha256": "5265d1b33dad6f6b75a41be734fda44d219c1ca5a310d459054381618c7d2610",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HermitianMat.Trace",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HermitianMat/Trace.lean",
+      "source_sha256": "15edec2620c1e46b8192bf87a11d3f719be40cf3d6ed88d62158650d71fb2c12",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HermitianMat.Order",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HermitianMat/Order.lean",
+      "source_sha256": "f1dec0715b0dc09b795317e7e2740b7219ab5be83acfbae8b0cdace7ed942b24",
+      "private_renames": {
+        "_root_.Matrix.eigenvalues_nonneg": "_root_.Matrix.eigenvalues_nonneg_lean4web_10"
+      },
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HermitianMat.Inner",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HermitianMat/Inner.lean",
+      "source_sha256": "66a603672b4232b09e4161a07e76012fc5aa8992449e7a6120add0423f1cc02e",
+      "private_renames": {
+        "inner_zero_iff_aux_lemma": "inner_zero_iff_aux_lemma_lean4web_11"
+      },
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HermitianMat.NonSingular",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HermitianMat/NonSingular.lean",
+      "source_sha256": "7aaf2508b5a5eaa4eb669c02a95f073c838efb005e8fc116b680df7281e920ba",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.Isometry",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/Isometry.lean",
+      "source_sha256": "fa5541c15776ce31f0805fb9b85ed095acc8b4754c461b54d6727bb1e52048b0",
+      "private_renames": {
+        "Matrix.cfc_conj_isometry'": "Matrix.cfc_conj_isometry'_lean4web_13"
+      },
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HermitianMat.CFC",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HermitianMat/CFC.lean",
+      "source_sha256": "85af0f0210bfc432a30626a8c025dad88754f27370b1c9aa07347bccb9cc085d",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.LownerHeinzCore",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean",
+      "source_sha256": "39521307e859ac015fa9ae39d98c62a0d9e472c571fae1ac61f7153c7aca9b08",
+      "private_renames": {
+        "spectrum_convexCombo_Ioi": "spectrum_convexCombo_Ioi_lean4web_15",
+        "posSemidef_block_one_inv": "posSemidef_block_one_inv_lean4web_15",
+        "schur_conj_eq_diagonal": "schur_conj_eq_diagonal_lean4web_15",
+        "cfcₙ_rpowIntegrand₀₁_eq_smul_cfcR_ratio": "cfcₙ_rpowIntegrand₀₁_eq_smul_cfcR_ratio_lean4web_15",
+        "cfcR_ratio_weighted_le": "cfcR_ratio_weighted_le_lean4web_15",
+        "concaveOn_cfcₙ_rpowIntegrand₀₁": "concaveOn_cfcₙ_rpowIntegrand₀₁_lean4web_15",
+        "concaveOn_nnrpow_Ioo": "concaveOn_nnrpow_Ioo_lean4web_15",
+        "concaveOn_rpow_Ioo": "concaveOn_rpow_Ioo_lean4web_15",
+        "sq_mul_div_add": "sq_mul_div_add_lean4web_15",
+        "convexOn_cfcR_one_div_add_t": "convexOn_cfcR_one_div_add_t_lean4web_15",
+        "G_eqOn_rpowIntegrand₀₁_mul": "G_eqOn_rpowIntegrand₀₁_mul_lean4web_15",
+        "convexOn_G_rpowIntegrand₀₁_mul": "convexOn_G_rpowIntegrand₀₁_mul_lean4web_15",
+        "ae_cfcₙ_mul_id_rpowIntegrand₀₁_restrict_Ioi": "ae_cfcₙ_mul_id_rpowIntegrand₀₁_restrict_Ioi_lean4web_15",
+        "convexOn_nnrpow_Ioo_one_add": "convexOn_nnrpow_Ioo_one_add_lean4web_15",
+        "convexOn_rpow_Ioo_one_two": "convexOn_rpow_Ioo_one_two_lean4web_15",
+        "cfcR_mul_self": "cfcR_mul_self_lean4web_15",
+        "sub_mul_sub": "sub_mul_sub_lean4web_15",
+        "smul_sub_mul_sub": "smul_sub_mul_sub_lean4web_15",
+        "square_convexity_diff_rhs": "square_convexity_diff_rhs_lean4web_15",
+        "square_convexity_diff_hL": "square_convexity_diff_hL_lean4web_15",
+        "square_convexity_diff_hCC_sum": "square_convexity_diff_hCC_sum_lean4web_15",
+        "square_convexity_diff_hCC": "square_convexity_diff_hCC_lean4web_15",
+        "square_convexity_diff": "square_convexity_diff_lean4web_15",
+        "operatorConvexOn_pow_two_Ici": "operatorConvexOn_pow_two_Ici_lean4web_15"
+      },
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.LownerHeinzTheorem",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzTheorem.lean",
+      "source_sha256": "ea87db1e5355faa1ef67db6f62d5a967fe66dbcdb5080cdd6bcba0ea829edc61",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.BlockDiagonal",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean",
+      "source_sha256": "ee689247022c907c160fd93145d8317f702070b091f48f86e4aede87c65152f4",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.JensenOperatorInequalityIImpIV",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean",
+      "source_sha256": "65df388877034cb3cd72c74d9cee4f9a8fa5141fcc150b69342d59da2b17edc9",
+      "private_renames": {
+        "blockSwap": "blockSwap_lean4web_18",
+        "blockSwap_star": "blockSwap_star_lean4web_18",
+        "blockSwap_sq": "blockSwap_sq_lean4web_18",
+        "blockDiagonal_eq_blockOp": "blockDiagonal_eq_blockOp_lean4web_18",
+        "blockOp_mul": "blockOp_mul_lean4web_18",
+        "blockOp_add": "blockOp_add_lean4web_18",
+        "blockOp_smulR": "blockOp_smulR_lean4web_18",
+        "blockSwap_add_I_smul_blockDiagonal": "blockSwap_add_I_smul_blockDiagonal_lean4web_18",
+        "blockOp_mul_blockDiagonal_zero_right": "blockOp_mul_blockDiagonal_zero_right_lean4web_18",
+        "cfcR_blockDiagonal": "cfcR_blockDiagonal_lean4web_18",
+        "blockDiagonal_le_left": "blockDiagonal_le_left_lean4web_18",
+        "blockDiagonal_selfAdjoint": "blockDiagonal_selfAdjoint_lean4web_18",
+        "cfcR_zero": "cfcR_zero_lean4web_18",
+        "cfcR_conj_unitary": "cfcR_conj_unitary_lean4web_18",
+        "cfcR_conj_unitary_on": "cfcR_conj_unitary_on_lean4web_18",
+        "cfcR_real_sqrt_eq_sqrt": "cfcR_real_sqrt_eq_sqrt_lean4web_18",
+        "nontrivial_hsumL": "nontrivial_hsumL_lean4web_18",
+        "sqrt_blockDiagonal_of_nonneg": "sqrt_blockDiagonal_of_nonneg_lean4web_18",
+        "complex_I_smul_real_I_smul_invTwo": "complex_I_smul_real_I_smul_invTwo_lean4web_18",
+        "real_smul_complex_I_real_smul_complex_I_comm": "real_smul_complex_I_real_smul_complex_I_comm_lean4web_18",
+        "half_add_half_eq": "half_add_half_eq_lean4web_18",
+        "half_mul_real_add_half_mul_real_eq": "half_mul_real_add_half_mul_real_eq_lean4web_18",
+        "rightEval_topLeft_scalar": "rightEval_topLeft_scalar_lean4web_18",
+        "rightEval_bottomRight_scalar": "rightEval_bottomRight_scalar_lean4web_18",
+        "star_mul_le_one": "star_mul_le_one_lean4web_18",
+        "mul_star_le_one": "mul_star_le_one_lean4web_18",
+        "blockSwap_norm_le_one": "blockSwap_norm_le_one_lean4web_18",
+        "continuousOn_union_of_subset_Ici": "continuousOn_union_of_subset_Ici_lean4web_18",
+        "spectrum_Ici_of_nonneg": "spectrum_Ici_of_nonneg_lean4web_18",
+        "spectrum_zero_subset_Ici": "spectrum_zero_subset_Ici_lean4web_18"
+      },
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.JensenOperatorInequality",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequality.lean",
+      "source_sha256": "88777dbfb7e69e760c87dba53315de01db2031add32b4c4947b0636854e63dc4",
+      "private_renames": {
+        "nontrivial_hsumL_wrap": "nontrivial_hsumL_wrap_lean4web_19",
+        "blockDiagonal_selfAdjoint_wrap": "blockDiagonal_selfAdjoint_wrap_lean4web_19",
+        "blockDiagonal_eq_blockOp_wrap": "blockDiagonal_eq_blockOp_wrap_lean4web_19",
+        "blockOp_mul_wrap": "blockOp_mul_wrap_lean4web_19",
+        "cfcR_blockDiagonal_wrap": "cfcR_blockDiagonal_wrap_lean4web_19",
+        "continuousOn_union_of_subset_Ici_wrap": "continuousOn_union_of_subset_Ici_wrap_lean4web_19",
+        "spectrum_Ici_of_nonneg_wrap": "spectrum_Ici_of_nonneg_wrap_lean4web_19",
+        "spectrum_zero_subset_Ici_wrap": "spectrum_zero_subset_Ici_wrap_lean4web_19",
+        "blockDiagonal_le_left_wrap": "blockDiagonal_le_left_wrap_lean4web_19"
+      },
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.GeneralizedPerspectiveFunction",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean",
+      "source_sha256": "bf2e78fa18d9481b2977576a54914e46b1dde088917748644e637ec3fa4b3d6a",
+      "private_renames": {
+        "spectrum_convexCombo_Ioi": "spectrum_convexCombo_Ioi_lean4web_20",
+        "cfcR_sq_eq": "cfcR_sq_eq_lean4web_20",
+        "cfcR_mul_eq": "cfcR_mul_eq_lean4web_20",
+        "hpow_continuousOn": "hpow_continuousOn_lean4web_20",
+        "hSqrt_selfAdjoint": "hSqrt_selfAdjoint_lean4web_20",
+        "hInvSqrt_selfAdjoint": "hInvSqrt_selfAdjoint_lean4web_20",
+        "hSqrt_mul_hInvSqrt_eq_one": "hSqrt_mul_hInvSqrt_eq_one_lean4web_20",
+        "hInvSqrt_mul_hSqrt_eq_one": "hInvSqrt_mul_hSqrt_eq_one_lean4web_20",
+        "hSqrt_mul_hSqrt_eq": "hSqrt_mul_hSqrt_eq_lean4web_20",
+        "conj_le_conj": "conj_le_conj_lean4web_20",
+        "theorem_2_5_forward_jointlyConvexOn_psd_pd_of_condV": "theorem_2_5_forward_jointlyConvexOn_psd_pd_of_condV_lean4web_20",
+        "generalizedPerspective_neg": "generalizedPerspective_neg_lean4web_20",
+        "jointlyConvexOn_neg": "jointlyConvexOn_neg_lean4web_20"
+      },
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.OperatorGeometricMean",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/OperatorGeometricMean.lean",
+      "source_sha256": "720b90746d69b2d706e76cf8e7bc431565e588cbb61a55abf21c90a2d41a83e8",
+      "private_renames": {
+        "rpow_continuousOn_Ici": "rpow_continuousOn_Ici_lean4web_21",
+        "operatorConcaveOn_Ioi_of_Ici": "operatorConcaveOn_Ioi_of_Ici_lean4web_21",
+        "pdSet_subset_psdSet": "pdSet_subset_psdSet_lean4web_21",
+        "rpow_pos_on_Ioi": "rpow_pos_on_Ioi_lean4web_21"
+      },
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.HilbertSchmidtOperatorSpace",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/HilbertSchmidtOperatorSpace.lean",
+      "source_sha256": "a58b00f2ae7efff56183af5a3c6afd7752330b04dbef32683e04edf504ee88dc",
+      "private_renames": {
+        "hsInner_eq_pairSum": "hsInner_eq_pairSum_lean4web_22",
+        "trace_star_mul_eq_pairSum": "trace_star_mul_eq_pairSum_lean4web_22",
+        "opStarHSAlgEquiv": "opStarHSAlgEquiv_lean4web_22",
+        "opStarHSLinearMap": "opStarHSLinearMap_lean4web_22",
+        "leftMulHSLinearMap": "leftMulHSLinearMap_lean4web_22",
+        "rightMulHSLinearMap": "rightMulHSLinearMap_lean4web_22"
+      },
+      "proof_adjustments": [
+        "Guard a final reflexivity step when broader simp rules already close the coordinate goal.",
+        "Make commutativity of the complex scalar inner-product factor explicit."
+      ]
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.LiebAndoTrace",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean",
+      "source_sha256": "7fd0656e3c7fde7ef226c99d65aad1562e87454412eeb740cdca277a03a30c6c",
+      "private_renames": {
+        "rightMulHS_real_smul_one": "rightMulHS_real_smul_one_lean4web_23",
+        "rightMulHS_nonneg": "rightMulHS_nonneg_lean4web_23",
+        "rightMulHS_le_rightMulHS": "rightMulHS_le_rightMulHS_lean4web_23",
+        "rightMulHS_pdSet": "rightMulHS_pdSet_lean4web_23",
+        "phiK": "phiK_lean4web_23",
+        "phiK_nonneg": "phiK_nonneg_lean4web_23",
+        "phiK_add": "phiK_add_lean4web_23",
+        "phiK_smul": "phiK_smul_lean4web_23",
+        "phiK_mono": "phiK_mono_lean4web_23",
+        "leftMulHS_rankOne": "leftMulHS_rankOne_lean4web_23",
+        "rightMulHS_rankOne": "rightMulHS_rankOne_lean4web_23",
+        "re_inner_nonneg_of_nonneg": "re_inner_nonneg_of_nonneg_lean4web_23",
+        "aeval_apply_of_mem_eigenspace_realpoly": "aeval_apply_of_mem_eigenspace_realpoly_lean4web_23",
+        "cfcR_apply_of_mem_eigenspace_real": "cfcR_apply_of_mem_eigenspace_real_lean4web_23",
+        "hmiddle_leftMul_rightMul": "hmiddle_leftMul_rightMul_lean4web_23",
+        "phiK_operatorPowerMean_eq_liebTraceMap": "phiK_operatorPowerMean_eq_liebTraceMap_lean4web_23",
+        "phiK_leftMul_rightMul_eq_traceRe": "phiK_leftMul_rightMul_eq_traceRe_lean4web_23",
+        "pdSet_rpow_of_mem_Icc_zero_one": "pdSet_rpow_of_mem_Icc_zero_one_lean4web_23",
+        "liebTraceMap_mono_right": "liebTraceMap_mono_right_lean4web_23",
+        "liebTraceMap_antitone_right": "liebTraceMap_antitone_right_lean4web_23",
+        "phiK_weightedSum_operatorPowerMean_eq": "phiK_weightedSum_operatorPowerMean_eq_lean4web_23"
+      },
+      "proof_adjustments": [
+        "Guard a final equality step when simp_all already uses the local equality."
+      ]
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.Majorization",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/Majorization.lean",
+      "source_sha256": "fe269c26f8e3916750522d0a2266c0fa3d05537bf5665510bc7097be1ff85bdf",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HermitianMat.CompoundMatrix",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HermitianMat/CompoundMatrix.lean",
+      "source_sha256": "1c572c4c9612403f130238de6d92b2262d1c31b788f807460d88c78d815b2922",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HermitianMat.Proj",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HermitianMat/Proj.lean",
+      "source_sha256": "9ce47d62f31a4eb3c8dd44e02d890bc08f3c5cff1df3039f1b2523679c01e769",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HermitianMat.LogExp",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HermitianMat/LogExp.lean",
+      "source_sha256": "b9d1f7aa3b3b4542615b9268ecfd02da633c58bf2dd921af23d5e1038711d146",
+      "private_renames": {
+        "integrand_eq": "integrand_eq_lean4web_27"
+      },
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HermitianMat.Sqrt",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HermitianMat/Sqrt.lean",
+      "source_sha256": "a8028425330bdbf96b4521aec7ea71981256f3bc2b46aa5f1103d2a53d81cc3c",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HermitianMat.Unitary",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HermitianMat/Unitary.lean",
+      "source_sha256": "4b265a1add92c62047fea0ecc0d1a8ccafd1261ac4f34cfc2cc87cc956318724",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HermitianMat.Rpow",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HermitianMat/Rpow.lean",
+      "source_sha256": "71a4ccf73a7244912a0e04c7b7c21704a447e42452cca5d32444e0c3f129ecf6",
+      "private_renames": {
+        "rpow_kron_diagonal": "rpow_kron_diagonal_lean4web_30",
+        "compoundHermitian_rpow": "compoundHermitian_rpow_lean4web_30",
+        "conj_rpow_le_one_of_conj_le_one_posDef": "conj_rpow_le_one_of_conj_le_one_posDef_lean4web_30",
+        "conj_smul_right": "conj_smul_right_lean4web_30",
+        "conjTranspose_half_mul_eq_conj": "conjTranspose_half_mul_eq_conj_lean4web_30",
+        "top_singular_le_of_self_mul_le_smul_one": "top_singular_le_of_self_mul_le_smul_one_lean4web_30",
+        "compound_top_singular_le_posDef": "compound_top_singular_le_posDef_lean4web_30",
+        "trace_conj_rpow_eq_sum_singularValuesSorted": "trace_conj_rpow_eq_sum_singularValuesSorted_lean4web_30",
+        "lieb_thirring_le_one_posDef": "lieb_thirring_le_one_posDef_lean4web_30",
+        "trace_conj_mono_sqrt": "trace_conj_mono_sqrt_lean4web_30",
+        "trace_conj_sqrt_eq_trace_mul_left": "trace_conj_sqrt_eq_trace_mul_left_lean4web_30",
+        "scalarRpowApprox_eq_mul_integral_sub_integral": "scalarRpowApprox_eq_mul_integral_sub_integral_lean4web_30",
+        "tendsto_mul_intervalIntegral_rpow_div_add": "tendsto_mul_intervalIntegral_rpow_div_add_lean4web_30",
+        "intervalIntegrable_weighted_div_nonneg": "intervalIntegrable_weighted_div_nonneg_lean4web_30",
+        "tendsto_intervalIntegral_weighted_div_nonneg": "tendsto_intervalIntegral_weighted_div_nonneg_lean4web_30",
+        "trace_mul_inv_shift_add_le": "trace_mul_inv_shift_add_le_lean4web_30",
+        "trace_mul_inv_shift_eq_sum_div": "trace_mul_inv_shift_eq_sum_div_lean4web_30",
+        "intervalIntegrable_weighted_trace_mul_inv_shift": "intervalIntegrable_weighted_trace_mul_inv_shift_lean4web_30",
+        "tendsto_intervalIntegral_weighted_trace_mul_inv_shift": "tendsto_intervalIntegral_weighted_trace_mul_inv_shift_lean4web_30"
+      },
+      "proof_adjustments": [
+        "Align the Gram matrix and Hermitian witness with singularValues, then use explicit square-root-square and real-power identities instead of expanding dependent spectral witnesses with simp."
+      ]
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HermitianMat.Schatten",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HermitianMat/Schatten.lean",
+      "source_sha256": "738dfe4053f2a9f7e2e4cd3d186df5fc914e7e10d11287a14b5678e4d46de81c",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HermitianMat.LiebConcavity",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean",
+      "source_sha256": "79eb1f115e93710162712b385fbfb83a58a5ea45106f26c251282571d7be5193",
+      "private_renames": {
+        "psd_convex": "psd_convex_lean4web_32",
+        "trace_conj_rpow_continuous": "trace_conj_rpow_continuous_lean4web_32",
+        "psd_add_eps_posdef": "psd_add_eps_posdef_lean4web_32",
+        "tendsto_add_eps": "tendsto_add_eps_lean4web_32",
+        "trace_rpow_conjTranspose_mul_comm": "trace_rpow_conjTranspose_mul_comm_lean4web_32",
+        "variational_lower_bound": "variational_lower_bound_lean4web_32",
+        "variational_eq_optimizer": "variational_eq_optimizer_lean4web_32",
+        "liebExtension_bridge": "liebExtension_bridge_lean4web_32",
+        "trace_conj_rpow_eq_conj_sqrt": "trace_conj_rpow_eq_conj_sqrt_lean4web_32",
+        "liebExtension_bridge_psd": "liebExtension_bridge_psd_lean4web_32",
+        "trace_conj_rpow_concave_pd": "trace_conj_rpow_concave_pd_lean4web_32"
+      },
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HermitianMat.Peierls",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HermitianMat/Peierls.lean",
+      "source_sha256": "80e6c78b781dbf677c610d11d26247f4cf957a1264cfafea04ce66891994acf2",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.HermitianMat",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/HermitianMat.lean",
+      "source_sha256": "7531d5871ac12f3cced1677353e6ed47f68d1d4ad8e6936902d5ba24366137ad",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ForMathlib.MatrixNorm.TraceNorm",
+      "path": "vendor/physlib/QuantumInfo/ForMathlib/MatrixNorm/TraceNorm.lean",
+      "source_sha256": "04c49f905fb154e1b0d2be861eba59974d6470179fdfdabf6cf5cdf3d5cac8eb",
+      "private_renames": {
+        "traceNorm_isometry_conj": "traceNorm_isometry_conj_lean4web_35",
+        "inner_A_mulVec_eq": "inner_A_mulVec_eq_lean4web_35",
+        "traceNorm_eq_sum_sqrt_eigenvalues": "traceNorm_eq_sum_sqrt_eigenvalues_lean4web_35"
+      },
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ClassicalInfo.Prob",
+      "path": "vendor/physlib/QuantumInfo/ClassicalInfo/Prob.lean",
+      "source_sha256": "503e175af18c43d1114e7804cb1b62bbc6efc48201cdc9f2d351b8a346096d22",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ClassicalInfo.Distribution",
+      "path": "vendor/physlib/QuantumInfo/ClassicalInfo/Distribution.lean",
+      "source_sha256": "039157755166fe880e6b5192ae7a4731740f4fde70205345c832f5165a86e77f",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.States.Pure.Braket",
+      "path": "vendor/physlib/QuantumInfo/States/Pure/Braket.lean",
+      "source_sha256": "dcf29f3cc67393269492ad560a33d4b9a9cacd8940c7ffa6ba7d50dae5ec4d6e",
+      "private_renames": {
+        "ketToEuclidean": "ketToEuclidean_lean4web_38",
+        "ketToEuclidean_norm": "ketToEuclidean_norm_lean4web_38",
+        "dot_eq_euclidean_inner": "dot_eq_euclidean_inner_lean4web_38"
+      },
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.States.Mixed.MState",
+      "path": "vendor/physlib/QuantumInfo/States/Mixed/MState.lean",
+      "source_sha256": "7a4e57cdcd41e5b2b74ea85370781a6189c9be1e34b03d51070f23544fa5d009",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.States.Ensemble",
+      "path": "vendor/physlib/QuantumInfo/States/Ensemble.lean",
+      "source_sha256": "71c2a951854d686224503c042d1d9362f27a9b5e2760000f8ee7dc737d5280ec",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.Channels.MatrixMap",
+      "path": "vendor/physlib/QuantumInfo/Channels/MatrixMap.lean",
+      "source_sha256": "2f6cefec8a30a1c5e04afdafe91ae663d482ae6cf47b2bd105244912ac6e1442",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.Channels.Unbundled",
+      "path": "vendor/physlib/QuantumInfo/Channels/Unbundled.lean",
+      "source_sha256": "7e333b5d9315aa90c4b3fa26e91106a714696b5fddbbac0b3be609357c0a57df",
+      "private_renames": {},
+      "proof_adjustments": [
+        "Reuse the preceding congruence_CP theorem for its duplicate conj_isCompletelyPositive statement, with classical decidable equality."
+      ]
+    },
+    {
+      "module": "QuantumInfo.Channels.Bundled",
+      "path": "vendor/physlib/QuantumInfo/Channels/Bundled.lean",
+      "source_sha256": "fd9a717338bcf978bac32f4f0dc23221e32da4a0338a57217b717b2a1690bdcd",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.Operators.Unitary",
+      "path": "vendor/physlib/QuantumInfo/Operators/Unitary.lean",
+      "source_sha256": "8acb0ed93f4386aba0ad7baddb850fa596afb56ca14ed7a2a48e4b4888419476",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.Channels.CPTP",
+      "path": "vendor/physlib/QuantumInfo/Channels/CPTP.lean",
+      "source_sha256": "ea5120c25d70a63b4b9ad7849d429d756baf9bc597b7e68116727e29c902acb2",
+      "private_renames": {
+        "kraus_sum_eq_one_of_TP": "kraus_sum_eq_one_of_TP_lean4web_45",
+        "exists_unitary_extending_isometry": "exists_unitary_extending_isometry_lean4web_45",
+        "purify_isometry_condition": "purify_isometry_condition_lean4web_45",
+        "purify_MState_pure_basis_default_entry": "purify_MState_pure_basis_default_entry_lean4web_45",
+        "purify_replacement_single_eq": "purify_replacement_single_eq_lean4web_45",
+        "purify_prep_append_entry": "purify_prep_append_entry_lean4web_45",
+        "purify_conj_entry": "purify_conj_entry_lean4web_45",
+        "purify_rhs_entry": "purify_rhs_entry_lean4web_45",
+        "purify_of_kraus_entry": "purify_of_kraus_entry_lean4web_45"
+      },
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ClassicalInfo.ForMathlib.Analysis.SpecialFunctions.Log.NegMulLog",
+      "path": "vendor/physlib/QuantumInfo/ClassicalInfo/ForMathlib/Analysis/SpecialFunctions/Log/NegMulLog.lean",
+      "source_sha256": "7e001a2b9aa8f97995e854bda5d5630012e01736fcde3a7d88ec76539bd05dfd",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.ClassicalInfo.Entropy",
+      "path": "vendor/physlib/QuantumInfo/ClassicalInfo/Entropy.lean",
+      "source_sha256": "f442e761e88cfc17e3bef70ebdab5f3294bcf6ec5290f08f99acc51f4ba935be",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.Entropy.VonNeumann",
+      "path": "vendor/physlib/QuantumInfo/Entropy/VonNeumann.lean",
+      "source_sha256": "0f1c77297a2734ca0d480f9e273edae731df31f5f26c9be3ce05a84dbc179f95",
+      "private_renames": {
+        "traceRight_eq_mul_conjTranspose": "traceRight_eq_mul_conjTranspose_lean4web_48",
+        "traceLeft_eq_transpose_conjTranspose_mul": "traceLeft_eq_transpose_conjTranspose_mul_lean4web_48",
+        "Hₛ_eq_of_nonzero_multiset_eq": "Hₛ_eq_of_nonzero_multiset_eq_lean4web_48",
+        "nonzero_roots_eq_of_charpoly_eq_X_pow": "nonzero_roots_eq_of_charpoly_eq_X_pow_lean4web_48",
+        "nonzero_eigenvalues_eq_of_mul_comm": "nonzero_eigenvalues_eq_of_mul_comm_lean4web_48",
+        "Sᵥₙ_eq_of_nonzero_eigenvalues_eq": "Sᵥₙ_eq_of_nonzero_eigenvalues_eq_lean4web_48",
+        "multiset_filter_map_ofReal_eq": "multiset_filter_map_ofReal_eq_lean4web_48",
+        "charpoly_roots_filter_ne_zero_eq_eigenvalues_filter_ne_zero": "charpoly_roots_filter_ne_zero_eq_eigenvalues_filter_ne_zero_lean4web_48",
+        "multiset_map_ofReal_injective": "multiset_map_ofReal_injective_lean4web_48",
+        "Sᵥₙ_eq_of_charpoly_roots_eq": "Sᵥₙ_eq_of_charpoly_roots_eq_lean4web_48"
+      },
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.Imported.MatrixEntropy",
+      "path": "QubitAdditivity/Imported/MatrixEntropy.lean",
+      "source_sha256": "f26b4705096008fc3e01c769aa359ee170fea3dbcd2b9d00991f7040a8e7cd23",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.Imported.TensorEntropy",
+      "path": "QubitAdditivity/Imported/TensorEntropy.lean",
+      "source_sha256": "15fc5f5f4a21bd09383e69618bc674bd3aef66e4fbab59339180574ef36abf51",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.Entropy",
+      "path": "QubitAdditivity/Entropy.lean",
+      "source_sha256": "061d048017f4fe74a4431920b458932dde5c533f7a613b39bab65222c841a87c",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.Ensemble",
+      "path": "QubitAdditivity/Ensemble.lean",
+      "source_sha256": "aa48e58184c3bc6766582e5715d5641d51f303017b662e2c9515d905c02eef86",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.Holevo",
+      "path": "QubitAdditivity/Holevo.lean",
+      "source_sha256": "fe8e607006d86f49ec94a0068a836a54b1bcbd12712f6446257a4b6d3a74b668",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.Target",
+      "path": "QubitAdditivity/Target.lean",
+      "source_sha256": "dae55f3daa13fb39ef70b340ba907656ac88438b1cee2aaeb3e24d1c5619a014",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.Blocks",
+      "path": "QubitAdditivity/Blocks.lean",
+      "source_sha256": "aa0ae542a45f539200d0e55fbb5e3185f1ba2d2f920544a8d56236f6ca4e4709",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.TC4",
+      "path": "QubitAdditivity/TC4.lean",
+      "source_sha256": "552998a4b99940998cca649f52479b3aa87c328c865cf05ae35fea463847b05e",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QuantumInfo.Entropy.SSA",
+      "path": "vendor/physlib/QuantumInfo/Entropy/SSA.lean",
+      "source_sha256": "c509d5160905bb980d8e18d207b8c9186777001ae631d78aa49756c48450e003",
+      "private_renames": {
+        "S_mat": "S_mat_lean4web_57",
+        "W_mat_sq_eq_conj": "W_mat_sq_eq_conj_lean4web_57",
+        "S_mat_conj_rhs_eq_one": "S_mat_conj_rhs_eq_one_lean4web_57",
+        "W_mat_eq_factored": "W_mat_eq_factored_lean4web_57",
+        "F_tensor_MES_eq_V_rho": "F_tensor_MES_eq_V_rho_lean4web_57",
+        "assoc_equiv": "assoc_equiv_lean4web_57",
+        "T₁_mat": "T₁_mat_lean4web_57",
+        "T₂_mat": "T₂_mat_lean4web_57",
+        "PERM_mat": "PERM_mat_lean4web_57",
+        "T₁_isometry": "T₁_isometry_lean4web_57",
+        "T₂_sq_le_one": "T₂_sq_le_one_lean4web_57",
+        "PERM_isometry": "PERM_isometry_lean4web_57",
+        "W_mat_entry": "W_mat_entry_lean4web_57",
+        "RHS_entry": "RHS_entry_lean4web_57",
+        "W_mat_eq_three_factors": "W_mat_eq_three_factors_lean4web_57",
+        "S_mat_isUnit": "S_mat_isUnit_lean4web_57",
+        "inner_kron_one_eq_inner_traceRight": "inner_kron_one_eq_inner_traceRight_lean4web_57",
+        "inner_one_kron_eq_inner_traceLeft": "inner_one_kron_eq_inner_traceLeft_lean4web_57",
+        "hermitianMat_log_inv_eq_neg": "hermitianMat_log_inv_eq_neg_lean4web_57",
+        "PosDef_assoc'_traceRight": "PosDef_assoc'_traceRight_lean4web_57",
+        "wm_inner_lhs": "wm_inner_lhs_lean4web_57",
+        "wm_inner_rhs": "wm_inner_rhs_lean4web_57",
+        "Sᵥₙ_wm_pd": "Sᵥₙ_wm_pd_lean4web_57",
+        "MState.approx_by_pd": "MState.approx_by_pd_lean4web_57",
+        "MState.traceLeft_continuous": "MState.traceLeft_continuous_lean4web_57",
+        "MState.traceRight_continuous": "MState.traceRight_continuous_lean4web_57",
+        "MState.assoc'_continuous": "MState.assoc'_continuous_lean4web_57",
+        "perm_A_BCR'": "perm_A_BCR'_lean4web_57",
+        "ρBCR": "ρBCR_lean4web_57",
+        "S_BC_of_BCR_eq": "S_BC_of_BCR_eq_lean4web_57",
+        "perm_AB_CR'": "perm_AB_CR'_lean4web_57",
+        "BCR_traceLeft_eq_purify_traceLeft": "BCR_traceLeft_eq_purify_traceLeft_lean4web_57",
+        "purify_AB_traceRight_eq": "purify_AB_traceRight_eq_lean4web_57",
+        "S_CR_of_BCR_eq": "S_CR_of_BCR_eq_lean4web_57",
+        "S_B_of_BCR_eq": "S_B_of_BCR_eq_lean4web_57",
+        "S_R_of_BCR_eq": "S_R_of_BCR_eq_lean4web_57"
+      },
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.Marginal",
+      "path": "QubitAdditivity/Marginal.lean",
+      "source_sha256": "91d48994af8c8545c466519e5b24135eae6e78649337924ad90fabcf4eca833a",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.UpperBound",
+      "path": "QubitAdditivity/UpperBound.lean",
+      "source_sha256": "b6178ed8e7cf953474e8c2d0a3b9136e13689fad2844021df993dc7f37bb695d",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.Imported.SpectralEntropy",
+      "path": "QubitAdditivity/Imported/SpectralEntropy.lean",
+      "source_sha256": "288879223b5fc012f723e8e8d5c9dc9b47763c9d9abf15ed1b0592e5a0e237ae",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.TwoExpectation",
+      "path": "QubitAdditivity/TwoExpectation.lean",
+      "source_sha256": "e32a12288be23e66a001197fec4a5d85baeccc7602b1ac7a379685f1a6995ce8",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.Partner",
+      "path": "QubitAdditivity/Partner.lean",
+      "source_sha256": "23f31158deac6639bcc602944e91614478b69ecefb978a58d9c052dea3aba5fa",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.PureInput",
+      "path": "QubitAdditivity/PureInput.lean",
+      "source_sha256": "6f0f4c9d8e1a4517a718d94e7af029c203b5c2d2d72927c3a19faf680e7f5838",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaCore",
+      "path": "QubitAdditivity/BetaCore.lean",
+      "source_sha256": "0efed599af5d6863cbdf968d565c695a136c6b8292e21e49cbac574ca1cbed33",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaOperators",
+      "path": "QubitAdditivity/BetaOperators.lean",
+      "source_sha256": "8fb3b8132d8534d087924371c35ce8dca700e6e83d53222f711eaa9086060681",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaOrder",
+      "path": "QubitAdditivity/BetaOrder.lean",
+      "source_sha256": "f9757d8ce1852a631acffb338656f4a979af8806f52e01d511abac564c22a885",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.Imported.MatrixCalculus",
+      "path": "QubitAdditivity/Imported/MatrixCalculus.lean",
+      "source_sha256": "472b582112bec373e7502154eb6ff96af0ff0f49529b1228b83647c24cab9ca5",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaPowers",
+      "path": "QubitAdditivity/BetaPowers.lean",
+      "source_sha256": "75d55c5068a90bacd4f29fd6a4676c92382ba4020a8f2d3c54209d6bd586a806",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaBridge",
+      "path": "QubitAdditivity/BetaBridge.lean",
+      "source_sha256": "c3ad85c88a2af5756a967ea6a618940398c4bdcb3952703c24de86cbc7083560",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaComparison",
+      "path": "QubitAdditivity/BetaComparison.lean",
+      "source_sha256": "fc26d1402d77cb8319fc4a32b0ba6790c6e51a301a8800dfb20842caf56cba4e",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaBarrier",
+      "path": "QubitAdditivity/BetaBarrier.lean",
+      "source_sha256": "db0fae98663d07375bdda84ec8ce5c74f97c40bfc132fdc8f380f02005e0bebc",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaBlocks",
+      "path": "QubitAdditivity/BetaBlocks.lean",
+      "source_sha256": "79bcefa080f69a5f855919b3fff3664fa357886af10176a461225074f9dbdb94",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaStrict",
+      "path": "QubitAdditivity/BetaStrict.lean",
+      "source_sha256": "8e738bb058ce39479bdd40a823f5206e5dd8c221cfa3cd6a74cdf289b6008540",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaEndpoints",
+      "path": "QubitAdditivity/BetaEndpoints.lean",
+      "source_sha256": "11147896d545c388fe0a37c0a9ef85b7c700def395eb2a46b3fb19d2946d590c",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaPWBound",
+      "path": "QubitAdditivity/BetaPWBound.lean",
+      "source_sha256": "1eddeea375bc274a7245cb833886e27ef0ff2eae92897221ffb275a766160a50",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaKM",
+      "path": "QubitAdditivity/BetaKM.lean",
+      "source_sha256": "55c83d983c785db55646346a97e841d20039bbbbb255c8f7cf733563411e9863",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.Imported.LogDetCalculus",
+      "path": "QubitAdditivity/Imported/LogDetCalculus.lean",
+      "source_sha256": "382de9c312718764e6b45966e822145bd3a9fa0c3310873a262487210a61b949",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaResolvent",
+      "path": "QubitAdditivity/BetaResolvent.lean",
+      "source_sha256": "3975525bae915bb35f2085fd99f77cde416f5d8bb8f8086672e225981f9188a0",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaHessian",
+      "path": "QubitAdditivity/BetaHessian.lean",
+      "source_sha256": "04f568a7d18288771d3f971aa4b8bddf8d5786273056ccca12d4bf2dfa06cebd",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaLog",
+      "path": "QubitAdditivity/BetaLog.lean",
+      "source_sha256": "ac1173d2e7f7f394b95b90ab0a9c0f958ce372669ae13587f5926aca5a7b6fba",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaLogMean",
+      "path": "QubitAdditivity/BetaLogMean.lean",
+      "source_sha256": "f77c14133ccdaaeeece3b2d0fbdf400a8840e361e092a36e59fddda4339e0bc6",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaLogKM",
+      "path": "QubitAdditivity/BetaLogKM.lean",
+      "source_sha256": "44965304281f2069ec0406a384ad093b089f8a12f1cb8580354b3300b4e7cde0",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaEntropy",
+      "path": "QubitAdditivity/BetaEntropy.lean",
+      "source_sha256": "98be4e943760ca289ea0da851d021c669e541f0d4410e0dc1ddc90f87d4e7610",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaKMOrder",
+      "path": "QubitAdditivity/BetaKMOrder.lean",
+      "source_sha256": "522f9904c8834bf00b5cad0ee4633d3c3ac59782cf0b51f96118ff46eea4845c",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaDual",
+      "path": "QubitAdditivity/BetaDual.lean",
+      "source_sha256": "499c6a351395549cc00eb88df2718032392c69a2aeb6b5e6d49906790b69ccf5",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaDualConvex",
+      "path": "QubitAdditivity/BetaDualConvex.lean",
+      "source_sha256": "33cdac46efa5b1b54cf11d06d65d782ab4087527bdc661e5b1e1551e20bd8ca2",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaDualExistence",
+      "path": "QubitAdditivity/BetaDualExistence.lean",
+      "source_sha256": "bca4bfe4f427971db02f29a57383a47c433277edb68bb0d51d752da139b57125",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaBoundaryEntropy",
+      "path": "QubitAdditivity/BetaBoundaryEntropy.lean",
+      "source_sha256": "5d4261fa4c1211b2613f3e2a80454c39007918b69615203a3ffdd34376632c32",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaDualInterior",
+      "path": "QubitAdditivity/BetaDualInterior.lean",
+      "source_sha256": "8f85c92f096658a9d94bba68c28373c624264e83d09f34806443125232c7d9f6",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaLogRegularity",
+      "path": "QubitAdditivity/BetaLogRegularity.lean",
+      "source_sha256": "96f3f8848bdd1116717a6edf13a0ed0c9c59f48c72891e77e480ad616c033246",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaDualDerivative",
+      "path": "QubitAdditivity/BetaDualDerivative.lean",
+      "source_sha256": "73108c5ab81c4d317797bcdb93dcabd98e9cf434bffd5e80adba76c285e870ce",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaMinimizer",
+      "path": "QubitAdditivity/BetaMinimizer.lean",
+      "source_sha256": "e561bd7d16fc46fc9588788ba751cd05116548ab8d71fb7e9873a006f9a30ce2",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaDualValue",
+      "path": "QubitAdditivity/BetaDualValue.lean",
+      "source_sha256": "76973e415e72284f70c9ea377697d5593a90e8472d33edb96c62f4804c75707a",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaValueHessian",
+      "path": "QubitAdditivity/BetaValueHessian.lean",
+      "source_sha256": "80fd5a40bef0e6070e9bb31bbe0e59f218a2cd16b396b4359219dbec7f8dab67",
+      "private_renames": {
+        "block_pairing_lift": "block_pairing_lift_lean4web_94"
+      },
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaDualConcave",
+      "path": "QubitAdditivity/BetaDualConcave.lean",
+      "source_sha256": "8530a9aaeb9951555cd33cef76b411f9928956ddce9522dbb8d83eb4ae892123",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaDualBoundary",
+      "path": "QubitAdditivity/BetaDualBoundary.lean",
+      "source_sha256": "33b6dc67af80f699d41e5f2d4bcd7a43e1207b17f9da0ba4e5b9b88411de303b",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaTC4Convex",
+      "path": "QubitAdditivity/BetaTC4Convex.lean",
+      "source_sha256": "410e97601012185c910d9066c05955da375f21cb0d22f9da1b630c5935988a4b",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.Imported.EntropyScaling",
+      "path": "QubitAdditivity/Imported/EntropyScaling.lean",
+      "source_sha256": "403b094936d90815cfe6926178d87472463e67542d2affa39e878258fc4d46ee",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaTC4Structure",
+      "path": "QubitAdditivity/BetaTC4Structure.lean",
+      "source_sha256": "7a262b0cc301eccca7b491f6c9b264a59e8a51d0233e3cd4eb2bb84058bf19a0",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaTC4Unitary",
+      "path": "QubitAdditivity/BetaTC4Unitary.lean",
+      "source_sha256": "1df78ad1d013efa4408a5d471ee4c4ba52fb377d72a5ab6206d6e3dc04e54a1d",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaSignFrame",
+      "path": "QubitAdditivity/BetaSignFrame.lean",
+      "source_sha256": "bfa595a134da0bc9264b39fede07b7a4ea717d35ffae48dd8b9408995216d760",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaGramSplit",
+      "path": "QubitAdditivity/BetaGramSplit.lean",
+      "source_sha256": "cf75f5623694dfebb80e1fe9893ee2a5a5ee3a0b9b3b2523ee5db1db7cc52366",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaLogOrder",
+      "path": "QubitAdditivity/BetaLogOrder.lean",
+      "source_sha256": "0e423c29fc049d7e5846d7298765c4d82c5c51fde8b9538313b2520f9cf713f2",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaScalarMinimum",
+      "path": "QubitAdditivity/BetaScalarMinimum.lean",
+      "source_sha256": "2b16c3189c2c063b0211a88e4bfee7d9ff7ec877f3a14d240d055206249107a0",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaScalarValue",
+      "path": "QubitAdditivity/BetaScalarValue.lean",
+      "source_sha256": "dd09845427549dcbed01c293271ae8625b4d1bdd9978a15077b86f31faf0ce16",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaOuterReduction",
+      "path": "QubitAdditivity/BetaOuterReduction.lean",
+      "source_sha256": "57101e1808e9147696862b4ad3d5a1dabcf8553c168f8af4f5c1c7d65244a83d",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaTC4Gram",
+      "path": "QubitAdditivity/BetaTC4Gram.lean",
+      "source_sha256": "d4d53cdfcb454450836afb567d5a38f357b870821642539780d0ddafb58800cc",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaTC4Bridge",
+      "path": "QubitAdditivity/BetaTC4Bridge.lean",
+      "source_sha256": "db423219af0024636ce1cb5a9e3887c915f139c9d7321479308d8e74712bc4c8",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaIsometryEntropy",
+      "path": "QubitAdditivity/BetaIsometryEntropy.lean",
+      "source_sha256": "5fdb76925ab8369b5bf84f25fd200686b0150f6ee59afecd0777fdb68d7cf7f9",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaOrthogonalEntropy",
+      "path": "QubitAdditivity/BetaOrthogonalEntropy.lean",
+      "source_sha256": "f3e2f839070e7aa04b13c55f5b692cbf7f6b074a6a94b30978c5bfc08d4fc764",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaReflection",
+      "path": "QubitAdditivity/BetaReflection.lean",
+      "source_sha256": "63e08be8695ad32245a097efb69c67d887e910ee2c0e67ea88d8c489523c6615",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaBlockIsometry",
+      "path": "QubitAdditivity/BetaBlockIsometry.lean",
+      "source_sha256": "cca3c8d29d77f68dc9061753ed4afca1d2829ac806553e0ae9186bb8d598e4a6",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaSupport",
+      "path": "QubitAdditivity/BetaSupport.lean",
+      "source_sha256": "7f8933a655a694531e0def07dc4d0d4582ac0998ac5ca9c60f92606cf6bd08e7",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaSupportMinimum",
+      "path": "QubitAdditivity/BetaSupportMinimum.lean",
+      "source_sha256": "42c1c44fdc886ad2f0e9f5097ca3bcde0f4d2e1448661cf4b9445b3befed7d67",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaNormalizedOuter",
+      "path": "QubitAdditivity/BetaNormalizedOuter.lean",
+      "source_sha256": "622dea1d7313bb1ce9e3815e7702567bc271b2bf4768c5eca27afe53f0c69597",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaBalancedValue",
+      "path": "QubitAdditivity/BetaBalancedValue.lean",
+      "source_sha256": "254a7117f5037666173ecddbce24b2fe58e9204afcc16dfa9f5d0a59cc60e228",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaPositiveTC4",
+      "path": "QubitAdditivity/BetaPositiveTC4.lean",
+      "source_sha256": "3a63f013fd7166f62b10ada92ba8cf3e45c4090324826c8406f0ba576337e3aa",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaTC4Regularization",
+      "path": "QubitAdditivity/BetaTC4Regularization.lean",
+      "source_sha256": "29fea3a33dcd069597d128e928a4a505f84e58e8200c8cb2b6ada70f1872d8ae",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.BetaTC4Boundary",
+      "path": "QubitAdditivity/BetaTC4Boundary.lean",
+      "source_sha256": "0e56f359e6924e1fdb4a8d687097e3e3876799a2b34aa76eca84deb49e0d974f",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.TC4Result",
+      "path": "QubitAdditivity/TC4Result.lean",
+      "source_sha256": "3082ba71b6c4ce52ae0fd05a8af40c0518e29cbccbb30e3111039aa238755e4f",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.NormalForm",
+      "path": "QubitAdditivity/NormalForm.lean",
+      "source_sha256": "d0d3dd6e437a8beda969abf13399970bb0712b2dec2ad269788d01293077600b",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.NormalSchur",
+      "path": "QubitAdditivity/NormalSchur.lean",
+      "source_sha256": "aa3a45ee640c98ae13fbc7fdec654fd54d8fbbd3d11de9cdf482218f9b3ae420",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.NormalCommonBranch",
+      "path": "QubitAdditivity/NormalCommonBranch.lean",
+      "source_sha256": "3791685b04a945da469dc193c8ca9020ab5598e0f06d2bf0851d35766000abee",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.NormalKraus",
+      "path": "QubitAdditivity/NormalKraus.lean",
+      "source_sha256": "e19741826a8ec6936f62b4f3e984727031c5d958fdded10885d105a1cf09ed13",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.NormalChannel",
+      "path": "QubitAdditivity/NormalChannel.lean",
+      "source_sha256": "df5676a6c5fa053cde5bb518049a0d311ba6671b50d6e304f1287d458048c033",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.RotationInvariant",
+      "path": "QubitAdditivity/RotationInvariant.lean",
+      "source_sha256": "da821014eeff387d4d1c169dfedcb49264b98e9137387bc32ef123a077aa8090",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.GeneralResult",
+      "path": "QubitAdditivity/GeneralResult.lean",
+      "source_sha256": "2a92cc007a97334e426a257749944348356059d9c291593ee57a01d3bf2bacdb",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.Presentation.Model",
+      "path": "QubitAdditivity/Presentation/Model.lean",
+      "source_sha256": "905f72843666e07f6f6efafafea13827dfc2e7f688df956d9b3f7537c1629295",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity.FCPresentation",
+      "path": "QubitAdditivity/FCPresentation.lean",
+      "source_sha256": "fe5277d9ac4adb21d9c4f5a1ef86cacbb960879eb8ac8bb674939ab0b9c51917",
+      "private_renames": {},
+      "proof_adjustments": []
+    },
+    {
+      "module": "QubitAdditivity",
+      "path": "QubitAdditivity.lean",
+      "source_sha256": "d307741439ef39e7ee8dbdc90a756c2672f5ef5a83e9954646d44b9cc794cec4",
+      "private_renames": {},
+      "proof_adjustments": []
+    }
+  ]
+}

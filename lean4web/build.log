@@ -1,0 +1,1596 @@
+QubitStrongAdditivityLean4Web.lean:12306:14: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+QubitStrongAdditivityLean4Web.lean:12306:4: warning: Unused tactic linter: `all_goals rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+QubitStrongAdditivityLean4Web.lean:12331:10: warning: This simp argument is unused:
+  inner_conj_symm (toHSCoordsLinearEquiv (ℋ := ℋ) T) (toHSCoordsLinearEquiv (ℋ := ℋ) S)
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:12340:10: warning: This simp argument is unused:
+  inner_add_left
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [map_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:12346:10: warning: This simp argument is unused:
+  inner_smul_left
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [map_smul, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:12942:14: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+QubitStrongAdditivityLean4Web.lean:12942:4: warning: Unused tactic linter: `all_goals exact h1` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+QubitStrongAdditivityLean4Web.lean:26327:2: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+QubitStrongAdditivityLean4Web.lean:28965:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.of_kraus_vecMulVec`:
+  [Fintype dOut]
+  [DecidableEq dIn]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype dOut] [DecidableEq dIn] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:29007:33: warning: This simp argument is unused:
+  LinearMap.coe_sum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [MatrixMap.of_kraus, Finset.sum_apply, LinearMap.coe_mk, AddHom.coe_mk, Fintype.sum_sum_type,
+    Fintype.univ_punit, Finset.sum_singleton, kraus, rows_conj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:29007:52: warning: This simp argument is unused:
+  Finset.sum_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [MatrixMap.of_kraus, LinearMap.coe_sum, LinearMap.coe_mk, AddHom.coe_mk, Fintype.sum_sum_type,
+    Fintype.univ_punit, Finset.sum_singleton, kraus, rows_conj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:29007:70: warning: This simp argument is unused:
+  LinearMap.coe_mk
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [MatrixMap.of_kraus, LinearMap.coe_sum, Finset.sum_apply, AddHom.coe_mk, Fintype.sum_sum_type,
+    Fintype.univ_punit, Finset.sum_singleton, kraus, rows_conj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:29008:4: warning: This simp argument is unused:
+  AddHom.coe_mk
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [MatrixMap.of_kraus, LinearMap.coe_sum, Finset.sum_apply, LinearMap.coe_mk, Fintype.sum_sum_type,
+    Fintype.univ_punit, Finset.sum_singleton, kraus, rows_conj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:29094:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.QubitNormalForm.jointColumns_eq`:
+  [DecidableEq dB]
+  [Fintype eB]
+  [DecidableEq eB]
+  [Fintype κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq dB] [Fintype eB] [DecidableEq eB] [Fintype κ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:29101:56: warning: This simp argument is unused:
+  Finset.mul_sum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [krausColumns, jointKraus, tc4At, tc4Matrix, rowEquiv, colEquiv, blockA, blockB, blockC, blockD,
+    branchBlock, branch, kraus, rows_zero, rows_one, mulVec, dotProduct, Matrix.kroneckerMap_apply,
+    Fintype.sum_prod_type]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:29106:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.QubitNormalForm.jointKraus_eq_kron`:
+  [DecidableEq eB]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq eB] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:29134:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.vecMass_nonneg`:
+  [DecidableEq dB]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq dB] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:29144:18: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+QubitStrongAdditivityLean4Web.lean:29167:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.branchBlock_gram`:
+  [DecidableEq eB]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq eB] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:29266:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.sum_branch_outer`:
+  [DecidableEq dB]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq dB] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:29519:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaCore.stationaryGram_identity`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:29668:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaOperators.left_conjTranspose`:
+  [Fintype n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:29671:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaOperators.right_conjTranspose`:
+  [Fintype n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:29686:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaOperators.generator_add_scalar`:
+  [Fintype n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:29698:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaOperators.coordinateInclusion_compression`:
+  [Fintype m]
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype m] [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:29724:8: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaOperators.blockCoordinates_inl`:
+  [Fintype r]
+  [Fintype s]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:29727:8: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaOperators.blockCoordinates_inr`:
+  [Fintype r]
+  [Fintype s]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:29752:8: warning: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [blockGenerator, generator, left, right]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:29756:8: warning: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [blockGenerator, generator, left, right]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:29815:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+QubitStrongAdditivityLean4Web.lean:29827:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+QubitStrongAdditivityLean4Web.lean:29841:37: warning: This simp argument is unused:
+  fromRows_mul_fromCols
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [conjTranspose_fromRows_eq_fromCols_conjTranspose, conjTranspose_zero, conjTranspose_one,
+    fromRows_mul, Matrix.zero_mul, Matrix.mul_zero, Matrix.mul_one, Matrix.one_mul] at hn
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:29842:4: warning: This simp argument is unused:
+  Matrix.mul_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [conjTranspose_fromRows_eq_fromCols_conjTranspose, conjTranspose_zero, conjTranspose_one,
+    fromRows_mul, fromRows_mul_fromCols, Matrix.zero_mul, Matrix.mul_one, Matrix.one_mul] at hn
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:29842:21: warning: This simp argument is unused:
+  Matrix.mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [conjTranspose_fromRows_eq_fromCols_conjTranspose, conjTranspose_zero, conjTranspose_one,
+    fromRows_mul, fromRows_mul_fromCols, Matrix.zero_mul, Matrix.mul_zero, Matrix.one_mul] at hn
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:30121:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaPowers.hasDerivAt_kronecker`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:30131:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaPowers.hasDerivAt_transpose`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:30149:65: warning: This simp argument is unused:
+  Matrix.mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [left, right, ← mul_kronecker_mul, Matrix.one_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:30220:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+QubitStrongAdditivityLean4Web.lean:30244:8: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBridge.compressionCLM_apply`:
+  [Fintype m]
+  [DecidableEq m]
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype m] [DecidableEq m] [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:30247:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBridge.isometry_mulVec_injective`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:30311:8: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBridge.diagonalBlocksCLM_apply`:
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:30337:15: warning: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [blockPW, diagonalBlocksCLM_apply, blockGenerator, Matrix.fromBlocks_multiply, Matrix.zero_mul,
+    Matrix.mul_zero, add_zero, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:30339:12: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+QubitStrongAdditivityLean4Web.lean:30336:22: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:30339:2: warning: Unused tactic linter: `all_goals rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+QubitStrongAdditivityLean4Web.lean:30377:16: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+QubitStrongAdditivityLean4Web.lean:30377:6: warning: Unused tactic linter: `all_goals rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+QubitStrongAdditivityLean4Web.lean:30421:15: warning: This simp argument is unused:
+  curve
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [curveFirst, blockInclusion, Matrix.mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:30422:12: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+QubitStrongAdditivityLean4Web.lean:30420:22: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:30422:2: warning: Unused tactic linter: `all_goals rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+QubitStrongAdditivityLean4Web.lean:30437:15: warning: This simp argument is unused:
+  curveFirst
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [curveSecond, blockInclusion, Function.comp_def, Matrix.mul_zero, add_zero, Matrix.mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:30437:56: warning: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [curveFirst, curveSecond, blockInclusion, Matrix.mul_zero, add_zero, Matrix.mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:30507:16: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+QubitStrongAdditivityLean4Web.lean:30510:16: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+QubitStrongAdditivityLean4Web.lean:30507:6: warning: Unused tactic linter: `all_goals rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+QubitStrongAdditivityLean4Web.lean:30510:6: warning: Unused tactic linter: `all_goals rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+QubitStrongAdditivityLean4Web.lean:30545:20: warning: This simp argument is unused:
+  Matrix.mul_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.neg_mul, Matrix.mul_neg, Matrix.one_mul, Matrix.mul_one, Matrix.add_mul, neg_neg]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:30545:36: warning: This simp argument is unused:
+  neg_neg
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.neg_mul, Matrix.mul_neg, Matrix.one_mul, Matrix.mul_one, Matrix.add_mul, Matrix.mul_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:30591:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.posSemidef_of_quadratic`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:30597:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.quadratic_nonneg`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:30600:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.quadratic_pos`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:30604:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.hasDerivAt_pairing`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:30619:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.quadratic_sub`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:30623:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.quadratic_smul`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:30627:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.quadratic_smul_vector`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+QubitStrongAdditivityLean4Web.lean:30753:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.pairing_mulVec_left`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:30757:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.pairing_mulVec_right`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:30761:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.pairing_smul_left`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:30765:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.pairing_smul_right`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:30769:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.pairing_sub`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:30773:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.pairing_add`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:30777:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.pairing_smul_matrix`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:30792:11: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:30953:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+QubitStrongAdditivityLean4Web.lean:30930:26: warning: This simp argument is unused:
+  smul_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [B₁, C, B, Matrix.add_mul, Matrix.smul_mul, Matrix.mul_smul, Matrix.one_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:30935:26: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:30935:38: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:30938:26: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:30993:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+QubitStrongAdditivityLean4Web.lean:31061:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+QubitStrongAdditivityLean4Web.lean:31086:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaStrict.posDef_of_le`:
+  [Fintype n]
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:31098:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+QubitStrongAdditivityLean4Web.lean:31103:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+QubitStrongAdditivityLean4Web.lean:31285:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaEndpoints.gap_blocks_posDef`:
+  [Fintype r]
+  [Fintype s]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:31414:12: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+QubitStrongAdditivityLean4Web.lean:31414:2: warning: Unused tactic linter: `all_goals rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+QubitStrongAdditivityLean4Web.lean:31578:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+QubitStrongAdditivityLean4Web.lean:31579:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+QubitStrongAdditivityLean4Web.lean:31580:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+QubitStrongAdditivityLean4Web.lean:31598:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaResolvent.shift_posDef`:
+  [Fintype n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:31605:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaResolvent.shift_sub`:
+  [Fintype n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:31781:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+QubitStrongAdditivityLean4Web.lean:31782:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+QubitStrongAdditivityLean4Web.lean:31783:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+QubitStrongAdditivityLean4Web.lean:31856:89: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:31876:78: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:31876:87: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:31898:38: warning: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+QubitStrongAdditivityLean4Web.lean:31900:9: warning: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+QubitStrongAdditivityLean4Web.lean:31942:19: warning: This simp argument is unused:
+  Matrix.smul_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [segment]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:31943:12: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+QubitStrongAdditivityLean4Web.lean:31943:2: warning: Unused tactic linter: `all_goals exact BetaPowers.continuousOn_spectrum _ _` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+QubitStrongAdditivityLean4Web.lean:32016:38: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `_root_.add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `_root_.add_apply x`).
+QubitStrongAdditivityLean4Web.lean:32017:6: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
+QubitStrongAdditivityLean4Web.lean:32017:38: warning: `ContinuousLinearMap.neg_apply` has been deprecated: Use `_root_.neg_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.neg_apply` to `_root_.neg_apply x`).
+QubitStrongAdditivityLean4Web.lean:32018:6: warning: This simp argument is unused:
+  hp.unit_spec
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hu, kernelDeriv_apply, ContinuousLinearMap.add_apply, ContinuousLinearMap.comp_apply,
+    ContinuousLinearMap.smul_apply, ContinuousLinearMap.neg_apply, ContinuousLinearMap.mulLeftRight_apply,
+    ← Matrix.nonsing_inv_eq_ringInverse, L, inclusion_apply, Function.comp_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:32024:47: warning: This simp argument is unused:
+  Matrix.neg_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.mul_smul, Matrix.smul_mul, Matrix.mul_neg, Matrix.mul_assoc] at hh ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:32138:12: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+QubitStrongAdditivityLean4Web.lean:32138:2: warning: Unused tactic linter: `all_goals exact BetaPowers.continuousOn_spectrum _ _` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+QubitStrongAdditivityLean4Web.lean:32183:58: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:32188:58: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:32227:29: warning: `ContinuousLinearMap.neg_apply` has been deprecated: Use `_root_.neg_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.neg_apply` to `_root_.neg_apply x`).
+QubitStrongAdditivityLean4Web.lean:32236:28: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+QubitStrongAdditivityLean4Web.lean:32236:28: warning: Unused tactic linter: `exact BetaPowers.continuousOn_spectrum _ _` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+QubitStrongAdditivityLean4Web.lean:32255:15: warning: `ContinuousLinearMap.neg_apply` has been deprecated: Use `_root_.neg_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.neg_apply` to `_root_.neg_apply x`).
+QubitStrongAdditivityLean4Web.lean:32256:6: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `_root_.add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `_root_.add_apply x`).
+QubitStrongAdditivityLean4Web.lean:32293:33: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:32293:42: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:32406:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+QubitStrongAdditivityLean4Web.lean:32407:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+QubitStrongAdditivityLean4Web.lean:32408:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+QubitStrongAdditivityLean4Web.lean:32433:22: warning: This simp argument is unused:
+  Unitary.conjStarAlgAut_symm_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [coordinates, Matrix.mul_smul, Matrix.smul_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:32433:56: warning: This simp argument is unused:
+  Matrix.mul_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [coordinates, Unitary.conjStarAlgAut_symm_apply, Matrix.smul_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:32433:72: warning: This simp argument is unused:
+  Matrix.smul_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [coordinates, Unitary.conjStarAlgAut_symm_apply, Matrix.mul_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:32527:16: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+QubitStrongAdditivityLean4Web.lean:32527:6: warning: Unused tactic linter: `all_goals convert! (oComplete (n := n)) using 1` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+QubitStrongAdditivityLean4Web.lean:32559:55: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:32724:33: warning: `ContinuousLinearMap.coe_comp'` has been deprecated: Use `ContinuousLinearMap.coe_comp` instead
+QubitStrongAdditivityLean4Web.lean:32724:33: warning: This simp argument is unused:
+  ContinuousLinearMap.coe_comp'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [psiGradient_apply, Function.comp_apply, ContinuousLinearMap.mulLeftRight_apply, Matrix.mul_one,
+    BetaLog.traceRe_apply, L]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:32727:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaEntropy.trace_mul_eq_vector_pairing`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:32854:8: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDual.diagonal_mat`:
+  [Fintype r]
+  [Fintype s]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:32883:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDual.trace_diagonal_mul`:
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:32957:38: warning: This simp argument is unused:
+  Matrix.mul_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.mul_sub, Matrix.mul_add, Matrix.mul_one, Matrix.trace_sub, Matrix.trace_add, Matrix.trace_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:32957:54: warning: This simp argument is unused:
+  Matrix.mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.mul_sub, Matrix.mul_add, Matrix.mul_smul, Matrix.trace_sub, Matrix.trace_add, Matrix.trace_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:32965:22: warning: `ContinuousLinearMap.sub_apply` has been deprecated: Use `_root_.sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `_root_.sub_apply x`).
+QubitStrongAdditivityLean4Web.lean:32965:52: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `_root_.add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `_root_.add_apply x`).
+QubitStrongAdditivityLean4Web.lean:32995:28: warning: `ContinuousLinearMap.zero_apply` has been deprecated: Use `_root_.zero_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.zero_apply` to `_root_.zero_apply x`).
+QubitStrongAdditivityLean4Web.lean:33055:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDual.total_gap_posDef`:
+  [Fintype r]
+  [Fintype s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:33082:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDual.diagonal_injective`:
+  [Fintype r]
+  [Fintype s]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:33109:22: warning: `ContinuousLinearMap.sub_apply` has been deprecated: Use `_root_.sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `_root_.sub_apply x`).
+QubitStrongAdditivityLean4Web.lean:33109:52: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `_root_.add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `_root_.add_apply x`).
+QubitStrongAdditivityLean4Web.lean:33134:33: warning: `ContinuousLinearMap.sub_apply` has been deprecated: Use `_root_.sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `_root_.sub_apply x`).
+QubitStrongAdditivityLean4Web.lean:33202:64: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:33342:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDualExistence.isClosed_positiveCone`:
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:33357:35: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:33391:63: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:33433:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDualExistence.diagonal_posSemidef`:
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:33449:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDualExistence.trace_diagonal`:
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:33452:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDualExistence.blockTrace_nonneg`:
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:33511:81: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:33596:66: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:33644:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+QubitStrongAdditivityLean4Web.lean:33752:59: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:33779:59: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:34096:10: warning: This simp argument is unused:
+  inner_add_left
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:34289:74: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:34544:50: warning: This simp argument is unused:
+  Fintype.sum_prod_type
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [blockInclusion, coordinateInclusion, Matrix.mulVec, dotProduct, Matrix.one_apply, blockCoordinates,
+    Matrix.conjTranspose_apply, ite_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:34544:72: warning: This simp argument is unused:
+  ite_and
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [blockInclusion, coordinateInclusion, Matrix.mulVec, dotProduct, Matrix.one_apply, blockCoordinates,
+    Matrix.conjTranspose_apply, Fintype.sum_prod_type]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:34566:8: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaValueHessian.vector_add`:
+  [Fintype n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:34567:8: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaValueHessian.blockVector_sub`:
+  [Fintype r]
+  [Fintype s]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:34773:64: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:35045:29: warning: This simp argument is unused:
+  HermitianMat.mat_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hz, zero_sub, Matrix.trace_zero, Complex.zero_re, mul_zero, add_zero, sub_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:35045:51: warning: This simp argument is unused:
+  Matrix.trace_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hz, zero_sub, HermitianMat.mat_zero, Complex.zero_re, mul_zero, add_zero, sub_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:35045:69: warning: This simp argument is unused:
+  Complex.zero_re
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hz, zero_sub, HermitianMat.mat_zero, Matrix.trace_zero, mul_zero, add_zero, sub_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:35046:8: warning: This simp argument is unused:
+  mul_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hz, zero_sub, HermitianMat.mat_zero, Matrix.trace_zero, Complex.zero_re, add_zero, sub_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:35046:17: warning: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hz, zero_sub, HermitianMat.mat_zero, Matrix.trace_zero, Complex.zero_re, mul_zero, sub_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:35046:26: warning: This simp argument is unused:
+  sub_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hz, zero_sub, HermitianMat.mat_zero, Matrix.trace_zero, Complex.zero_re, mul_zero, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:35088:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDualBoundary.regularization_posDef`:
+  [Fintype k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:35181:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Convex.convex_positiveCone`:
+  [Fintype r]
+  [Fintype s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:35385:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Structure.trace_diagonal`:
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:35401:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Structure.smul_mem_positiveCone`:
+  [Fintype r]
+  [Fintype s]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:35477:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Structure.sum_posSemidef`:
+  [Fintype r]
+  [Fintype s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:35575:10: warning: This simp argument is unused:
+  pinchLeft
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [HermitianMat.conj_apply_mat, blockUnitary, Matrix.submatrix_apply, Matrix.mul_apply,
+    Fintype.sum_sum_type, Matrix.fromBlocks, Matrix.conjTranspose_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:35575:20: warning: This simp argument is unused:
+  HermitianMat.conj_apply_mat
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [pinchLeft, blockUnitary, Matrix.submatrix_apply, Matrix.mul_apply, Fintype.sum_sum_type,
+    Matrix.fromBlocks, Matrix.conjTranspose_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:35582:10: warning: This simp argument is unused:
+  pinchRight
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [HermitianMat.conj_apply_mat, blockUnitary, Matrix.submatrix_apply, Matrix.mul_apply,
+    Fintype.sum_sum_type, Matrix.fromBlocks, Matrix.conjTranspose_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:35582:21: warning: This simp argument is unused:
+  HermitianMat.conj_apply_mat
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [pinchRight, blockUnitary, Matrix.submatrix_apply, Matrix.mul_apply, Fintype.sum_sum_type,
+    Matrix.fromBlocks, Matrix.conjTranspose_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:35710:8: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSignFrame.flip_apply_same`:
+  [Fintype n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:35713:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSignFrame.flip_apply_ne`:
+  [Fintype n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:35793:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSignFrame.imageFrame_gram`:
+  [Fintype m]
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype m] [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:35854:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.outer_posSemidef`:
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:35857:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.outer_rank_le_one`:
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:35865:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.sum_outer_columns`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:35881:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.rightGram_trace`:
+  [DecidableEq n]
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:35905:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.rightGram_pairing`:
+  [DecidableEq n]
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:35937:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.outer_trace`:
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:35969:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.outer_sqrt_smul`:
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:36022:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.gramPair_trace`:
+  [DecidableEq n]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:36159:66: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:36226:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+QubitStrongAdditivityLean4Web.lean:36227:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+QubitStrongAdditivityLean4Web.lean:36228:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+QubitStrongAdditivityLean4Web.lean:36408:69: warning: This simp argument is unused:
+  Fin.sum_univ_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [scalarBlock, Matrix.trace, Matrix.smul_apply, Complex.real_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:36414:57: warning: This simp argument is unused:
+  Fin.sum_univ_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.trace, Matrix.smul_apply, Complex.real_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:36642:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Gram.gram_posSemidef`:
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:36645:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Gram.gram_trace`:
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:36679:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Gram.gramPair_posSemidef`:
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:36682:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Gram.pinchLeft_gramPair`:
+  [Fintype r]
+  [Fintype s]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:36688:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Gram.pinchRight_gramPair`:
+  [Fintype r]
+  [Fintype s]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:36699:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Gram.tc4Matrix_eq_fromCols`:
+  [Fintype r]
+  [Fintype s]
+  [Fintype k]
+  [Fintype l]
+  [Fintype t]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [Fintype k] [Fintype l] [Fintype t] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:36859:8: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaIsometryEntropy.embeddingHom_apply`:
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:36874:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaIsometryEntropy.trace_isometry`:
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:37022:34: warning: This simp argument is unused:
+  smul_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.sub_mul, Matrix.mul_sub, Matrix.smul_mul, Matrix.mul_smul, Matrix.one_mul, Matrix.mul_one,
+    Matrix.mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:37079:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBlockIsometry.blockEmbedding_isometry`:
+  [Fintype a]
+  [Fintype b]
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype a] [Fintype b] [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:37092:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBlockIsometry.diagonal_embedBlocks`:
+  [Fintype r]
+  [Fintype s]
+  [DecidableEq r]
+  [DecidableEq s]
+  [DecidableEq a]
+  [DecidableEq b]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] [DecidableEq a] [DecidableEq b] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:37098:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBlockIsometry.embedBlocks_mem_positiveCone`:
+  [DecidableEq r]
+  [DecidableEq s]
+  [DecidableEq a]
+  [DecidableEq b]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] [DecidableEq a] [DecidableEq b] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:37102:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBlockIsometry.compressBlocks_mem_positiveCone`:
+  [DecidableEq r]
+  [DecidableEq s]
+  [DecidableEq a]
+  [DecidableEq b]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] [DecidableEq a] [DecidableEq b] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:37197:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSupport.rangeProjection_sq`:
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:37202:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSupport.rangeProjection_mul`:
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:37229:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSupport.complementBlocks_mem_positiveCone`:
+  [DecidableEq a]
+  [DecidableEq b]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq a] [DecidableEq b] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:37233:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSupport.block_complement_eq`:
+  [Fintype r]
+  [Fintype s]
+  [DecidableEq a]
+  [DecidableEq b]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype s] [DecidableEq a] [DecidableEq b] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:37333:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSupportMinimum.embed_compress_eq`:
+  [DecidableEq r]
+  [DecidableEq s]
+  [DecidableEq a]
+  [DecidableEq b]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] [DecidableEq a] [DecidableEq b] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:37496:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaNormalizedOuter.vecMass_star_dotProduct`:
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:37499:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaNormalizedOuter.vecMass_zero_iff`:
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:37524:13: warning: This simp argument is unused:
+  star_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [star_trivial, Complex.real_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:37524:23: warning: This simp argument is unused:
+  star_trivial
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [star_smul, Complex.real_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:37539:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaNormalizedOuter.normalizedColumn_mul_sqrt`:
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:37543:50: warning: This simp argument is unused:
+  Fin.sum_univ_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [normalizedColumn, Matrix.mulVec, dotProduct, Complex.real_smul, Complex.ofReal_inv, mul_comm,
+    mul_left_comm, mul_assoc, hs]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:37544:13: warning: This simp argument is unused:
+  mul_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [normalizedColumn, Matrix.mulVec, dotProduct, Fin.sum_univ_one, Complex.real_smul, Complex.ofReal_inv,
+    mul_comm, mul_assoc, hs]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:37544:27: warning: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [normalizedColumn, Matrix.mulVec, dotProduct, Fin.sum_univ_one, Complex.real_smul, Complex.ofReal_inv,
+    mul_comm, mul_left_comm, hs]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:37546:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaNormalizedOuter.outer_conj`:
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:37559:47: warning: Variable name `hx` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hx
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+QubitStrongAdditivityLean4Web.lean:37559:60: warning: Variable name `hz` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hz
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+QubitStrongAdditivityLean4Web.lean:37568:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaNormalizedOuter.pinchLeft_outer`:
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:37572:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaNormalizedOuter.pinchRight_outer`:
+  [DecidableEq r]
+  [DecidableEq s]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] [DecidableEq s] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:37629:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBalancedValue.outer_zero`:
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:37682:39: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+QubitStrongAdditivityLean4Web.lean:37682:39: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+QubitStrongAdditivityLean4Web.lean:37810:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Regularization.rowEmbedding_mul`:
+  [Fintype k]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype k] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:37820:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Regularization.blockMass_regularized`:
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:37823:4: warning: This simp argument is unused:
+  Fin.sum_univ_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [regularized, blockMass_eq_sum_normSq, Matrix.fromBlocks, Fintype.sum_sum_type, Matrix.one_apply,
+    Complex.real_smul, Complex.normSq_ofReal, pow_two]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:37825:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Regularization.gram_fromCols_zero`:
+  [Fintype r]
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:37832:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Regularization.gram_mul`:
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:37849:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Regularization.continuous_regularized`:
+  [Fintype r]
+  [Fintype k]
+  [DecidableEq r]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype r] [Fintype k] [DecidableEq r] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:37873:24: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:37952:79: warning: This simp argument is unused:
+  Matrix.cons_val_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [tc4ScalarMatrix, Matrix.of_apply, Matrix.cons_val_one, Matrix.cons_val_fin_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:37953:6: warning: This simp argument is unused:
+  Matrix.cons_val_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [tc4ScalarMatrix, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_fin_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:37953:26: warning: This simp argument is unused:
+  Matrix.cons_val_fin_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [tc4ScalarMatrix, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:38123:6: warning: This simp argument is unused:
+  Complex.star_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [rotU, Matrix.mul_apply, Fin.sum_univ_two, Matrix.conjTranspose_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:38228:71: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:38231:74: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:38302:55: warning: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [scalarMatrix, Complex.real_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:38302:16: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:38302:32: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:38310:38: warning: This simp argument is unused:
+  Fin.sum_univ_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [scalarMatrix, Matrix.mul_apply, Matrix.one_apply, Complex.ofReal_ne_zero.mpr hd]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:38310:55: warning: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [scalarMatrix, Matrix.mul_apply, Fin.sum_univ_one, Complex.ofReal_ne_zero.mpr hd]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:38309:14: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:38316:14: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:38328:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalSchur.column_scalar_sandwich`:
+  [Fintype n]
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:38332:4: warning: This simp argument is unused:
+  Fin.sum_univ_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [vectorColumn, scalarMatrix, outerM, Matrix.mul_apply, Matrix.conjTranspose_apply,
+    Matrix.vecMulVec_apply, Complex.real_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:38338:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+QubitStrongAdditivityLean4Web.lean:38346:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+QubitStrongAdditivityLean4Web.lean:38352:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalSchur.outer_sandwich`:
+  [Fintype m]
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype m] [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:38364:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+QubitStrongAdditivityLean4Web.lean:38374:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalSchur.outerM_smul`:
+  [Fintype n]
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:38376:65: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+QubitStrongAdditivityLean4Web.lean:38378:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalSchur.cross_scaled_inverse_sqrt`:
+  [Fintype n]
+  [Fintype m]
+  [DecidableEq n]
+  [DecidableEq m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] [Fintype m] [DecidableEq n] [DecidableEq m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:38450:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalCommonBranch.posDef_add_identity`:
+  [Fintype n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:38455:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalCommonBranch.fromBlocks_add_identity`:
+  [Fintype n]
+  [Fintype m]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] [Fintype m] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:38564:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalKraus.sum_outer_columns`:
+  [Fintype n]
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype n] [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:38656:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalChannel.bform_trace_outer`:
+  [DecidableEq n]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq n] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+QubitStrongAdditivityLean4Web.lean:38709:52: warning: This simp argument is unused:
+  Matrix.zero_vecMulVec
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [outerM, star_zero, Matrix.vecMulVec_zero, add_zero, zero_add, Finset.sum_const_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:38718:22: warning: This simp argument is unused:
+  sum_bform_trace
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.mul_add, Matrix.trace_add, Matrix.conjTranspose_vecMulVec, star_star, bform_trace_outer,
+    crossMat, massMat, outerM, Matrix.mul_sum, Matrix.trace_sum]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:38718:38: warning: This simp argument is unused:
+  crossMat
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.mul_add, Matrix.trace_add, Matrix.conjTranspose_vecMulVec, star_star, bform_trace_outer,
+    sum_bform_trace, massMat, outerM, Matrix.mul_sum, Matrix.trace_sum]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+QubitStrongAdditivityLean4Web.lean:38840:0: warning: automatically included section variable(s) unused in theorem `QubitAdditivity.RotationInvariant.prod_compose`:
+  [DecidableEq h]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq h] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'QubitAdditivity.GeneralResult.generalQubitStrongAdditivity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.GeneralResult.generalQubitUpperBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitHolevo.strong_additivity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitHolevo.power_additivity' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,20 @@
+name = "qubitStrongAdditivity"
+version = "0.1.0"
+defaultTargets = ["QubitAdditivity"]
+
+[[lean_lib]]
+name = "QubitAdditivity"
+
+[[lean_lib]]
+name = "QuantumInfo"
+srcDir = "vendor/physlib"
+
+[[lean_lib]]
+name = "OAI"
+srcDir = "vendor/openai"
+moreLeanArgs = ["-DautoImplicit=false"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"

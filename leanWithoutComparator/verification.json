@@ -1,0 +1,37 @@
+{
+  "started_utc": "2026-10-12T12:52:17.586825+00:00",
+  "sources_sha256": "6fbf708c6cbeef27e7977a145237e076bf234603611a414f60f822e631b324ae",
+  "identical_files": 154,
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "built_in_place": false,
+  "project_build_products_present_before": true,
+  "steps": [
+    {
+      "step": "build",
+      "command": [
+        "lake",
+        "build"
+      ],
+      "exit_code": 0
+    },
+    {
+      "step": "axioms",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "scope": "Lake build of this file set and the transitive axioms reported by its Audit.lean; Mathlib comes from the pinned dependency cache. Statement comparison, kernel replay and Comparator belong to lean/ and are not repeated here.",
+  "axiom_reports": 741,
+  "axioms_used": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "status": "passed",
+  "completed_utc": "2026-10-12T13:59:50.302990+00:00"
+}
