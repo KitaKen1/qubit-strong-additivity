@@ -98,8 +98,7 @@ there are finite ensembles $`\{p_i,\sigma_i\}`$ of the marginal $`\rho_A`$ and
 $`\{q_j,\tau_j\}`$ of the marginal $`\rho_B`$ with
 
 ```math
-\sum_ip_iS(\Phi(\sigma_i))+\sum_jq_jS(\Omega(\tau_j))\le S\bigl((\Phi\otimes\Omega)(\psi)\bigr).
-\tag{$*$}
+\sum_ip_iS(\Phi(\sigma_i))+\sum_jq_jS(\Omega(\tau_j))\le S\bigl((\Phi\otimes\Omega)(\psi)\bigr).\qquad(*)
 ```
 
 Then $`\chi(\Phi\otimes\Omega)\le\chi(\Phi)+\chi(\Omega)`$
