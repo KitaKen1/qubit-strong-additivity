@@ -72,7 +72,7 @@ def powerKraus {ι κ ρ : Type*} (K : ρ → Matrix ι κ ℂ) (n : ℕ) :
 /-- Strong Holevo additivity: $\chi(\Phi \otimes \Omega) = \chi(\Phi) + \chi(\Omega)$ for every
 qubit channel $\Phi$ and every channel $\Omega$ between systems of positive finite dimension. -/
 @[category research solved, AMS 81 94,
-    formal_proof using lean4 at "https://github.com/KitaKen1/qubit-strong-additivity/blob/COMMIT_OF_THE_PUBLIC_REPOSITORY/lean/QubitAdditivity/FCPresentation.lean#L361"]
+    formal_proof using lean4 at "https://github.com/KitaKen1/qubit-strong-additivity/blob/36cfa17e849e4206fbc6aff30efef414e9c85cb6/lean/QubitAdditivity/FCPresentation.lean#L361"]
 theorem strong_additivity {r s n m : ℕ}
     (K : Fin r → Matrix (Fin 2) (Fin 2) ℂ) (hK : IsKraus K)
     (L : Fin s → Matrix (Fin (m + 1)) (Fin (n + 1)) ℂ) (hL : IsKraus L) :
@@ -82,7 +82,7 @@ theorem strong_additivity {r s n m : ℕ}
 /-- Additivity over independent uses: $\chi(\Phi^{\otimes n}) = n\,\chi(\Phi)$ for every qubit
 channel $\Phi$. -/
 @[category research solved, AMS 81 94,
-    formal_proof using lean4 at "https://github.com/KitaKen1/qubit-strong-additivity/blob/COMMIT_OF_THE_PUBLIC_REPOSITORY/lean/QubitAdditivity/FCPresentation.lean#L369"]
+    formal_proof using lean4 at "https://github.com/KitaKen1/qubit-strong-additivity/blob/36cfa17e849e4206fbc6aff30efef414e9c85cb6/lean/QubitAdditivity/FCPresentation.lean#L369"]
 theorem power_additivity {r : ℕ} (K : Fin r → Matrix (Fin 2) (Fin 2) ℂ) (hK : IsKraus K)
     (n : ℕ) : holevo (powerKraus K n) = n * holevo K := by
   sorry

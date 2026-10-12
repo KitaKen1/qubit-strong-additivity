@@ -13,7 +13,7 @@ $`\Phi`$ and every finite-dimensional channel $`\Omega`$. Both statements are pr
   complete proof in [FCPresentation.lean](../lean/QubitAdditivity/FCPresentation.lean) relates
   them to the project's definitions.
 - **Proof links:** both statements use `by sorry`, with `formal_proof` links to the complete
-  Lean proofs. Run `fill_links.py` with a public commit to pin these links.
+  Lean proofs, pinned to a fixed commit of this repository.
 
 `python3 lean/scripts/check_publication.py` checks that the definitions and both statements
 agree with the complete proof. `python3 lean/scripts/make_fc_statement.py` regenerates this

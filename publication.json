@@ -1,7 +1,7 @@
 {
-  "repository_url": null,
-  "proof_commit": null,
-  "status": "local_publication_package",
-  "hosted_lean4web": "manual run of an earlier version of the file; see lean4web/hosted-status.json",
-  "formal_conjectures_checkout": "not_run"
+  "repository_url": "https://github.com/KitaKen1/qubit-strong-additivity",
+  "proof_commit": "36cfa17e849e4206fbc6aff30efef414e9c85cb6",
+  "lean4web_url": "https://live.lean-lang.org/#project=mathlib-stable&url=https%3A%2F%2Fraw.githubusercontent.com%2FKitaKen1%2Fqubit-strong-additivity%2Fmain%2Flean4web%2FQubitStrongAdditivityLean4Web.lean",
+  "lean4web_project": "mathlib-stable",
+  "hosted_status": "lean4web/hosted-status.json"
 }
