@@ -1,0 +1,18 @@
+﻿2026-10-12T15:05:47.2886768Z ##[group]Run actions/cache/restore@v4
+2026-10-12T15:05:47.2887065Z with:
+2026-10-12T15:05:47.2887278Z   path: lean/.lake/build
+2026-10-12T15:05:47.2887621Z   key: qubit-fc-00e82103c022243203f9bfc2da428cc32eea3c78-38265719873-1
+2026-10-12T15:05:47.2887994Z   fail-on-cache-miss: true
+2026-10-12T15:05:47.2888243Z   enableCrossOsArchive: false
+2026-10-12T15:05:47.2888486Z   lookup-only: false
+2026-10-12T15:05:47.2888699Z ##[endgroup]
+2026-10-12T15:05:47.3987422Z (node:3126) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-12T15:05:47.3988272Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-12T15:05:47.6808251Z Cache hit for: qubit-fc-00e82103c022243203f9bfc2da428cc32eea3c78-38265719873-1
+2026-10-12T15:05:47.6905940Z (node:3126) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-12T15:05:48.9749164Z Received 4194304 of 49983594 (8.4%), 4.0 MBs/sec
+2026-10-12T15:05:49.5164134Z Received 49983594 of 49983594 (100.0%), 30.9 MBs/sec
+2026-10-12T15:05:49.5166091Z Cache Size: ~48 MB (49983594 B)
+2026-10-12T15:05:49.5206348Z [command]/usr/bin/tar -xf /home/runner/work/_temp/4d4c8318-f57e-4424-8d9e-475efc9c4a80/cache.tzst -P -C /home/runner/work/qubit-strong-additivity/qubit-strong-additivity --use-compress-program unzstd
+2026-10-12T15:05:50.1789145Z Cache restored successfully
+2026-10-12T15:05:50.3882928Z Cache restored from key: qubit-fc-00e82103c022243203f9bfc2da428cc32eea3c78-38265719873-1

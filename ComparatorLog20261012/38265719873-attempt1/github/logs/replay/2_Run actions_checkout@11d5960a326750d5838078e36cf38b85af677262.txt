@@ -1,0 +1,83 @@
+﻿2026-10-12T15:02:45.1707472Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+2026-10-12T15:02:45.1708504Z with:
+2026-10-12T15:02:45.1708972Z   persist-credentials: false
+2026-10-12T15:02:45.1709554Z   repository: KitaKen1/qubit-strong-additivity
+2026-10-12T15:02:45.1713455Z   token: ***
+2026-10-12T15:02:45.1713912Z   ssh-strict: true
+2026-10-12T15:02:45.1714413Z   ssh-user: git
+2026-10-12T15:02:45.1714843Z   clean: true
+2026-10-12T15:02:45.1715298Z   sparse-checkout-cone-mode: true
+2026-10-12T15:02:45.1715994Z   fetch-depth: 1
+2026-10-12T15:02:45.1716431Z   fetch-tags: false
+2026-10-12T15:02:45.1716881Z   show-progress: true
+2026-10-12T15:02:45.1717355Z   lfs: false
+2026-10-12T15:02:45.1717775Z   submodules: false
+2026-10-12T15:02:45.1718238Z   set-safe-directory: true
+2026-10-12T15:02:45.1718758Z   allow-unsafe-pr-checkout: false
+2026-10-12T15:02:45.1719493Z ##[endgroup]
+2026-10-12T15:02:45.2732006Z Syncing repository: KitaKen1/qubit-strong-additivity
+2026-10-12T15:02:45.2734085Z ##[group]Getting Git version info
+2026-10-12T15:02:45.2735055Z Working directory is '/home/runner/work/qubit-strong-additivity/qubit-strong-additivity'
+2026-10-12T15:02:45.2736557Z [command]/usr/bin/git version
+2026-10-12T15:02:45.2790453Z git version 2.55.0
+2026-10-12T15:02:45.2812158Z ##[endgroup]
+2026-10-12T15:02:45.2824529Z Temporarily overriding HOME='/home/runner/work/_temp/05c6f750-d1f9-4445-8ad4-0be043d6ff2b' before making global git config changes
+2026-10-12T15:02:45.2826593Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-12T15:02:45.2829311Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/qubit-strong-additivity/qubit-strong-additivity
+2026-10-12T15:02:45.2878134Z Deleting the contents of '/home/runner/work/qubit-strong-additivity/qubit-strong-additivity'
+2026-10-12T15:02:45.2882221Z ##[group]Initializing the repository
+2026-10-12T15:02:45.2886362Z [command]/usr/bin/git init /home/runner/work/qubit-strong-additivity/qubit-strong-additivity
+2026-10-12T15:02:45.2974899Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-12T15:02:45.2976391Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-12T15:02:45.2977859Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-12T15:02:45.2979025Z hint: call:
+2026-10-12T15:02:45.2979938Z hint:
+2026-10-12T15:02:45.2980642Z hint: 	git config --global init.defaultBranch <name>
+2026-10-12T15:02:45.2981273Z hint:
+2026-10-12T15:02:45.2981847Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-12T15:02:45.2982777Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-12T15:02:45.2983511Z hint:
+2026-10-12T15:02:45.2983929Z hint: 	git branch -m <name>
+2026-10-12T15:02:45.2984553Z hint:
+2026-10-12T15:02:45.2985679Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-12T15:02:45.2986877Z Initialized empty Git repository in /home/runner/work/qubit-strong-additivity/qubit-strong-additivity/.git/
+2026-10-12T15:02:45.2989711Z [command]/usr/bin/git remote add origin https://github.com/KitaKen1/qubit-strong-additivity
+2026-10-12T15:02:45.3035785Z ##[endgroup]
+2026-10-12T15:02:45.3039414Z ##[group]Disabling automatic garbage collection
+2026-10-12T15:02:45.3040115Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-12T15:02:45.3069026Z ##[endgroup]
+2026-10-12T15:02:45.3069776Z ##[group]Setting up auth
+2026-10-12T15:02:45.3075126Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-12T15:02:45.3105126Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-12T15:02:45.3464386Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-12T15:02:45.3499011Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-12T15:02:45.3747583Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-12T15:02:45.3782971Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-12T15:02:45.4023432Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-12T15:02:45.4059335Z ##[endgroup]
+2026-10-12T15:02:45.4060210Z ##[group]Fetching the repository
+2026-10-12T15:02:45.4068740Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +00e82103c022243203f9bfc2da428cc32eea3c78:refs/remotes/origin/main
+2026-10-12T15:02:45.8861104Z From https://github.com/KitaKen1/qubit-strong-additivity
+2026-10-12T15:02:45.8862207Z  * [new ref]         00e82103c022243203f9bfc2da428cc32eea3c78 -> origin/main
+2026-10-12T15:02:45.8865685Z ##[endgroup]
+2026-10-12T15:02:45.8866430Z ##[group]Determining the checkout info
+2026-10-12T15:02:45.8869135Z ##[endgroup]
+2026-10-12T15:02:45.8875920Z [command]/usr/bin/git sparse-checkout disable
+2026-10-12T15:02:45.8928608Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-12T15:02:45.8962127Z ##[group]Checking out the ref
+2026-10-12T15:02:45.8962985Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-10-12T15:02:45.9458943Z Switched to a new branch 'main'
+2026-10-12T15:02:45.9463506Z branch 'main' set up to track 'origin/main'.
+2026-10-12T15:02:45.9466200Z ##[endgroup]
+2026-10-12T15:02:45.9485145Z [command]/usr/bin/git log -1 --format=%H
+2026-10-12T15:02:45.9510648Z 00e82103c022243203f9bfc2da428cc32eea3c78
+2026-10-12T15:02:45.9523918Z ##[group]Removing auth
+2026-10-12T15:02:45.9533096Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-12T15:02:45.9559648Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-12T15:02:45.9809244Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-12T15:02:45.9836833Z http.https://github.com/.extraheader
+2026-10-12T15:02:45.9846866Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-12T15:02:45.9879792Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-12T15:02:46.0107768Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-12T15:02:46.0137671Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-12T15:02:46.0363581Z ##[endgroup]

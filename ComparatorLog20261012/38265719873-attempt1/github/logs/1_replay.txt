@@ -1,0 +1,426 @@
+﻿2026-10-12T15:02:44.2655281Z Current runner version: '2.337.0'
+2026-10-12T15:02:44.2681274Z ##[group]Runner Image Provisioner
+2026-10-12T15:02:44.2682158Z Hosted Compute Agent
+2026-10-12T15:02:44.2682958Z Version: 20261002.596
+2026-10-12T15:02:44.2683613Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+2026-10-12T15:02:44.2684346Z Build Date: 2026-10-02T22:28:27Z
+2026-10-12T15:02:44.2685136Z Worker ID: {60b4c020-4e94-4d5b-8af6-0a435d8e505a}
+2026-10-12T15:02:44.2686107Z Region: westus
+2026-10-12T15:02:44.2686765Z Cloud: Azure
+2026-10-12T15:02:44.2687350Z ##[endgroup]
+2026-10-12T15:02:44.2688905Z ##[group]Operating System
+2026-10-12T15:02:44.2689719Z Ubuntu
+2026-10-12T15:02:44.2690275Z 24.04.5
+2026-10-12T15:02:44.2690946Z LTS
+2026-10-12T15:02:44.2691515Z ##[endgroup]
+2026-10-12T15:02:44.2692088Z ##[group]Runner Image
+2026-10-12T15:02:44.2692754Z Image: ubuntu-24.04
+2026-10-12T15:02:44.2693356Z Version: 20261004.327.1
+2026-10-12T15:02:44.2694755Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-12T15:02:44.2696470Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+2026-10-12T15:02:44.2697529Z ##[endgroup]
+2026-10-12T15:02:44.2698682Z ##[group]GITHUB_TOKEN Permissions
+2026-10-12T15:02:44.2701275Z Contents: read
+2026-10-12T15:02:44.2701895Z Metadata: read
+2026-10-12T15:02:44.2702544Z ##[endgroup]
+2026-10-12T15:02:44.2704639Z Secret source: Actions
+2026-10-12T15:02:44.2706020Z Cache mode: write
+2026-10-12T15:02:44.2706948Z Prepare workflow directory
+2026-10-12T15:02:44.3146362Z Prepare all required actions
+2026-10-12T15:02:44.3207241Z Getting action download info
+2026-10-12T15:02:44.6539493Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-12T15:02:44.7349891Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+2026-10-12T15:02:44.8842159Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-12T15:02:45.0964167Z Complete job name: replay
+2026-10-12T15:02:45.1707505Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+2026-10-12T15:02:45.1708508Z with:
+2026-10-12T15:02:45.1708976Z   persist-credentials: false
+2026-10-12T15:02:45.1709558Z   repository: KitaKen1/qubit-strong-additivity
+2026-10-12T15:02:45.1713457Z   token: ***
+2026-10-12T15:02:45.1713916Z   ssh-strict: true
+2026-10-12T15:02:45.1714415Z   ssh-user: git
+2026-10-12T15:02:45.1714846Z   clean: true
+2026-10-12T15:02:45.1715302Z   sparse-checkout-cone-mode: true
+2026-10-12T15:02:45.1715999Z   fetch-depth: 1
+2026-10-12T15:02:45.1716435Z   fetch-tags: false
+2026-10-12T15:02:45.1716884Z   show-progress: true
+2026-10-12T15:02:45.1717357Z   lfs: false
+2026-10-12T15:02:45.1717778Z   submodules: false
+2026-10-12T15:02:45.1718242Z   set-safe-directory: true
+2026-10-12T15:02:45.1718761Z   allow-unsafe-pr-checkout: false
+2026-10-12T15:02:45.1719498Z ##[endgroup]
+2026-10-12T15:02:45.2732062Z Syncing repository: KitaKen1/qubit-strong-additivity
+2026-10-12T15:02:45.2734171Z ##[group]Getting Git version info
+2026-10-12T15:02:45.2735061Z Working directory is '/home/runner/work/qubit-strong-additivity/qubit-strong-additivity'
+2026-10-12T15:02:45.2736562Z [command]/usr/bin/git version
+2026-10-12T15:02:45.2790484Z git version 2.55.0
+2026-10-12T15:02:45.2812182Z ##[endgroup]
+2026-10-12T15:02:45.2824552Z Temporarily overriding HOME='/home/runner/work/_temp/05c6f750-d1f9-4445-8ad4-0be043d6ff2b' before making global git config changes
+2026-10-12T15:02:45.2826606Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-12T15:02:45.2829322Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/qubit-strong-additivity/qubit-strong-additivity
+2026-10-12T15:02:45.2878164Z Deleting the contents of '/home/runner/work/qubit-strong-additivity/qubit-strong-additivity'
+2026-10-12T15:02:45.2882238Z ##[group]Initializing the repository
+2026-10-12T15:02:45.2886390Z [command]/usr/bin/git init /home/runner/work/qubit-strong-additivity/qubit-strong-additivity
+2026-10-12T15:02:45.2974925Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-12T15:02:45.2976413Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-12T15:02:45.2977868Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-12T15:02:45.2979031Z hint: call:
+2026-10-12T15:02:45.2979947Z hint:
+2026-10-12T15:02:45.2980646Z hint: 	git config --global init.defaultBranch <name>
+2026-10-12T15:02:45.2981276Z hint:
+2026-10-12T15:02:45.2981851Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-12T15:02:45.2982782Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-12T15:02:45.2983514Z hint:
+2026-10-12T15:02:45.2983932Z hint: 	git branch -m <name>
+2026-10-12T15:02:45.2984558Z hint:
+2026-10-12T15:02:45.2985684Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-12T15:02:45.2986892Z Initialized empty Git repository in /home/runner/work/qubit-strong-additivity/qubit-strong-additivity/.git/
+2026-10-12T15:02:45.2989724Z [command]/usr/bin/git remote add origin https://github.com/KitaKen1/qubit-strong-additivity
+2026-10-12T15:02:45.3035810Z ##[endgroup]
+2026-10-12T15:02:45.3039425Z ##[group]Disabling automatic garbage collection
+2026-10-12T15:02:45.3040118Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-12T15:02:45.3069048Z ##[endgroup]
+2026-10-12T15:02:45.3069780Z ##[group]Setting up auth
+2026-10-12T15:02:45.3075136Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-12T15:02:45.3105149Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-12T15:02:45.3464434Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-12T15:02:45.3499454Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-12T15:02:45.3747628Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-12T15:02:45.3782998Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-12T15:02:45.4023475Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-12T15:02:45.4059363Z ##[endgroup]
+2026-10-12T15:02:45.4060216Z ##[group]Fetching the repository
+2026-10-12T15:02:45.4068751Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +00e82103c022243203f9bfc2da428cc32eea3c78:refs/remotes/origin/main
+2026-10-12T15:02:45.8861188Z From https://github.com/KitaKen1/qubit-strong-additivity
+2026-10-12T15:02:45.8862266Z  * [new ref]         00e82103c022243203f9bfc2da428cc32eea3c78 -> origin/main
+2026-10-12T15:02:45.8865691Z ##[endgroup]
+2026-10-12T15:02:45.8866434Z ##[group]Determining the checkout info
+2026-10-12T15:02:45.8869166Z ##[endgroup]
+2026-10-12T15:02:45.8875949Z [command]/usr/bin/git sparse-checkout disable
+2026-10-12T15:02:45.8928635Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-12T15:02:45.8962152Z ##[group]Checking out the ref
+2026-10-12T15:02:45.8963002Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-10-12T15:02:45.9459011Z Switched to a new branch 'main'
+2026-10-12T15:02:45.9463539Z branch 'main' set up to track 'origin/main'.
+2026-10-12T15:02:45.9466223Z ##[endgroup]
+2026-10-12T15:02:45.9485179Z [command]/usr/bin/git log -1 --format=%H
+2026-10-12T15:02:45.9510695Z 00e82103c022243203f9bfc2da428cc32eea3c78
+2026-10-12T15:02:45.9523955Z ##[group]Removing auth
+2026-10-12T15:02:45.9533162Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-12T15:02:45.9559703Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-12T15:02:45.9809312Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-12T15:02:45.9836873Z http.https://github.com/.extraheader
+2026-10-12T15:02:45.9846904Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-12T15:02:45.9879824Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-12T15:02:46.0107821Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-12T15:02:46.0137726Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-12T15:02:46.0363640Z ##[endgroup]
+2026-10-12T15:02:46.0620342Z ##[group]Run bash comparator/prepare-runner.sh && bash comparator/add-swap.sh 16 3
+2026-10-12T15:02:46.0623028Z [36;1mbash comparator/prepare-runner.sh && bash comparator/add-swap.sh 16 3[0m
+2026-10-12T15:02:46.0873403Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-12T15:02:46.0875021Z ##[endgroup]
+2026-10-12T15:04:02.5551465Z info: downloading installer
+2026-10-12T15:04:02.8525207Z cores: 4
+2026-10-12T15:04:02.8525938Z                total        used        free      shared  buff/cache   available
+2026-10-12T15:04:02.8526538Z Mem:              15           0          10           0           4          14
+2026-10-12T15:04:02.8527055Z Swap:              2           0           2
+2026-10-12T15:04:02.8527525Z Filesystem      Size  Used Avail Use% Mounted on
+2026-10-12T15:04:02.8603369Z /dev/root       145G   23G  123G  16% /
+2026-10-12T15:04:02.8604173Z /dev/root       145G   23G  123G  16% /
+2026-10-12T15:04:02.9084187Z added 16 GB of swap on /
+2026-10-12T15:04:02.9102986Z                total        used        free      shared  buff/cache   available
+2026-10-12T15:04:02.9103688Z Mem:              15           1          10           0           4          14
+2026-10-12T15:04:02.9104084Z Swap:             18           0          18
+2026-10-12T15:04:02.9118913Z NAME             TYPE SIZE USED PRIO
+2026-10-12T15:04:02.9119313Z /swapfile        file   3G   0B   -2
+2026-10-12T15:04:02.9119692Z /swap-extra-1087 file  16G   0B   -3
+2026-10-12T15:04:02.9173871Z ##[group]Run lake exe cache get
+2026-10-12T15:04:02.9174230Z [36;1mlake exe cache get[0m
+2026-10-12T15:04:02.9245635Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-12T15:04:02.9246036Z ##[endgroup]
+2026-10-12T15:04:03.2941890Z info: downloading https://releases.lean-lang.org/lean4/v4.34.1/lean-4.34.1-linux.tar.zst
+2026-10-12T15:04:06.2755703Z info: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.34.1
+2026-10-12T15:04:13.3624874Z info: mathlib: cloning https://github.com/leanprover-community/mathlib4.git
+2026-10-12T15:04:46.4946802Z info: mathlib: checking out revision 'd13f23b723b8a846827a245b89c10fc7d3f11612'
+2026-10-12T15:04:48.5984838Z info: plausible: cloning https://github.com/leanprover-community/plausible
+2026-10-12T15:04:49.1302764Z info: plausible: checking out revision '118aa17ee84656b8bd727fef7c458ee8c833385c'
+2026-10-12T15:04:49.1439008Z info: LeanSearchClient: cloning https://github.com/leanprover-community/LeanSearchClient
+2026-10-12T15:04:49.5570360Z info: LeanSearchClient: checking out revision 'ddf04cf3949fa556442341e87d47f9f6e6074707'
+2026-10-12T15:04:49.5699363Z info: importGraph: cloning https://github.com/leanprover-community/import-graph
+2026-10-12T15:04:50.1998055Z info: importGraph: checking out revision 'e928b72544873815af278d38681b31c0293588e3'
+2026-10-12T15:04:50.2189163Z info: proofwidgets: cloning https://github.com/leanprover-community/ProofWidgets4
+2026-10-12T15:04:50.9156985Z info: proofwidgets: checking out revision '106ff4fafc74ef4ac99d81dbf3ab399118f497a5'
+2026-10-12T15:04:51.5252786Z info: aesop: cloning https://github.com/leanprover-community/aesop
+2026-10-12T15:04:52.3573044Z info: aesop: checking out revision '355695d523e41d0554926416cba2a2b3544fbbc9'
+2026-10-12T15:04:52.3770985Z info: Qq: cloning https://github.com/leanprover-community/quote4
+2026-10-12T15:04:52.9259359Z info: Qq: checking out revision '6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259'
+2026-10-12T15:04:52.9400637Z info: batteries: cloning https://github.com/leanprover-community/batteries
+2026-10-12T15:05:01.8961411Z info: batteries: checking out revision 'f2effa3d803fda822b1f97b806c47cf2adfbcbc2'
+2026-10-12T15:05:01.9346345Z info: Cli: cloning https://github.com/leanprover/lean4-cli
+2026-10-12T15:05:02.6364354Z info: Cli: checking out revision 'e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204'
+2026-10-12T15:05:03.0537172Z ✔ [2/42] Built Cache.Cli (329ms)
+2026-10-12T15:05:03.1537377Z ✔ [5/42] Built Cache.Lean (455ms)
+2026-10-12T15:05:03.2517422Z ✔ [6/42] Built Cache.Cli:c.o (208ms)
+2026-10-12T15:05:03.3537225Z ✔ [7/42] Built Cache.Lean:c.o (178ms)
+2026-10-12T15:05:03.4519185Z ✔ [8/42] Built Cache.Env (422ms)
+2026-10-12T15:05:03.6522379Z ✔ [9/42] Built Cache.Env:c.o (198ms)
+2026-10-12T15:05:03.8536787Z ✔ [10/42] Built Cache.Infra (434ms)
+2026-10-12T15:05:04.0537202Z ✔ [11/42] Built Batteries.Tactic.OpenPrivate (1.0s)
+2026-10-12T15:05:04.1534848Z ✔ [12/42] Built Cache.Infra:c.o (249ms)
+2026-10-12T15:05:05.3539694Z ✔ [13/42] Built Batteries.Tactic.OpenPrivate:c.o (1.3s)
+2026-10-12T15:05:05.4540352Z ✔ [14/42] Built Cache.IO (1.4s)
+2026-10-12T15:05:06.2550842Z ✔ [15/42] Built Cache.Hashing (799ms)
+2026-10-12T15:05:06.8568970Z ✔ [16/42] Built Cache.Hashing:c.o (641ms)
+2026-10-12T15:05:07.2573985Z ✔ [17/42] Built Cache.IO:c.o (1.8s)
+2026-10-12T15:05:08.0583205Z ✔ [18/42] Built Cache.Requests (1.8s)
+2026-10-12T15:05:08.6607123Z ✔ [19/42] Built Cache.Marker (571ms)
+2026-10-12T15:05:08.7591886Z ✔ [20/42] Built Cache.Marker:c.o (149ms)
+2026-10-12T15:05:09.2643443Z ✔ [21/42] Built Cache.Upload.Dest (657ms)
+2026-10-12T15:05:09.4676672Z ✔ [22/42] Built Cache.Upload.Dest:c.o (169ms)
+2026-10-12T15:05:09.7686990Z ✔ [23/42] Built Cache.Query (1.1s)
+2026-10-12T15:05:10.1678626Z ✔ [24/42] Built Cache.Query:c.o (442ms)
+2026-10-12T15:05:10.2692051Z ✔ [25/42] Built Cache.Upload.Rclone (921ms)
+2026-10-12T15:05:10.4706775Z ✔ [26/42] Built Cache.Upload.Curl (952ms)
+2026-10-12T15:05:10.4736437Z ✔ [27/42] Built Cache.Upload.Rclone:c.o (283ms)
+2026-10-12T15:05:10.6699002Z ✔ [28/42] Built Cache.Upload.Curl:c.o (249ms)
+2026-10-12T15:05:11.1746860Z ✔ [29/42] Built Cache.Warning (996ms)
+2026-10-12T15:05:11.3757139Z ✔ [30/42] Built Cache.Upload.Azure (897ms)
+2026-10-12T15:05:11.5743882Z ✔ [31/42] Built Cache.Requests:c.o (3.5s)
+2026-10-12T15:05:11.5744383Z ✔ [32/42] Built Cache.Upload.Azure:c.o (209ms)
+2026-10-12T15:05:11.5744807Z ✔ [33/42] Built Cache.Warning:c.o (377ms)
+2026-10-12T15:05:11.6745883Z ✔ [34/42] Built Cache.Upload.S3 (1.0s)
+2026-10-12T15:05:11.9748850Z ✔ [35/42] Built Cache.Upload.S3:c.o (309ms)
+2026-10-12T15:05:12.2752445Z ✔ [36/42] Built Cache.Upload.Defs (596ms)
+2026-10-12T15:05:12.3754078Z ✔ [37/42] Built Cache.Upload.Defs:c.o (141ms)
+2026-10-12T15:05:12.7760942Z ✔ [38/42] Built Cache.Upload (538ms)
+2026-10-12T15:05:12.9763023Z ✔ [39/42] Built Cache.Upload:c.o (110ms)
+2026-10-12T15:05:13.8763082Z ✔ [40/42] Built Cache.Main (1.1s)
+2026-10-12T15:05:14.7773019Z ✔ [41/42] Built Cache.Main:c.o (889ms)
+2026-10-12T15:05:15.5811535Z ✔ [42/42] Built cache:exe (767ms)
+2026-10-12T15:05:18.5896949Z Current branch: HEAD
+2026-10-12T15:05:18.5897507Z Using cache from origin: (some leanprover-community/mathlib4)
+2026-10-12T15:05:18.5898557Z Attempting to download 8908 file(s) from leanprover-community/mathlib4 cache at https://cache.mathlib.org/mathlib4-master
+2026-10-12T15:05:19.1666272Z 
+2026-10-12T15:05:19.2907903Z Downloaded: 1 file(s) [attempted 1/8908 = 0%, 30 KB/s], Decompressed: 0
+2026-10-12T15:05:19.4268923Z Downloaded: 10 file(s) [attempted 10/8908 = 0%, 47 KB/s], Decompressed: 7
+2026-10-12T15:05:19.5475310Z Downloaded: 22 file(s) [attempted 22/8908 = 0%, 26 KB/s], Decompressed: 17
+2026-10-12T15:05:19.6542396Z Downloaded: 44 file(s) [attempted 44/8908 = 0%, 9 KB/s], Decompressed: 39
+2026-10-12T15:05:19.7546536Z Downloaded: 80 file(s) [attempted 80/8908 = 0%, 421 KB/s], Decompressed: 63
+2026-10-12T15:05:19.8555596Z Downloaded: 125 file(s) [attempted 125/8908 = 1%, 240 KB/s], Decompressed: 92
+2026-10-12T15:05:19.9550347Z Downloaded: 186 file(s) [attempted 186/8908 = 2%, 245 KB/s], Decompressed: 92
+2026-10-12T15:05:20.0652567Z Downloaded: 236 file(s) [attempted 236/8908 = 2%, 1285 KB/s], Decompressed: 123
+2026-10-12T15:05:20.1686809Z Downloaded: 296 file(s) [attempted 296/8908 = 3%, 384 KB/s], Decompressed: 123
+2026-10-12T15:05:20.2736868Z Downloaded: 359 file(s) [attempted 359/8908 = 4%, 135 KB/s], Decompressed: 195
+2026-10-12T15:05:20.3786742Z Downloaded: 417 file(s) [attempted 417/8908 = 4%, 194 KB/s], Decompressed: 195
+2026-10-12T15:05:20.4788445Z Downloaded: 479 file(s) [attempted 479/8908 = 5%, 352 KB/s], Decompressed: 195
+2026-10-12T15:05:20.5820078Z Downloaded: 537 file(s) [attempted 537/8908 = 6%, 472 KB/s], Decompressed: 313
+2026-10-12T15:05:20.6861944Z Downloaded: 599 file(s) [attempted 599/8908 = 6%, 588 KB/s], Decompressed: 313
+2026-10-12T15:05:20.7917051Z Downloaded: 667 file(s) [attempted 667/8908 = 7%, 82 KB/s], Decompressed: 313
+2026-10-12T15:05:20.9041758Z Downloaded: 729 file(s) [attempted 729/8908 = 8%, 487 KB/s], Decompressed: 313
+2026-10-12T15:05:21.0068235Z Downloaded: 775 file(s) [attempted 775/8908 = 8%, 315 KB/s], Decompressed: 313
+2026-10-12T15:05:21.1114142Z Downloaded: 821 file(s) [attempted 821/8908 = 9%, 228 KB/s], Decompressed: 313
+2026-10-12T15:05:21.2163932Z Downloaded: 874 file(s) [attempted 874/8908 = 9%, 1407 KB/s], Decompressed: 527
+2026-10-12T15:05:21.3154167Z Downloaded: 936 file(s) [attempted 936/8908 = 10%, 730 KB/s], Decompressed: 527
+2026-10-12T15:05:21.4192603Z Downloaded: 992 file(s) [attempted 992/8908 = 11%, 565 KB/s], Decompressed: 527
+2026-10-12T15:05:21.5169733Z Downloaded: 1054 file(s) [attempted 1054/8908 = 11%, 126 KB/s], Decompressed: 527
+2026-10-12T15:05:21.6210326Z Downloaded: 1117 file(s) [attempted 1117/8908 = 12%, 828 KB/s], Decompressed: 527
+2026-10-12T15:05:21.7281808Z Downloaded: 1179 file(s) [attempted 1179/8908 = 13%, 215 KB/s], Decompressed: 527
+2026-10-12T15:05:21.8290002Z Downloaded: 1237 file(s) [attempted 1237/8908 = 13%, 1376 KB/s], Decompressed: 527
+2026-10-12T15:05:21.9407270Z Downloaded: 1297 file(s) [attempted 1297/8908 = 14%, 153 KB/s], Decompressed: 527
+2026-10-12T15:05:22.0393881Z Downloaded: 1357 file(s) [attempted 1357/8908 = 15%, 1842 KB/s], Decompressed: 527
+2026-10-12T15:05:22.1431349Z Downloaded: 1424 file(s) [attempted 1424/8908 = 15%, 1126 KB/s], Decompressed: 527
+2026-10-12T15:05:22.2419953Z Downloaded: 1482 file(s) [attempted 1482/8908 = 16%, 544 KB/s], Decompressed: 527
+2026-10-12T15:05:22.3507265Z Downloaded: 1542 file(s) [attempted 1542/8908 = 17%, 62 KB/s], Decompressed: 871
+2026-10-12T15:05:22.4494356Z Downloaded: 1605 file(s) [attempted 1605/8908 = 18%, 241 KB/s], Decompressed: 871
+2026-10-12T15:05:22.5503824Z Downloaded: 1662 file(s) [attempted 1662/8908 = 18%, 798 KB/s], Decompressed: 871
+2026-10-12T15:05:22.6579270Z Downloaded: 1725 file(s) [attempted 1725/8908 = 19%, 87 KB/s], Decompressed: 871
+2026-10-12T15:05:22.7588139Z Downloaded: 1792 file(s) [attempted 1792/8908 = 20%, 308 KB/s], Decompressed: 871
+2026-10-12T15:05:22.8652311Z Downloaded: 1850 file(s) [attempted 1850/8908 = 20%, 456 KB/s], Decompressed: 871
+2026-10-12T15:05:22.9654420Z Downloaded: 1917 file(s) [attempted 1917/8908 = 21%, 428 KB/s], Decompressed: 871
+2026-10-12T15:05:23.0734828Z Downloaded: 1972 file(s) [attempted 1972/8908 = 22%, 936 KB/s], Decompressed: 871
+2026-10-12T15:05:23.1783253Z Downloaded: 2037 file(s) [attempted 2037/8908 = 22%, 119 KB/s], Decompressed: 871
+2026-10-12T15:05:23.2837924Z Downloaded: 2100 file(s) [attempted 2100/8908 = 23%, 210 KB/s], Decompressed: 871
+2026-10-12T15:05:23.3904047Z Downloaded: 2162 file(s) [attempted 2162/8908 = 24%, 72 KB/s], Decompressed: 871
+2026-10-12T15:05:23.4943870Z Downloaded: 2230 file(s) [attempted 2230/8908 = 25%, 2101 KB/s], Decompressed: 871
+2026-10-12T15:05:23.5976832Z Downloaded: 2292 file(s) [attempted 2292/8908 = 25%, 186 KB/s], Decompressed: 871
+2026-10-12T15:05:23.7070726Z Downloaded: 2362 file(s) [attempted 2362/8908 = 26%, 1561 KB/s], Decompressed: 871
+2026-10-12T15:05:23.8146913Z Downloaded: 2429 file(s) [attempted 2429/8908 = 27%, 203 KB/s], Decompressed: 871
+2026-10-12T15:05:23.9139857Z Downloaded: 2484 file(s) [attempted 2484/8908 = 27%, 546 KB/s], Decompressed: 871
+2026-10-12T15:05:24.0150892Z Downloaded: 2547 file(s) [attempted 2547/8908 = 28%, 1605 KB/s], Decompressed: 871
+2026-10-12T15:05:24.1198401Z Downloaded: 2609 file(s) [attempted 2609/8908 = 29%, 74 KB/s], Decompressed: 871
+2026-10-12T15:05:24.2195817Z Downloaded: 2670 file(s) [attempted 2670/8908 = 29%, 909 KB/s], Decompressed: 1489
+2026-10-12T15:05:24.3224696Z Downloaded: 2727 file(s) [attempted 2727/8908 = 30%, 504 KB/s], Decompressed: 1489
+2026-10-12T15:05:24.4227859Z Downloaded: 2790 file(s) [attempted 2790/8908 = 31%, 266 KB/s], Decompressed: 1489
+2026-10-12T15:05:24.5242656Z Downloaded: 2847 file(s) [attempted 2847/8908 = 31%, 407 KB/s], Decompressed: 1489
+2026-10-12T15:05:24.6266942Z Downloaded: 2910 file(s) [attempted 2910/8908 = 32%, 110 KB/s], Decompressed: 1489
+2026-10-12T15:05:24.7283251Z Downloaded: 2975 file(s) [attempted 2975/8908 = 33%, 2269 KB/s], Decompressed: 1489
+2026-10-12T15:05:24.8356680Z Downloaded: 3033 file(s) [attempted 3033/8908 = 34%, 51 KB/s], Decompressed: 1489
+2026-10-12T15:05:24.9367248Z Downloaded: 3095 file(s) [attempted 3095/8908 = 34%, 906 KB/s], Decompressed: 1489
+2026-10-12T15:05:25.0352168Z Downloaded: 3157 file(s) [attempted 3157/8908 = 35%, 1578 KB/s], Decompressed: 1489
+2026-10-12T15:05:25.1353066Z Downloaded: 3220 file(s) [attempted 3220/8908 = 36%, 542 KB/s], Decompressed: 1489
+2026-10-12T15:05:25.2357260Z Downloaded: 3275 file(s) [attempted 3275/8908 = 36%, 574 KB/s], Decompressed: 1489
+2026-10-12T15:05:25.3371728Z Downloaded: 3323 file(s) [attempted 3323/8908 = 37%, 309 KB/s], Decompressed: 1489
+2026-10-12T15:05:25.4383976Z Downloaded: 3388 file(s) [attempted 3388/8908 = 38%, 607 KB/s], Decompressed: 1489
+2026-10-12T15:05:25.5448448Z Downloaded: 3436 file(s) [attempted 3436/8908 = 38%, 212 KB/s], Decompressed: 1489
+2026-10-12T15:05:25.6463710Z Downloaded: 3499 file(s) [attempted 3499/8908 = 39%, 2094 KB/s], Decompressed: 1489
+2026-10-12T15:05:25.7542419Z Downloaded: 3566 file(s) [attempted 3566/8908 = 40%, 77 KB/s], Decompressed: 1489
+2026-10-12T15:05:25.8566816Z Downloaded: 3624 file(s) [attempted 3624/8908 = 40%, 140 KB/s], Decompressed: 1489
+2026-10-12T15:05:25.9579409Z Downloaded: 3686 file(s) [attempted 3686/8908 = 41%, 173 KB/s], Decompressed: 1489
+2026-10-12T15:05:26.0636812Z Downloaded: 3746 file(s) [attempted 3746/8908 = 42%, 621 KB/s], Decompressed: 1489
+2026-10-12T15:05:26.1687431Z Downloaded: 3802 file(s) [attempted 3802/8908 = 42%, 1258 KB/s], Decompressed: 1489
+2026-10-12T15:05:26.2717191Z Downloaded: 3859 file(s) [attempted 3859/8908 = 43%, 359 KB/s], Decompressed: 1489
+2026-10-12T15:05:26.3681476Z Downloaded: 3922 file(s) [attempted 3922/8908 = 44%, 300 KB/s], Decompressed: 1489
+2026-10-12T15:05:26.4726424Z Downloaded: 3995 file(s) [attempted 3995/8908 = 44%, 76 KB/s], Decompressed: 1489
+2026-10-12T15:05:26.5771378Z Downloaded: 4044 file(s) [attempted 4044/8908 = 45%, 683 KB/s], Decompressed: 1489
+2026-10-12T15:05:26.6789717Z Downloaded: 4112 file(s) [attempted 4112/8908 = 46%, 149 KB/s], Decompressed: 1489
+2026-10-12T15:05:26.7807419Z Downloaded: 4174 file(s) [attempted 4174/8908 = 46%, 1153 KB/s], Decompressed: 1489
+2026-10-12T15:05:26.9107245Z Downloaded: 4239 file(s) [attempted 4239/8908 = 47%, 153 KB/s], Decompressed: 1489
+2026-10-12T15:05:27.0162560Z Downloaded: 4287 file(s) [attempted 4287/8908 = 48%, 305 KB/s], Decompressed: 1489
+2026-10-12T15:05:27.1189295Z Downloaded: 4359 file(s) [attempted 4359/8908 = 48%, 108 KB/s], Decompressed: 1489
+2026-10-12T15:05:27.2268434Z Downloaded: 4434 file(s) [attempted 4434/8908 = 49%, 133 KB/s], Decompressed: 1489
+2026-10-12T15:05:27.3296755Z Downloaded: 4489 file(s) [attempted 4489/8908 = 50%, 423 KB/s], Decompressed: 1489
+2026-10-12T15:05:27.4306931Z Downloaded: 4547 file(s) [attempted 4547/8908 = 51%, 318 KB/s], Decompressed: 1489
+2026-10-12T15:05:27.5379054Z Downloaded: 4605 file(s) [attempted 4605/8908 = 51%, 302 KB/s], Decompressed: 1489
+2026-10-12T15:05:27.6376109Z Downloaded: 4662 file(s) [attempted 4662/8908 = 52%, 519 KB/s], Decompressed: 1489
+2026-10-12T15:05:27.7467482Z Downloaded: 4742 file(s) [attempted 4742/8908 = 53%, 194 KB/s], Decompressed: 1489
+2026-10-12T15:05:27.8481102Z Downloaded: 4799 file(s) [attempted 4799/8908 = 53%, 64 KB/s], Decompressed: 2631
+2026-10-12T15:05:27.9497107Z Downloaded: 4862 file(s) [attempted 4862/8908 = 54%, 818 KB/s], Decompressed: 2631
+2026-10-12T15:05:28.0657293Z Downloaded: 4927 file(s) [attempted 4927/8908 = 55%, 82 KB/s], Decompressed: 2631
+2026-10-12T15:05:28.1644056Z Downloaded: 4977 file(s) [attempted 4977/8908 = 55%, 235 KB/s], Decompressed: 2631
+2026-10-12T15:05:28.2758862Z Downloaded: 5016 file(s) [attempted 5016/8908 = 56%, 109 KB/s], Decompressed: 2631
+2026-10-12T15:05:28.3996974Z Downloaded: 5076 file(s) [attempted 5076/8908 = 56%, 324 KB/s], Decompressed: 2631
+2026-10-12T15:05:28.4987453Z Downloaded: 5083 file(s) [attempted 5083/8908 = 57%, 269 KB/s], Decompressed: 2631
+2026-10-12T15:05:28.6116976Z Downloaded: 5148 file(s) [attempted 5148/8908 = 57%, 347 KB/s], Decompressed: 2631
+2026-10-12T15:05:28.7173418Z Downloaded: 5220 file(s) [attempted 5220/8908 = 58%, 72 KB/s], Decompressed: 2631
+2026-10-12T15:05:28.8276477Z Downloaded: 5282 file(s) [attempted 5282/8908 = 59%, 309 KB/s], Decompressed: 2631
+2026-10-12T15:05:28.9246987Z Downloaded: 5335 file(s) [attempted 5335/8908 = 59%, 153 KB/s], Decompressed: 2631
+2026-10-12T15:05:29.0230662Z Downloaded: 5398 file(s) [attempted 5398/8908 = 60%, 503 KB/s], Decompressed: 2631
+2026-10-12T15:05:29.1296697Z Downloaded: 5472 file(s) [attempted 5472/8908 = 61%, 165 KB/s], Decompressed: 2631
+2026-10-12T15:05:29.2324349Z Downloaded: 5532 file(s) [attempted 5532/8908 = 62%, 86 KB/s], Decompressed: 2631
+2026-10-12T15:05:29.3333027Z Downloaded: 5592 file(s) [attempted 5592/8908 = 62%, 115 KB/s], Decompressed: 2631
+2026-10-12T15:05:29.4328703Z Downloaded: 5657 file(s) [attempted 5657/8908 = 63%, 396 KB/s], Decompressed: 2631
+2026-10-12T15:05:29.5359439Z Downloaded: 5720 file(s) [attempted 5720/8908 = 64%, 314 KB/s], Decompressed: 2631
+2026-10-12T15:05:29.6412806Z Downloaded: 5778 file(s) [attempted 5778/8908 = 64%, 1417 KB/s], Decompressed: 2631
+2026-10-12T15:05:29.7416272Z Downloaded: 5847 file(s) [attempted 5847/8908 = 65%, 291 KB/s], Decompressed: 2631
+2026-10-12T15:05:29.8507150Z Downloaded: 5910 file(s) [attempted 5910/8908 = 66%, 405 KB/s], Decompressed: 2631
+2026-10-12T15:05:29.9489739Z Downloaded: 5975 file(s) [attempted 5975/8908 = 67%, 396 KB/s], Decompressed: 2631
+2026-10-12T15:05:30.0503863Z Downloaded: 6030 file(s) [attempted 6030/8908 = 67%, 293 KB/s], Decompressed: 2631
+2026-10-12T15:05:30.1528107Z Downloaded: 6078 file(s) [attempted 6078/8908 = 68%, 167 KB/s], Decompressed: 2631
+2026-10-12T15:05:30.2537051Z Downloaded: 6131 file(s) [attempted 6131/8908 = 68%, 95 KB/s], Decompressed: 2631
+2026-10-12T15:05:30.3755191Z Downloaded: 6174 file(s) [attempted 6174/8908 = 69%, 638 KB/s], Decompressed: 2631
+2026-10-12T15:05:30.4772654Z Downloaded: 6215 file(s) [attempted 6215/8908 = 69%, 365 KB/s], Decompressed: 2631
+2026-10-12T15:05:30.5772166Z Downloaded: 6258 file(s) [attempted 6258/8908 = 70%, 37 KB/s], Decompressed: 2631
+2026-10-12T15:05:30.6797612Z Downloaded: 6326 file(s) [attempted 6326/8908 = 71%, 788 KB/s], Decompressed: 2631
+2026-10-12T15:05:30.7862321Z Downloaded: 6379 file(s) [attempted 6379/8908 = 71%, 70 KB/s], Decompressed: 2631
+2026-10-12T15:05:30.8921265Z Downloaded: 6434 file(s) [attempted 6434/8908 = 72%, 545 KB/s], Decompressed: 2631
+2026-10-12T15:05:30.9966787Z Downloaded: 6484 file(s) [attempted 6484/8908 = 72%, 629 KB/s], Decompressed: 2631
+2026-10-12T15:05:31.1098884Z Downloaded: 6547 file(s) [attempted 6547/8908 = 73%, 806 KB/s], Decompressed: 2631
+2026-10-12T15:05:31.2060660Z Downloaded: 6616 file(s) [attempted 6616/8908 = 74%, 187 KB/s], Decompressed: 2631
+2026-10-12T15:05:31.3065586Z Downloaded: 6684 file(s) [attempted 6684/8908 = 75%, 941 KB/s], Decompressed: 2631
+2026-10-12T15:05:31.4179532Z Downloaded: 6737 file(s) [attempted 6737/8908 = 75%, 247 KB/s], Decompressed: 2631
+2026-10-12T15:05:31.5194672Z Downloaded: 6797 file(s) [attempted 6797/8908 = 76%, 1101 KB/s], Decompressed: 2631
+2026-10-12T15:05:31.6216919Z Downloaded: 6871 file(s) [attempted 6871/8908 = 77%, 2680 KB/s], Decompressed: 2631
+2026-10-12T15:05:31.7281697Z Downloaded: 6936 file(s) [attempted 6936/8908 = 77%, 635 KB/s], Decompressed: 2631
+2026-10-12T15:05:31.8296730Z Downloaded: 6994 file(s) [attempted 6994/8908 = 78%, 344 KB/s], Decompressed: 2631
+2026-10-12T15:05:31.9369640Z Downloaded: 7056 file(s) [attempted 7056/8908 = 79%, 456 KB/s], Decompressed: 2631
+2026-10-12T15:05:32.0795504Z Downloaded: 7116 file(s) [attempted 7116/8908 = 79%, 90 KB/s], Decompressed: 2631
+2026-10-12T15:05:32.1786430Z Downloaded: 7169 file(s) [attempted 7169/8908 = 80%, 244 KB/s], Decompressed: 2631
+2026-10-12T15:05:32.2936717Z Downloaded: 7246 file(s) [attempted 7246/8908 = 81%, 1277 KB/s], Decompressed: 2631
+2026-10-12T15:05:32.4018512Z Downloaded: 7311 file(s) [attempted 7311/8908 = 82%, 400 KB/s], Decompressed: 2631
+2026-10-12T15:05:32.4995182Z Downloaded: 7342 file(s) [attempted 7342/8908 = 82%, 48 KB/s], Decompressed: 2631
+2026-10-12T15:05:32.5997882Z Downloaded: 7374 file(s) [attempted 7374/8908 = 82%, 789 KB/s], Decompressed: 2631
+2026-10-12T15:05:32.6999466Z Downloaded: 7433 file(s) [attempted 7433/8908 = 83%, 52 KB/s], Decompressed: 2631
+2026-10-12T15:05:32.8019105Z Downloaded: 7484 file(s) [attempted 7484/8908 = 84%, 473 KB/s], Decompressed: 2631
+2026-10-12T15:05:32.9294766Z Downloaded: 7547 file(s) [attempted 7547/8908 = 84%, 159 KB/s], Decompressed: 2631
+2026-10-12T15:05:33.0381582Z Downloaded: 7621 file(s) [attempted 7621/8908 = 85%, 167 KB/s], Decompressed: 2631
+2026-10-12T15:05:33.1544962Z Downloaded: 7674 file(s) [attempted 7674/8908 = 86%, 290 KB/s], Decompressed: 2631
+2026-10-12T15:05:33.2894853Z Downloaded: 7732 file(s) [attempted 7732/8908 = 86%, 1705 KB/s], Decompressed: 2631
+2026-10-12T15:05:33.3987507Z Downloaded: 7775 file(s) [attempted 7775/8908 = 87%, 101 KB/s], Decompressed: 2631
+2026-10-12T15:05:33.4996972Z Downloaded: 7826 file(s) [attempted 7826/8908 = 87%, 43 KB/s], Decompressed: 2631
+2026-10-12T15:05:33.6316825Z Downloaded: 7877 file(s) [attempted 7877/8908 = 88%, 1709 KB/s], Decompressed: 2631
+2026-10-12T15:05:33.7301210Z Downloaded: 7929 file(s) [attempted 7929/8908 = 89%, 292 KB/s], Decompressed: 2631
+2026-10-12T15:05:33.8476564Z Downloaded: 8020 file(s) [attempted 8020/8908 = 90%, 776 KB/s], Decompressed: 2631
+2026-10-12T15:05:33.9546795Z Downloaded: 8076 file(s) [attempted 8076/8908 = 90%, 931 KB/s], Decompressed: 2631
+2026-10-12T15:05:34.0549196Z Downloaded: 8124 file(s) [attempted 8124/8908 = 91%, 273 KB/s], Decompressed: 2631
+2026-10-12T15:05:34.1595522Z Downloaded: 8176 file(s) [attempted 8176/8908 = 91%, 62 KB/s], Decompressed: 2631
+2026-10-12T15:05:34.2769755Z Downloaded: 8232 file(s) [attempted 8232/8908 = 92%, 783 KB/s], Decompressed: 2631
+2026-10-12T15:05:34.3720109Z Downloaded: 8301 file(s) [attempted 8301/8908 = 93%, 499 KB/s], Decompressed: 2631
+2026-10-12T15:05:34.4729478Z Downloaded: 8359 file(s) [attempted 8359/8908 = 93%, 188 KB/s], Decompressed: 2631
+2026-10-12T15:05:34.5720819Z Downloaded: 8419 file(s) [attempted 8419/8908 = 94%, 128 KB/s], Decompressed: 2631
+2026-10-12T15:05:34.6751328Z Downloaded: 8491 file(s) [attempted 8491/8908 = 95%, 85 KB/s], Decompressed: 2631
+2026-10-12T15:05:34.7759896Z Downloaded: 8544 file(s) [attempted 8544/8908 = 95%, 670 KB/s], Decompressed: 2631
+2026-10-12T15:05:34.8796460Z Downloaded: 8592 file(s) [attempted 8592/8908 = 96%, 531 KB/s], Decompressed: 4787
+2026-10-12T15:05:34.9807169Z Downloaded: 8638 file(s) [attempted 8638/8908 = 96%, 1151 KB/s], Decompressed: 4787
+2026-10-12T15:05:35.0976810Z Downloaded: 8679 file(s) [attempted 8679/8908 = 97%, 224 KB/s], Decompressed: 4787
+2026-10-12T15:05:35.1986323Z Downloaded: 8717 file(s) [attempted 8717/8908 = 97%, 429 KB/s], Decompressed: 4787
+2026-10-12T15:05:35.3021507Z Downloaded: 8753 file(s) [attempted 8753/8908 = 98%, 289 KB/s], Decompressed: 4787
+2026-10-12T15:05:35.4173482Z Downloaded: 8794 file(s) [attempted 8794/8908 = 98%, 1123 KB/s], Decompressed: 4787
+2026-10-12T15:05:35.5180723Z Downloaded: 8825 file(s) [attempted 8825/8908 = 99%, 353 KB/s], Decompressed: 4787
+2026-10-12T15:05:35.6280199Z Downloaded: 8847 file(s) [attempted 8847/8908 = 99%, 319 KB/s], Decompressed: 4787
+2026-10-12T15:05:35.6794952Z Downloaded: 8876 file(s) [attempted 8876/8908 = 99%, 26 KB/s], Decompressed: 4787
+2026-10-12T15:05:35.6796331Z Downloaded: 8908 file(s) [attempted 8908/8908 = 100%, 26 KB/s], Decompressed: 4787
+2026-10-12T15:05:47.2140805Z Decompressed 8908 file(s)
+2026-10-12T15:05:47.2141405Z Already decompressed 8908 file(s)
+2026-10-12T15:05:47.2886782Z ##[group]Run actions/cache/restore@v4
+2026-10-12T15:05:47.2887068Z with:
+2026-10-12T15:05:47.2887281Z   path: lean/.lake/build
+2026-10-12T15:05:47.2887624Z   key: qubit-fc-00e82103c022243203f9bfc2da428cc32eea3c78-38265719873-1
+2026-10-12T15:05:47.2887996Z   fail-on-cache-miss: true
+2026-10-12T15:05:47.2888244Z   enableCrossOsArchive: false
+2026-10-12T15:05:47.2888488Z   lookup-only: false
+2026-10-12T15:05:47.2888701Z ##[endgroup]
+2026-10-12T15:05:47.3987472Z (node:3126) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-12T15:05:47.3988278Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-12T15:05:47.6808287Z Cache hit for: qubit-fc-00e82103c022243203f9bfc2da428cc32eea3c78-38265719873-1
+2026-10-12T15:05:47.6906067Z (node:3126) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-12T15:05:48.9749212Z Received 4194304 of 49983594 (8.4%), 4.0 MBs/sec
+2026-10-12T15:05:49.5164184Z Received 49983594 of 49983594 (100.0%), 30.9 MBs/sec
+2026-10-12T15:05:49.5166095Z Cache Size: ~48 MB (49983594 B)
+2026-10-12T15:05:49.5206358Z [command]/usr/bin/tar -xf /home/runner/work/_temp/4d4c8318-f57e-4424-8d9e-475efc9c4a80/cache.tzst -P -C /home/runner/work/qubit-strong-additivity/qubit-strong-additivity --use-compress-program unzstd
+2026-10-12T15:05:50.1789195Z Cache restored successfully
+2026-10-12T15:05:50.3882975Z Cache restored from key: qubit-fc-00e82103c022243203f9bfc2da428cc32eea3c78-38265719873-1
+2026-10-12T15:05:50.4808331Z ##[group]Run mkdir -p ../replay-receipt
+2026-10-12T15:05:50.4808864Z [36;1mmkdir -p ../replay-receipt[0m
+2026-10-12T15:05:50.4809751Z [36;1m/usr/bin/time -v lake env leanchecker --fresh QubitAdditivity > ../replay-receipt/replay.log 2> ../replay-receipt/time.log[0m
+2026-10-12T15:05:50.4810407Z [36;1mgrep -q 'Exit status: 0' ../replay-receipt/time.log[0m
+2026-10-12T15:05:50.4810814Z [36;1mprintf 'PASS\n' > ../replay-receipt/status.txt[0m
+2026-10-12T15:05:50.5833300Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-12T15:05:50.5833713Z ##[endgroup]
+2026-10-12T15:15:24.4221211Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+2026-10-12T15:15:24.4221634Z with:
+2026-10-12T15:15:24.4221854Z   name: replay-38265719873-1
+2026-10-12T15:15:24.4222117Z   path: replay-receipt/
+2026-10-12T15:15:24.4222352Z   retention-days: 90
+2026-10-12T15:15:24.4222582Z   if-no-files-found: warn
+2026-10-12T15:15:24.4222830Z   compression-level: 6
+2026-10-12T15:15:24.4223053Z   overwrite: false
+2026-10-12T15:15:24.4223280Z   include-hidden-files: false
+2026-10-12T15:15:24.4223731Z ##[endgroup]
+2026-10-12T15:15:24.5980636Z (node:3369) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-12T15:15:24.5981332Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-12T15:15:24.6034130Z With the provided path, there will be 3 files uploaded
+2026-10-12T15:15:24.6038946Z Artifact name is valid!
+2026-10-12T15:15:24.6039889Z Root directory input is valid!
+2026-10-12T15:15:24.9847921Z Beginning upload of artifact content to blob storage
+2026-10-12T15:15:25.0043981Z (node:3369) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-12T15:15:25.2808686Z Uploaded bytes 767
+2026-10-12T15:15:25.3589937Z Finished uploading artifact content to blob storage!
+2026-10-12T15:15:25.3590933Z SHA256 digest of uploaded artifact zip is ec0f5075cff83699d75ace1f4363c9f6c1e3f6f7a7bce8ace93568de1efed211
+2026-10-12T15:15:25.3592130Z Finalizing artifact upload
+2026-10-12T15:15:25.6636599Z Artifact replay-38265719873-1.zip successfully finalized. Artifact ID 11755144563
+2026-10-12T15:15:25.6637541Z Artifact replay-38265719873-1 has been successfully uploaded! Final size is 767 bytes. Artifact ID is 11755144563
+2026-10-12T15:15:25.6643604Z Artifact download URL: https://github.com/KitaKen1/qubit-strong-additivity/actions/runs/38265719873/artifacts/11755144563
+2026-10-12T15:15:25.6846391Z Post job cleanup.
+2026-10-12T15:15:25.7697764Z [command]/usr/bin/git version
+2026-10-12T15:15:25.7734888Z git version 2.55.0
+2026-10-12T15:15:25.7770580Z Temporarily overriding HOME='/home/runner/work/_temp/7a8edb8c-f3d4-4d90-8e41-6dbc99a41239' before making global git config changes
+2026-10-12T15:15:25.7771902Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-12T15:15:25.7776515Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/qubit-strong-additivity/qubit-strong-additivity
+2026-10-12T15:15:25.7813283Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-12T15:15:25.7870107Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-12T15:15:25.8113736Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-12T15:15:25.8145576Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-12T15:15:25.8378562Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-12T15:15:25.8409268Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-12T15:15:25.8776497Z Cleaning up orphan processes
+2026-10-12T15:15:25.9189431Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/cache/restore@v4, actions/checkout@11d5960a326750d5838078e36cf38b85af677262, actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

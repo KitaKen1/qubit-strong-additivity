@@ -1,0 +1,24 @@
+﻿2026-10-12T15:02:37.7168076Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+2026-10-12T15:02:37.7168852Z with:
+2026-10-12T15:02:37.7169212Z   name: build-38265719873-1
+2026-10-12T15:02:37.7169664Z   path: build-receipt/
+2026-10-12T15:02:37.7170079Z   retention-days: 90
+2026-10-12T15:02:37.7170483Z   if-no-files-found: error
+2026-10-12T15:02:37.7170922Z   compression-level: 6
+2026-10-12T15:02:37.7171316Z   overwrite: false
+2026-10-12T15:02:37.7171705Z   include-hidden-files: false
+2026-10-12T15:02:37.7172151Z ##[endgroup]
+2026-10-12T15:02:37.9032483Z (node:4505) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-12T15:02:37.9033544Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-12T15:02:37.9099395Z With the provided path, there will be 4 files uploaded
+2026-10-12T15:02:37.9104997Z Artifact name is valid!
+2026-10-12T15:02:37.9105918Z Root directory input is valid!
+2026-10-12T15:02:38.2174923Z Beginning upload of artifact content to blob storage
+2026-10-12T15:02:38.2510841Z (node:4505) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-12T15:02:38.4331514Z Uploaded bytes 18789
+2026-10-12T15:02:38.4820824Z Finished uploading artifact content to blob storage!
+2026-10-12T15:02:38.4822449Z SHA256 digest of uploaded artifact zip is 5f31e10a5945111765cbe88216302ad33b4219aef54722ebb88fb2a78bfaeaff
+2026-10-12T15:02:38.4824091Z Finalizing artifact upload
+2026-10-12T15:02:38.7533951Z Artifact build-38265719873-1.zip successfully finalized. Artifact ID 11754818666
+2026-10-12T15:02:38.7535407Z Artifact build-38265719873-1 has been successfully uploaded! Final size is 18789 bytes. Artifact ID is 11754818666
+2026-10-12T15:02:38.7542870Z Artifact download URL: https://github.com/KitaKen1/qubit-strong-additivity/actions/runs/38265719873/artifacts/11754818666

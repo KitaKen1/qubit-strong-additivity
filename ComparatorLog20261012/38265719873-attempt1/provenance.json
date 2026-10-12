@@ -1,0 +1,42 @@
+{
+  "repository": "KitaKen1/qubit-strong-additivity",
+  "run_id": 38265719873,
+  "run_attempt": 1,
+  "proof_commit": "36cfa17e849e4206fbc6aff30efef414e9c85cb6",
+  "tested_commit": "00e82103c022243203f9bfc2da428cc32eea3c78",
+  "archive_commit": null,
+  "run_url": "https://github.com/KitaKen1/qubit-strong-additivity/actions/runs/38265719873",
+  "conclusion": "success",
+  "artifacts": [
+    {
+      "id": 11755807213,
+      "name": "comparator-38265719873-1",
+      "file": "artifacts/11755807213-comparator-38265719873-1.zip",
+      "github_digest": "sha256:bb7ad6fbab36a677c190dfd2935308322fe8fb6586146198990771cf45ba0e2b",
+      "sha256": "bb7ad6fbab36a677c190dfd2935308322fe8fb6586146198990771cf45ba0e2b",
+      "digest_matches": true,
+      "expires_at": "2027-01-10T14:49:30Z"
+    },
+    {
+      "id": 11755144563,
+      "name": "replay-38265719873-1",
+      "file": "artifacts/11755144563-replay-38265719873-1.zip",
+      "github_digest": "sha256:ec0f5075cff83699d75ace1f4363c9f6c1e3f6f7a7bce8ace93568de1efed211",
+      "sha256": "ec0f5075cff83699d75ace1f4363c9f6c1e3f6f7a7bce8ace93568de1efed211",
+      "digest_matches": true,
+      "expires_at": "2027-01-10T14:49:30Z"
+    },
+    {
+      "id": 11754818666,
+      "name": "build-38265719873-1",
+      "file": "artifacts/11754818666-build-38265719873-1.zip",
+      "github_digest": "sha256:5f31e10a5945111765cbe88216302ad33b4219aef54722ebb88fb2a78bfaeaff",
+      "sha256": "5f31e10a5945111765cbe88216302ad33b4219aef54722ebb88fb2a78bfaeaff",
+      "digest_matches": true,
+      "expires_at": "2027-01-10T14:49:30Z"
+    }
+  ],
+  "retrieved_at_utc": "2026-10-12T15:16:30.775675+00:00",
+  "note": "API metadata, original ZIPs, full job logs and all extracted receipts preserved. SHA256SUMS are local file identities, not a signed GitHub attestation. Record the archive commit after committing.",
+  "target_scope": "definitions and both statements copied from the proposed FC draft; FC import, module/public declarations and review attributes removed"
+}

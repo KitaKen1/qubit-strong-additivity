@@ -1,0 +1,12 @@
+﻿2026-10-12T14:53:05.3014828Z ##[group]Run actions/cache/restore@v4
+2026-10-12T14:53:05.3015146Z with:
+2026-10-12T14:53:05.3015349Z   path: lean/.lake/build
+2026-10-12T14:53:05.3015686Z   key: qubit-fc-00e82103c022243203f9bfc2da428cc32eea3c78-38265719873-1
+2026-10-12T14:53:05.3016142Z   restore-keys: qubit-fc-00e82103c022243203f9bfc2da428cc32eea3c78-
+2026-10-12T14:53:05.3016497Z   enableCrossOsArchive: false
+2026-10-12T14:53:05.3016743Z   fail-on-cache-miss: false
+2026-10-12T14:53:05.3016968Z   lookup-only: false
+2026-10-12T14:53:05.3017174Z ##[endgroup]
+2026-10-12T14:53:05.4171136Z (node:3055) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-12T14:53:05.4172495Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-12T14:53:05.5818555Z Cache not found for input keys: qubit-fc-00e82103c022243203f9bfc2da428cc32eea3c78-38265719873-1, qubit-fc-00e82103c022243203f9bfc2da428cc32eea3c78-

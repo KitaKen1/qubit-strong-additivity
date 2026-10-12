@@ -1,0 +1,31 @@
+{
+  "proof_repository": "KitaKen1/qubit-strong-additivity",
+  "proof_commit": "36cfa17e849e4206fbc6aff30efef414e9c85cb6",
+  "proof_commit_status": "published on main; the proof files are fixed by proof_release_manifest_sha256",
+  "proof_release_manifest": "leanWithoutComparator/sources.json",
+  "proof_release_manifest_sha256": "6fbf708c6cbeef27e7977a145237e076bf234603611a414f60f822e631b324ae",
+  "proof_source_lakefile_sha256": "c8e348b71f71ac3dd9aa6cdf6f1420153e4973fd799ccca0349801a2a55a0ca2",
+  "fc_repository": "google-deepmind/formal-conjectures",
+  "fc_target_commit": null,
+  "fc_pr": null,
+  "fc_target_status": "local proposed draft; not submitted",
+  "fc_draft_path": "FClikelean/QubitHolevoAdditivity.lean",
+  "fc_draft_sha256": "25103663d9d40f4a9bd3497a4e16ddda35b86c540f92cec66751d9b8e1d81030",
+  "fc_upstream_toolchain": "leanprover/lean4:v4.33.1",
+  "challenge_kind": "definitions and both statements copied from the proposed FC draft; FC import, module/public declarations and review attributes removed",
+  "challenge_sha256": "f78ba3b64780d92ed95b19fbc15e251b86c937eedea3552d38cc0261b1e2f0df",
+  "config_sha256": "b35120d06b23d487c8c2b121ccf793e5a957575f97239b7eb6493c31e052c5b9",
+  "solution_sha256": "fe5277d9ac4adb21d9c4f5a1ef86cacbb960879eb8ac8bb674939ab0b9c51917",
+  "definitions_sha256": "905f72843666e07f6f6efafafea13827dfc2e7f688df956d9b3f7537c1629295",
+  "audit_sha256": "0939ba20bfcbea44cba93e43c298f58006dfb18f8ee47fea852ecb685db7580a",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "comparator_commit": "ca04cfc72b550331658ec314bf47685281bfd4bf",
+  "landrun_commit": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4",
+  "lean4export_commit": "076e8e57707e813375e8f9da8bf989799ace9680",
+  "targets": [
+    "QubitHolevo.strong_additivity",
+    "QubitHolevo.power_additivity"
+  ],
+  "fc_checkout_compatibility": "pending: upstream FC is Lean 4.33.1; this proof is Lean 4.34.1"
+}

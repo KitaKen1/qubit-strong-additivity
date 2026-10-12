@@ -1,0 +1,7 @@
+﻿2026-10-12T15:05:50.4808314Z ##[group]Run mkdir -p ../replay-receipt
+2026-10-12T15:05:50.4808859Z [36;1mmkdir -p ../replay-receipt[0m
+2026-10-12T15:05:50.4809748Z [36;1m/usr/bin/time -v lake env leanchecker --fresh QubitAdditivity > ../replay-receipt/replay.log 2> ../replay-receipt/time.log[0m
+2026-10-12T15:05:50.4810404Z [36;1mgrep -q 'Exit status: 0' ../replay-receipt/time.log[0m
+2026-10-12T15:05:50.4810811Z [36;1mprintf 'PASS\n' > ../replay-receipt/status.txt[0m
+2026-10-12T15:05:50.5833281Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-12T15:05:50.5833710Z ##[endgroup]

@@ -1,7 +1,9 @@
 # Qubit Holevo additivity proposed FC target verification
 
-The FC-target verification described here has not been run on public `main` yet. No public run
-records exist, and no Formal Conjectures PR has been created. The setup follows the verification of
+The FC-target verification described here passed on public `main` on 12 October 2026 (UTC):
+[run 38265719873](https://github.com/KitaKen1/qubit-strong-additivity/actions/runs/38265719873), tested commit `00e8210`. Its records are kept in
+[ComparatorLog20261012/38265719873-attempt1/](../ComparatorLog20261012/38265719873-attempt1/README.md). No Formal Conjectures PR has been created.
+The setup follows the verification of
 [KitaKen1/smooth-isometric-embeddings-r4](https://github.com/KitaKen1/smooth-isometric-embeddings-r4/tree/main/comparator),
 which uses the same Lean and Mathlib versions.
 

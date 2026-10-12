@@ -1,0 +1,10 @@
+﻿2026-10-12T15:08:06.4944578Z ##[group]Run lake build ComparatorChallenges
+2026-10-12T15:08:06.4945085Z [36;1mlake build ComparatorChallenges[0m
+2026-10-12T15:08:06.4945504Z [36;1mmkdir -p "$RUNNER_TEMP/trusted-challenge"[0m
+2026-10-12T15:08:06.4946386Z [36;1mfind .lake/build -type f -path '*ComparatorChallenges*' -print0 | tar --null -T - -cf "$RUNNER_TEMP/trusted-challenge/files.tar"[0m
+2026-10-12T15:08:06.5464855Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-12T15:08:06.5465504Z ##[endgroup]
+2026-10-12T15:08:10.5819081Z ⚠ [3097/3098] Built ComparatorChallenges.QubitHolevoAdditivity (2.1s)
+2026-10-12T15:08:10.5820347Z warning: ComparatorChallenges/QubitHolevoAdditivity.lean:50:8: declaration uses `sorry`
+2026-10-12T15:08:10.5821600Z warning: ComparatorChallenges/QubitHolevoAdditivity.lean:58:8: declaration uses `sorry`
+2026-10-12T15:08:10.5868576Z Build completed successfully (3098 jobs).

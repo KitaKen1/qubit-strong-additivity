@@ -1,0 +1,1628 @@
+﻿2026-10-12T15:09:08.0870938Z ##[group]Run bash comparator/run-check.sh
+2026-10-12T15:09:08.0871405Z [36;1mbash comparator/run-check.sh[0m
+2026-10-12T15:09:08.0903929Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-12T15:09:08.0904450Z env:
+2026-10-12T15:09:08.0904815Z   COMPARATOR_TOOLS: /home/runner/work/_temp/comparator-tools
+2026-10-12T15:09:08.0905229Z ##[endgroup]
+2026-10-12T15:09:08.2402001Z Input check passed: 2 targets, 154 unchanged release inputs; FC checkout compatibility pending.
+2026-10-12T15:09:10.3774461Z Running as unit: run-u17.service
+2026-10-12T15:09:11.2253507Z Building ComparatorChallenges.QubitHolevoAdditivity
+2026-10-12T15:09:15.7100884Z ⚠ [3097/3097] Replayed ComparatorChallenges.QubitHolevoAdditivity
+2026-10-12T15:09:15.7101531Z warning: ComparatorChallenges/QubitHolevoAdditivity.lean:50:8: declaration uses `sorry`
+2026-10-12T15:09:15.7102103Z warning: ComparatorChallenges/QubitHolevoAdditivity.lean:58:8: declaration uses `sorry`
+2026-10-12T15:09:15.7145630Z Build completed successfully (3097 jobs).
+2026-10-12T15:09:30.8750074Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, QubitHolevo.strong_additivity, QubitHolevo.power_additivity, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from ComparatorChallenges.QubitHolevoAdditivity
+2026-10-12T15:09:30.8751620Z Building QubitAdditivity.FCPresentation
+2026-10-12T15:09:33.5668986Z ⚠ [3274/3361] Replayed QubitAdditivity.Entropy
+2026-10-12T15:09:33.5669915Z warning: QubitAdditivity/Entropy.lean:16:2: try 'simp' instead of 'simpa'
+2026-10-12T15:09:33.5670483Z 
+2026-10-12T15:09:33.5671400Z Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+2026-10-12T15:09:33.5672270Z ⚠ [3285/3361] Replayed QubitAdditivity.Partner
+2026-10-12T15:09:33.5673109Z warning: QubitAdditivity/Partner.lean:46:0: automatically included section variable(s) unused in theorem `QubitAdditivity.of_kraus_vecMulVec`:
+2026-10-12T15:09:33.5673951Z   [Fintype dOut]
+2026-10-12T15:09:33.5674242Z   [DecidableEq dIn]
+2026-10-12T15:09:33.5674839Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5675598Z   omit [Fintype dOut] [DecidableEq dIn] in theorem ...
+2026-10-12T15:09:33.5675819Z 
+2026-10-12T15:09:33.5676235Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5677008Z warning: QubitAdditivity/Partner.lean:88:33: This simp argument is unused:
+2026-10-12T15:09:33.5677397Z   LinearMap.coe_sum
+2026-10-12T15:09:33.5677548Z 
+2026-10-12T15:09:33.5677672Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5678210Z   [apply] simp only [MatrixMap.of_kraus, Finset.sum_apply, LinearMap.coe_mk, AddHom.coe_mk, Fintype.sum_sum_type,
+2026-10-12T15:09:33.5678782Z     Fintype.univ_punit, Finset.sum_singleton, kraus, rows_conj]
+2026-10-12T15:09:33.5679029Z 
+2026-10-12T15:09:33.5679240Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5679700Z warning: QubitAdditivity/Partner.lean:88:52: This simp argument is unused:
+2026-10-12T15:09:33.5680073Z   Finset.sum_apply
+2026-10-12T15:09:33.5680195Z 
+2026-10-12T15:09:33.5680321Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5680840Z   [apply] simp only [MatrixMap.of_kraus, LinearMap.coe_sum, LinearMap.coe_mk, AddHom.coe_mk, Fintype.sum_sum_type,
+2026-10-12T15:09:33.5681653Z     Fintype.univ_punit, Finset.sum_singleton, kraus, rows_conj]
+2026-10-12T15:09:33.5681884Z 
+2026-10-12T15:09:33.5682104Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5682575Z warning: QubitAdditivity/Partner.lean:88:70: This simp argument is unused:
+2026-10-12T15:09:33.5682947Z   LinearMap.coe_mk
+2026-10-12T15:09:33.5683081Z 
+2026-10-12T15:09:33.5683206Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5684020Z   [apply] simp only [MatrixMap.of_kraus, LinearMap.coe_sum, Finset.sum_apply, AddHom.coe_mk, Fintype.sum_sum_type,
+2026-10-12T15:09:33.5684589Z     Fintype.univ_punit, Finset.sum_singleton, kraus, rows_conj]
+2026-10-12T15:09:33.5684823Z 
+2026-10-12T15:09:33.5685038Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5685494Z warning: QubitAdditivity/Partner.lean:89:4: This simp argument is unused:
+2026-10-12T15:09:33.5686138Z   AddHom.coe_mk
+2026-10-12T15:09:33.5686290Z 
+2026-10-12T15:09:33.5686407Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5686937Z   [apply] simp only [MatrixMap.of_kraus, LinearMap.coe_sum, Finset.sum_apply, LinearMap.coe_mk, Fintype.sum_sum_type,
+2026-10-12T15:09:33.5687508Z     Fintype.univ_punit, Finset.sum_singleton, kraus, rows_conj]
+2026-10-12T15:09:33.5687737Z 
+2026-10-12T15:09:33.5687941Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5688673Z warning: QubitAdditivity/Partner.lean:175:0: automatically included section variable(s) unused in theorem `QubitAdditivity.QubitNormalForm.jointColumns_eq`:
+2026-10-12T15:09:33.5689282Z   [DecidableEq dB]
+2026-10-12T15:09:33.5689501Z   [Fintype eB]
+2026-10-12T15:09:33.5689714Z   [DecidableEq eB]
+2026-10-12T15:09:33.5690002Z   [Fintype κ]
+2026-10-12T15:09:33.5690429Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5691094Z   omit [DecidableEq dB] [Fintype eB] [DecidableEq eB] [Fintype κ] in theorem ...
+2026-10-12T15:09:33.5691373Z 
+2026-10-12T15:09:33.5691590Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5692070Z warning: QubitAdditivity/Partner.lean:182:56: This simp argument is unused:
+2026-10-12T15:09:33.5692431Z   Finset.mul_sum
+2026-10-12T15:09:33.5692556Z 
+2026-10-12T15:09:33.5692669Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5693182Z   [apply] simp [krausColumns, jointKraus, tc4At, tc4Matrix, rowEquiv, colEquiv, blockA, blockB, blockC, blockD,
+2026-10-12T15:09:33.5693877Z     branchBlock, branch, kraus, rows_zero, rows_one, mulVec, dotProduct, Matrix.kroneckerMap_apply,
+2026-10-12T15:09:33.5694322Z     Fintype.sum_prod_type]
+2026-10-12T15:09:33.5694472Z 
+2026-10-12T15:09:33.5694675Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5695399Z warning: QubitAdditivity/Partner.lean:187:0: automatically included section variable(s) unused in theorem `QubitAdditivity.QubitNormalForm.jointKraus_eq_kron`:
+2026-10-12T15:09:33.5696015Z   [DecidableEq eB]
+2026-10-12T15:09:33.5697246Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5698006Z   omit [DecidableEq eB] in theorem ...
+2026-10-12T15:09:33.5698262Z 
+2026-10-12T15:09:33.5698607Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5699613Z warning: QubitAdditivity/Partner.lean:215:0: automatically included section variable(s) unused in theorem `QubitAdditivity.vecMass_nonneg`:
+2026-10-12T15:09:33.5700152Z   [DecidableEq dB]
+2026-10-12T15:09:33.5700585Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5701074Z   omit [DecidableEq dB] in theorem ...
+2026-10-12T15:09:33.5701237Z 
+2026-10-12T15:09:33.5701453Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5702299Z warning: QubitAdditivity/Partner.lean:225:18: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+2026-10-12T15:09:33.5703041Z warning: QubitAdditivity/Partner.lean:248:0: automatically included section variable(s) unused in theorem `QubitAdditivity.branchBlock_gram`:
+2026-10-12T15:09:33.5703588Z   [DecidableEq eB]
+2026-10-12T15:09:33.5704021Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5704604Z   omit [DecidableEq eB] in theorem ...
+2026-10-12T15:09:33.5704769Z 
+2026-10-12T15:09:33.5704987Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5705664Z warning: QubitAdditivity/Partner.lean:347:0: automatically included section variable(s) unused in theorem `QubitAdditivity.sum_branch_outer`:
+2026-10-12T15:09:33.5706358Z   [DecidableEq dB]
+2026-10-12T15:09:33.5706813Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5707316Z   omit [DecidableEq dB] in theorem ...
+2026-10-12T15:09:33.5707489Z 
+2026-10-12T15:09:33.5707700Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5708205Z ⚠ [3287/3361] Replayed QubitAdditivity.NormalForm
+2026-10-12T15:09:33.5708614Z warning: QubitAdditivity/NormalForm.lean:29:6: This simp argument is unused:
+2026-10-12T15:09:33.5708993Z   Complex.star_def
+2026-10-12T15:09:33.5709125Z 
+2026-10-12T15:09:33.5709247Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5709681Z   [apply] simp [rotU, Matrix.mul_apply, Fin.sum_univ_two, Matrix.conjTranspose_apply]
+2026-10-12T15:09:33.5709966Z 
+2026-10-12T15:09:33.5710179Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5710730Z warning: QubitAdditivity/NormalForm.lean:134:71: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.5711081Z 
+2026-10-12T15:09:33.5711310Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.5711862Z warning: QubitAdditivity/NormalForm.lean:137:74: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.5712201Z 
+2026-10-12T15:09:33.5712423Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.5712904Z ⚠ [3288/3361] Replayed QubitAdditivity.NormalSchur
+2026-10-12T15:09:33.5713321Z warning: QubitAdditivity/NormalSchur.lean:41:55: This simp argument is unused:
+2026-10-12T15:09:33.5713703Z   Matrix.one_apply
+2026-10-12T15:09:33.5713833Z 
+2026-10-12T15:09:33.5713948Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5714279Z   [apply] simp [scalarMatrix, Complex.real_smul]
+2026-10-12T15:09:33.5714469Z 
+2026-10-12T15:09:33.5714681Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5715219Z warning: QubitAdditivity/NormalSchur.lean:41:16: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.5715557Z 
+2026-10-12T15:09:33.5715780Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.5716620Z warning: QubitAdditivity/NormalSchur.lean:41:32: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.5716959Z 
+2026-10-12T15:09:33.5717171Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.5717662Z warning: QubitAdditivity/NormalSchur.lean:49:38: This simp argument is unused:
+2026-10-12T15:09:33.5718046Z   Fin.sum_univ_one
+2026-10-12T15:09:33.5718167Z 
+2026-10-12T15:09:33.5718291Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5718754Z   [apply] simp [scalarMatrix, Matrix.mul_apply, Matrix.one_apply, Complex.ofReal_ne_zero.mpr hd]
+2026-10-12T15:09:33.5719083Z 
+2026-10-12T15:09:33.5719293Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5719841Z warning: QubitAdditivity/NormalSchur.lean:49:55: This simp argument is unused:
+2026-10-12T15:09:33.5720212Z   Matrix.one_apply
+2026-10-12T15:09:33.5720341Z 
+2026-10-12T15:09:33.5720455Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5720922Z   [apply] simp [scalarMatrix, Matrix.mul_apply, Fin.sum_univ_one, Complex.ofReal_ne_zero.mpr hd]
+2026-10-12T15:09:33.5721238Z 
+2026-10-12T15:09:33.5721522Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5722048Z warning: QubitAdditivity/NormalSchur.lean:48:14: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.5722384Z 
+2026-10-12T15:09:33.5722606Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.5723146Z warning: QubitAdditivity/NormalSchur.lean:55:14: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.5723467Z 
+2026-10-12T15:09:33.5723680Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.5724431Z warning: QubitAdditivity/NormalSchur.lean:67:0: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalSchur.column_scalar_sandwich`:
+2026-10-12T15:09:33.5725043Z   [Fintype n]
+2026-10-12T15:09:33.5725255Z   [DecidableEq n]
+2026-10-12T15:09:33.5725695Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5726305Z   omit [Fintype n] [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5726503Z 
+2026-10-12T15:09:33.5726724Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5727212Z warning: QubitAdditivity/NormalSchur.lean:71:4: This simp argument is unused:
+2026-10-12T15:09:33.5727581Z   Fin.sum_univ_one
+2026-10-12T15:09:33.5727715Z 
+2026-10-12T15:09:33.5727837Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5728316Z   [apply] simp [vectorColumn, scalarMatrix, outerM, Matrix.mul_apply, Matrix.conjTranspose_apply,
+2026-10-12T15:09:33.5728816Z     Matrix.vecMulVec_apply, Complex.real_smul]
+2026-10-12T15:09:33.5729009Z 
+2026-10-12T15:09:33.5729214Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5729642Z warning: QubitAdditivity/NormalSchur.lean:77:2: Try this: 
+2026-10-12T15:09:33.5734353Z   letI̵
+2026-10-12T15:09:33.5734513Z 
+2026-10-12T15:09:33.5734709Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T15:09:33.5735140Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T15:09:33.5735582Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T15:09:33.5735814Z 
+2026-10-12T15:09:33.5736036Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T15:09:33.5736676Z warning: QubitAdditivity/NormalSchur.lean:85:2: Try this: 
+2026-10-12T15:09:33.5737042Z   letI̵
+2026-10-12T15:09:33.5737150Z 
+2026-10-12T15:09:33.5737333Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T15:09:33.5737738Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T15:09:33.5738166Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T15:09:33.5738403Z 
+2026-10-12T15:09:33.5738618Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T15:09:33.5739344Z warning: QubitAdditivity/NormalSchur.lean:91:0: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalSchur.outer_sandwich`:
+2026-10-12T15:09:33.5739921Z   [Fintype m]
+2026-10-12T15:09:33.5740144Z   [DecidableEq m]
+2026-10-12T15:09:33.5740584Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5741108Z   omit [Fintype m] [DecidableEq m] in theorem ...
+2026-10-12T15:09:33.5741305Z 
+2026-10-12T15:09:33.5741517Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5742115Z warning: QubitAdditivity/NormalSchur.lean:103:2: Try this: 
+2026-10-12T15:09:33.5742437Z   letI̵
+2026-10-12T15:09:33.5742550Z 
+2026-10-12T15:09:33.5742711Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T15:09:33.5743130Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T15:09:33.5743571Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T15:09:33.5743955Z 
+2026-10-12T15:09:33.5744169Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T15:09:33.5744907Z warning: QubitAdditivity/NormalSchur.lean:113:0: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalSchur.outerM_smul`:
+2026-10-12T15:09:33.5746037Z   [Fintype n]
+2026-10-12T15:09:33.5746456Z   [DecidableEq n]
+2026-10-12T15:09:33.5746905Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5747432Z   omit [Fintype n] [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5747628Z 
+2026-10-12T15:09:33.5747851Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5748403Z warning: QubitAdditivity/NormalSchur.lean:115:65: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.5748743Z 
+2026-10-12T15:09:33.5748966Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.5749719Z warning: QubitAdditivity/NormalSchur.lean:117:0: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalSchur.cross_scaled_inverse_sqrt`:
+2026-10-12T15:09:33.5750341Z   [Fintype n]
+2026-10-12T15:09:33.5750547Z   [Fintype m]
+2026-10-12T15:09:33.5750751Z   [DecidableEq n]
+2026-10-12T15:09:33.5750966Z   [DecidableEq m]
+2026-10-12T15:09:33.5751399Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5752000Z   omit [Fintype n] [Fintype m] [DecidableEq n] [DecidableEq m] in theorem ...
+2026-10-12T15:09:33.5752257Z 
+2026-10-12T15:09:33.5752621Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5753149Z ⚠ [3289/3361] Replayed QubitAdditivity.NormalCommonBranch
+2026-10-12T15:09:33.5753882Z warning: QubitAdditivity/NormalCommonBranch.lean:43:0: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalCommonBranch.posDef_add_identity`:
+2026-10-12T15:09:33.5754538Z   [Fintype n]
+2026-10-12T15:09:33.5754962Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5755458Z   omit [Fintype n] in theorem ...
+2026-10-12T15:09:33.5755615Z 
+2026-10-12T15:09:33.5755833Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5756704Z warning: QubitAdditivity/NormalCommonBranch.lean:48:0: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalCommonBranch.fromBlocks_add_identity`:
+2026-10-12T15:09:33.5757370Z   [Fintype n]
+2026-10-12T15:09:33.5757569Z   [Fintype m]
+2026-10-12T15:09:33.5757981Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5758481Z   omit [Fintype n] [Fintype m] in theorem ...
+2026-10-12T15:09:33.5758672Z 
+2026-10-12T15:09:33.5758891Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5759361Z ⚠ [3290/3361] Replayed QubitAdditivity.NormalKraus
+2026-10-12T15:09:33.5759993Z warning: QubitAdditivity/NormalKraus.lean:20:0: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalKraus.sum_outer_columns`:
+2026-10-12T15:09:33.5760574Z   [Fintype n]
+2026-10-12T15:09:33.5760777Z   [DecidableEq n]
+2026-10-12T15:09:33.5761207Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5761826Z   omit [Fintype n] [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5762019Z 
+2026-10-12T15:09:33.5762236Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5762710Z ⚠ [3291/3361] Replayed QubitAdditivity.NormalChannel
+2026-10-12T15:09:33.5763387Z warning: QubitAdditivity/NormalChannel.lean:19:0: automatically included section variable(s) unused in theorem `QubitAdditivity.NormalChannel.bform_trace_outer`:
+2026-10-12T15:09:33.5764088Z   [DecidableEq n]
+2026-10-12T15:09:33.5764580Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5765343Z   omit [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5765557Z 
+2026-10-12T15:09:33.5765845Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5766763Z warning: QubitAdditivity/NormalChannel.lean:72:52: This simp argument is unused:
+2026-10-12T15:09:33.5767331Z   Matrix.zero_vecMulVec
+2026-10-12T15:09:33.5767542Z 
+2026-10-12T15:09:33.5767730Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5768351Z   [apply] simp only [outerM, star_zero, Matrix.vecMulVec_zero, add_zero, zero_add, Finset.sum_const_zero]
+2026-10-12T15:09:33.5768768Z 
+2026-10-12T15:09:33.5769014Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5769639Z warning: QubitAdditivity/NormalChannel.lean:81:22: This simp argument is unused:
+2026-10-12T15:09:33.5770165Z   sum_bform_trace
+2026-10-12T15:09:33.5770353Z 
+2026-10-12T15:09:33.5770506Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5771143Z   [apply] simp only [Matrix.mul_add, Matrix.trace_add, Matrix.conjTranspose_vecMulVec, star_star, bform_trace_outer,
+2026-10-12T15:09:33.5771875Z     crossMat, massMat, outerM, Matrix.mul_sum, Matrix.trace_sum]
+2026-10-12T15:09:33.5772141Z 
+2026-10-12T15:09:33.5772406Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5773049Z warning: QubitAdditivity/NormalChannel.lean:81:38: This simp argument is unused:
+2026-10-12T15:09:33.5773581Z   crossMat
+2026-10-12T15:09:33.5773761Z 
+2026-10-12T15:09:33.5773919Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5774587Z   [apply] simp only [Matrix.mul_add, Matrix.trace_add, Matrix.conjTranspose_vecMulVec, star_star, bform_trace_outer,
+2026-10-12T15:09:33.5775322Z     sum_bform_trace, massMat, outerM, Matrix.mul_sum, Matrix.trace_sum]
+2026-10-12T15:09:33.5775653Z 
+2026-10-12T15:09:33.5775895Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5776706Z ⚠ [3292/3361] Replayed QubitAdditivity.RotationInvariant
+2026-10-12T15:09:33.5777549Z warning: QubitAdditivity/RotationInvariant.lean:42:0: automatically included section variable(s) unused in theorem `QubitAdditivity.RotationInvariant.prod_compose`:
+2026-10-12T15:09:33.5778301Z   [DecidableEq h]
+2026-10-12T15:09:33.5778869Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5779521Z   omit [DecidableEq h] in theorem ...
+2026-10-12T15:09:33.5779728Z 
+2026-10-12T15:09:33.5779998Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5780585Z ⚠ [3294/3361] Replayed QubitAdditivity.BetaCore
+2026-10-12T15:09:33.5781375Z warning: QubitAdditivity/BetaCore.lean:23:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaCore.stationaryGram_identity`:
+2026-10-12T15:09:33.5782106Z   [DecidableEq n]
+2026-10-12T15:09:33.5782639Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5783270Z   omit [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5783484Z 
+2026-10-12T15:09:33.5783765Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5784451Z ⚠ [3295/3361] Replayed QubitAdditivity.BetaOperators
+2026-10-12T15:09:33.5785239Z warning: QubitAdditivity/BetaOperators.lean:51:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaOperators.left_conjTranspose`:
+2026-10-12T15:09:33.5785982Z   [Fintype n]
+2026-10-12T15:09:33.5786723Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5787411Z   omit [Fintype n] in theorem ...
+2026-10-12T15:09:33.5787665Z 
+2026-10-12T15:09:33.5787934Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5788806Z warning: QubitAdditivity/BetaOperators.lean:54:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaOperators.right_conjTranspose`:
+2026-10-12T15:09:33.5789508Z   [Fintype n]
+2026-10-12T15:09:33.5790042Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5790710Z   omit [Fintype n] in theorem ...
+2026-10-12T15:09:33.5790902Z 
+2026-10-12T15:09:33.5791168Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5792042Z warning: QubitAdditivity/BetaOperators.lean:69:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaOperators.generator_add_scalar`:
+2026-10-12T15:09:33.5792776Z   [Fintype n]
+2026-10-12T15:09:33.5793330Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5793938Z   omit [Fintype n] in theorem ...
+2026-10-12T15:09:33.5794161Z 
+2026-10-12T15:09:33.5794391Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5795337Z warning: QubitAdditivity/BetaOperators.lean:81:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaOperators.coordinateInclusion_compression`:
+2026-10-12T15:09:33.5796168Z   [Fintype m]
+2026-10-12T15:09:33.5796496Z   [DecidableEq m]
+2026-10-12T15:09:33.5797086Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5797709Z   omit [Fintype m] [DecidableEq m] in theorem ...
+2026-10-12T15:09:33.5797985Z 
+2026-10-12T15:09:33.5798230Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5799103Z warning: QubitAdditivity/BetaOperators.lean:107:8: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaOperators.blockCoordinates_inl`:
+2026-10-12T15:09:33.5799896Z   [Fintype r]
+2026-10-12T15:09:33.5800188Z   [Fintype s]
+2026-10-12T15:09:33.5800484Z   [DecidableEq r]
+2026-10-12T15:09:33.5800843Z   [DecidableEq s]
+2026-10-12T15:09:33.5801365Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5802116Z   omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+2026-10-12T15:09:33.5802446Z 
+2026-10-12T15:09:33.5802694Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5803607Z warning: QubitAdditivity/BetaOperators.lean:110:8: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaOperators.blockCoordinates_inr`:
+2026-10-12T15:09:33.5804327Z   [Fintype r]
+2026-10-12T15:09:33.5804608Z   [Fintype s]
+2026-10-12T15:09:33.5804999Z   [DecidableEq r]
+2026-10-12T15:09:33.5805304Z   [DecidableEq s]
+2026-10-12T15:09:33.5805845Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5806827Z   omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+2026-10-12T15:09:33.5807168Z 
+2026-10-12T15:09:33.5807468Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5808103Z warning: QubitAdditivity/BetaOperators.lean:135:8: This simp argument is unused:
+2026-10-12T15:09:33.5808668Z   Matrix.one_apply
+2026-10-12T15:09:33.5808859Z 
+2026-10-12T15:09:33.5809056Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5809499Z   [apply] simp [blockGenerator, generator, left, right]
+2026-10-12T15:09:33.5809740Z 
+2026-10-12T15:09:33.5810041Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5810700Z warning: QubitAdditivity/BetaOperators.lean:139:8: This simp argument is unused:
+2026-10-12T15:09:33.5811203Z   Matrix.one_apply
+2026-10-12T15:09:33.5811368Z 
+2026-10-12T15:09:33.5811563Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5812025Z   [apply] simp [blockGenerator, generator, left, right]
+2026-10-12T15:09:33.5812282Z 
+2026-10-12T15:09:33.5812581Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5813168Z ⚠ [3296/3361] Replayed QubitAdditivity.BetaOrder
+2026-10-12T15:09:33.5813601Z warning: QubitAdditivity/BetaOrder.lean:18:2: Try this: 
+2026-10-12T15:09:33.5814070Z   letI̵
+2026-10-12T15:09:33.5814250Z 
+2026-10-12T15:09:33.5814513Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T15:09:33.5815092Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T15:09:33.5815615Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T15:09:33.5815927Z 
+2026-10-12T15:09:33.5816435Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T15:09:33.5816896Z warning: QubitAdditivity/BetaOrder.lean:30:2: Try this: 
+2026-10-12T15:09:33.5817252Z   letI̵
+2026-10-12T15:09:33.5817365Z 
+2026-10-12T15:09:33.5817546Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T15:09:33.5817980Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T15:09:33.5818435Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T15:09:33.5818690Z 
+2026-10-12T15:09:33.5818908Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T15:09:33.5819397Z warning: QubitAdditivity/BetaOrder.lean:44:37: This simp argument is unused:
+2026-10-12T15:09:33.5819788Z   fromRows_mul_fromCols
+2026-10-12T15:09:33.5819935Z 
+2026-10-12T15:09:33.5820055Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5820600Z   [apply] simp only [conjTranspose_fromRows_eq_fromCols_conjTranspose, conjTranspose_zero, conjTranspose_one,
+2026-10-12T15:09:33.5821329Z     fromRows_mul, Matrix.zero_mul, Matrix.mul_zero, Matrix.mul_one, Matrix.one_mul] at hn
+2026-10-12T15:09:33.5821625Z 
+2026-10-12T15:09:33.5821829Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5822308Z warning: QubitAdditivity/BetaOrder.lean:45:4: This simp argument is unused:
+2026-10-12T15:09:33.5822668Z   Matrix.mul_zero
+2026-10-12T15:09:33.5822787Z 
+2026-10-12T15:09:33.5822908Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5823425Z   [apply] simp only [conjTranspose_fromRows_eq_fromCols_conjTranspose, conjTranspose_zero, conjTranspose_one,
+2026-10-12T15:09:33.5824099Z     fromRows_mul, fromRows_mul_fromCols, Matrix.zero_mul, Matrix.mul_one, Matrix.one_mul] at hn
+2026-10-12T15:09:33.5824414Z 
+2026-10-12T15:09:33.5824626Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5825093Z warning: QubitAdditivity/BetaOrder.lean:45:21: This simp argument is unused:
+2026-10-12T15:09:33.5825459Z   Matrix.mul_one
+2026-10-12T15:09:33.5825577Z 
+2026-10-12T15:09:33.5825697Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5826456Z   [apply] simp only [conjTranspose_fromRows_eq_fromCols_conjTranspose, conjTranspose_zero, conjTranspose_one,
+2026-10-12T15:09:33.5827151Z     fromRows_mul, fromRows_mul_fromCols, Matrix.zero_mul, Matrix.mul_zero, Matrix.one_mul] at hn
+2026-10-12T15:09:33.5827474Z 
+2026-10-12T15:09:33.5827681Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5828247Z ⚠ [3299/3361] Replayed QubitAdditivity.BetaPowers
+2026-10-12T15:09:33.5828910Z warning: QubitAdditivity/BetaPowers.lean:147:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaPowers.hasDerivAt_kronecker`:
+2026-10-12T15:09:33.5829520Z   [DecidableEq n]
+2026-10-12T15:09:33.5829950Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5830516Z   omit [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5830689Z 
+2026-10-12T15:09:33.5830903Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5831630Z warning: QubitAdditivity/BetaPowers.lean:157:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaPowers.hasDerivAt_transpose`:
+2026-10-12T15:09:33.5832226Z   [DecidableEq n]
+2026-10-12T15:09:33.5832653Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5833150Z   omit [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5833322Z 
+2026-10-12T15:09:33.5833542Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5834061Z warning: QubitAdditivity/BetaPowers.lean:175:65: This simp argument is unused:
+2026-10-12T15:09:33.5834428Z   Matrix.mul_one
+2026-10-12T15:09:33.5834558Z 
+2026-10-12T15:09:33.5834678Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5835127Z   [apply] simp only [left, right, ← mul_kronecker_mul, Matrix.one_mul]
+2026-10-12T15:09:33.5835376Z 
+2026-10-12T15:09:33.5835589Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5836031Z ⚠ [3300/3361] Replayed QubitAdditivity.BetaBridge
+2026-10-12T15:09:33.5836469Z warning: QubitAdditivity/BetaBridge.lean:32:4: Try this: 
+2026-10-12T15:09:33.5836800Z   letI̵
+2026-10-12T15:09:33.5836911Z 
+2026-10-12T15:09:33.5837085Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T15:09:33.5837494Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T15:09:33.5837924Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T15:09:33.5838151Z 
+2026-10-12T15:09:33.5838365Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T15:09:33.5839093Z warning: QubitAdditivity/BetaBridge.lean:56:8: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBridge.compressionCLM_apply`:
+2026-10-12T15:09:33.5839691Z   [Fintype m]
+2026-10-12T15:09:33.5839900Z   [DecidableEq m]
+2026-10-12T15:09:33.5840111Z   [DecidableEq n]
+2026-10-12T15:09:33.5840541Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5841109Z   omit [Fintype m] [DecidableEq m] [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5841332Z 
+2026-10-12T15:09:33.5841555Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5842299Z warning: QubitAdditivity/BetaBridge.lean:59:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBridge.isometry_mulVec_injective`:
+2026-10-12T15:09:33.5842943Z   [DecidableEq n]
+2026-10-12T15:09:33.5843380Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5843873Z   omit [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5844042Z 
+2026-10-12T15:09:33.5844250Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5844989Z warning: QubitAdditivity/BetaBridge.lean:123:8: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBridge.diagonalBlocksCLM_apply`:
+2026-10-12T15:09:33.5845669Z   [DecidableEq r]
+2026-10-12T15:09:33.5845954Z   [DecidableEq s]
+2026-10-12T15:09:33.5846631Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5847312Z   omit [DecidableEq r] [DecidableEq s] in theorem ...
+2026-10-12T15:09:33.5847515Z 
+2026-10-12T15:09:33.5847742Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5848242Z warning: QubitAdditivity/BetaBridge.lean:149:15: This simp argument is unused:
+2026-10-12T15:09:33.5848698Z   Function.comp_def
+2026-10-12T15:09:33.5848836Z 
+2026-10-12T15:09:33.5848975Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5849515Z   [apply] simp only [blockPW, diagonalBlocksCLM_apply, blockGenerator, Matrix.fromBlocks_multiply, Matrix.zero_mul,
+2026-10-12T15:09:33.5850033Z     Matrix.mul_zero, add_zero, zero_add]
+2026-10-12T15:09:33.5850214Z 
+2026-10-12T15:09:33.5850430Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5850967Z warning: QubitAdditivity/BetaBridge.lean:148:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.5851308Z 
+2026-10-12T15:09:33.5851525Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.5852018Z warning: QubitAdditivity/BetaBridge.lean:189:16: this tactic is never executed
+2026-10-12T15:09:33.5852297Z 
+2026-10-12T15:09:33.5852510Z Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-12T15:09:33.5853045Z warning: QubitAdditivity/BetaBridge.lean:189:6: Unused tactic linter: `all_goals rfl` does nothing
+2026-10-12T15:09:33.5853378Z 
+2026-10-12T15:09:33.5853579Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-12T15:09:33.5854060Z warning: QubitAdditivity/BetaBridge.lean:233:15: This simp argument is unused:
+2026-10-12T15:09:33.5854419Z   curve
+2026-10-12T15:09:33.5854531Z 
+2026-10-12T15:09:33.5854646Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5855018Z   [apply] simp only [curveFirst, blockInclusion, Matrix.mul_assoc]
+2026-10-12T15:09:33.5855259Z 
+2026-10-12T15:09:33.5855469Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5855939Z warning: QubitAdditivity/BetaBridge.lean:234:12: this tactic is never executed
+2026-10-12T15:09:33.5856504Z 
+2026-10-12T15:09:33.5856725Z Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-12T15:09:33.5857290Z warning: QubitAdditivity/BetaBridge.lean:232:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.5857622Z 
+2026-10-12T15:09:33.5857850Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.5858404Z warning: QubitAdditivity/BetaBridge.lean:234:2: Unused tactic linter: `all_goals rfl` does nothing
+2026-10-12T15:09:33.5858739Z 
+2026-10-12T15:09:33.5858947Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-12T15:09:33.5859423Z warning: QubitAdditivity/BetaBridge.lean:249:15: This simp argument is unused:
+2026-10-12T15:09:33.5859794Z   curveFirst
+2026-10-12T15:09:33.5859917Z 
+2026-10-12T15:09:33.5860033Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5860565Z   [apply] simp only [curveSecond, blockInclusion, Function.comp_def, Matrix.mul_zero, add_zero, Matrix.mul_assoc]
+2026-10-12T15:09:33.5860927Z 
+2026-10-12T15:09:33.5861141Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5861633Z warning: QubitAdditivity/BetaBridge.lean:249:56: This simp argument is unused:
+2026-10-12T15:09:33.5862021Z   Function.comp_def
+2026-10-12T15:09:33.5862160Z 
+2026-10-12T15:09:33.5862283Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5862801Z   [apply] simp only [curveFirst, curveSecond, blockInclusion, Matrix.mul_zero, add_zero, Matrix.mul_assoc]
+2026-10-12T15:09:33.5863161Z 
+2026-10-12T15:09:33.5863368Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5863933Z warning: QubitAdditivity/BetaBridge.lean:319:16: this tactic is never executed
+2026-10-12T15:09:33.5864205Z 
+2026-10-12T15:09:33.5864430Z Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-12T15:09:33.5864922Z warning: QubitAdditivity/BetaBridge.lean:322:16: this tactic is never executed
+2026-10-12T15:09:33.5865210Z 
+2026-10-12T15:09:33.5865424Z Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-12T15:09:33.5866146Z warning: QubitAdditivity/BetaBridge.lean:319:6: Unused tactic linter: `all_goals rfl` does nothing
+2026-10-12T15:09:33.5866486Z 
+2026-10-12T15:09:33.5866683Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-12T15:09:33.5867194Z warning: QubitAdditivity/BetaBridge.lean:322:6: Unused tactic linter: `all_goals rfl` does nothing
+2026-10-12T15:09:33.5867521Z 
+2026-10-12T15:09:33.5867723Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-12T15:09:33.5868232Z ⚠ [3304/3361] Replayed QubitAdditivity.BetaComparison
+2026-10-12T15:09:33.5868665Z warning: QubitAdditivity/BetaComparison.lean:28:20: This simp argument is unused:
+2026-10-12T15:09:33.5869058Z   Matrix.mul_add
+2026-10-12T15:09:33.5869180Z 
+2026-10-12T15:09:33.5869302Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5869788Z   [apply] simp only [Matrix.neg_mul, Matrix.mul_neg, Matrix.one_mul, Matrix.mul_one, Matrix.add_mul, neg_neg]
+2026-10-12T15:09:33.5870139Z 
+2026-10-12T15:09:33.5870343Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5870835Z warning: QubitAdditivity/BetaComparison.lean:28:36: This simp argument is unused:
+2026-10-12T15:09:33.5871208Z   neg_neg
+2026-10-12T15:09:33.5871319Z 
+2026-10-12T15:09:33.5871430Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5871931Z   [apply] simp only [Matrix.neg_mul, Matrix.mul_neg, Matrix.one_mul, Matrix.mul_one, Matrix.add_mul, Matrix.mul_add]
+2026-10-12T15:09:33.5872284Z 
+2026-10-12T15:09:33.5872497Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5873248Z warning: QubitAdditivity/BetaComparison.lean:74:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.posSemidef_of_quadratic`:
+2026-10-12T15:09:33.5873877Z   [DecidableEq n]
+2026-10-12T15:09:33.5874319Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5874817Z   omit [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5874988Z 
+2026-10-12T15:09:33.5875197Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5875931Z warning: QubitAdditivity/BetaComparison.lean:80:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.quadratic_nonneg`:
+2026-10-12T15:09:33.5876615Z   [DecidableEq n]
+2026-10-12T15:09:33.5877060Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5877560Z   omit [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5877734Z 
+2026-10-12T15:09:33.5877953Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5878674Z warning: QubitAdditivity/BetaComparison.lean:83:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.quadratic_pos`:
+2026-10-12T15:09:33.5879277Z   [DecidableEq n]
+2026-10-12T15:09:33.5879713Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5880207Z   omit [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5880367Z 
+2026-10-12T15:09:33.5880586Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5881330Z warning: QubitAdditivity/BetaComparison.lean:87:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.hasDerivAt_pairing`:
+2026-10-12T15:09:33.5882291Z   [DecidableEq n]
+2026-10-12T15:09:33.5882729Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5883222Z   omit [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5883395Z 
+2026-10-12T15:09:33.5883609Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5884419Z warning: QubitAdditivity/BetaComparison.lean:102:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.quadratic_sub`:
+2026-10-12T15:09:33.5885016Z   [DecidableEq n]
+2026-10-12T15:09:33.5885451Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5885941Z   omit [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5886269Z 
+2026-10-12T15:09:33.5886562Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5887315Z warning: QubitAdditivity/BetaComparison.lean:106:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.quadratic_smul`:
+2026-10-12T15:09:33.5887920Z   [DecidableEq n]
+2026-10-12T15:09:33.5888364Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5888860Z   omit [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5889032Z 
+2026-10-12T15:09:33.5889243Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5890010Z warning: QubitAdditivity/BetaComparison.lean:110:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.quadratic_smul_vector`:
+2026-10-12T15:09:33.5890632Z   [DecidableEq n]
+2026-10-12T15:09:33.5891065Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5891551Z   omit [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5891723Z 
+2026-10-12T15:09:33.5891938Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5892373Z info: QubitAdditivity/BetaComparison.lean:159:4: Try this:
+2026-10-12T15:09:33.5892691Z   [apply] ring_nf
+2026-10-12T15:09:33.5892891Z   
+2026-10-12T15:09:33.5893266Z   The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+2026-10-12T15:09:33.5893620Z     
+2026-10-12T15:09:33.5894259Z   Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+2026-10-12T15:09:33.5895262Z warning: QubitAdditivity/BetaComparison.lean:236:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.pairing_mulVec_left`:
+2026-10-12T15:09:33.5895865Z   [DecidableEq n]
+2026-10-12T15:09:33.5896376Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5896883Z   omit [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5897051Z 
+2026-10-12T15:09:33.5897270Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5898027Z warning: QubitAdditivity/BetaComparison.lean:240:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.pairing_mulVec_right`:
+2026-10-12T15:09:33.5898649Z   [DecidableEq n]
+2026-10-12T15:09:33.5899076Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5899560Z   omit [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5899716Z 
+2026-10-12T15:09:33.5899930Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5900674Z warning: QubitAdditivity/BetaComparison.lean:244:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.pairing_smul_left`:
+2026-10-12T15:09:33.5901373Z   [DecidableEq n]
+2026-10-12T15:09:33.5901802Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5902282Z   omit [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5902451Z 
+2026-10-12T15:09:33.5902659Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5903566Z warning: QubitAdditivity/BetaComparison.lean:248:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.pairing_smul_right`:
+2026-10-12T15:09:33.5904165Z   [DecidableEq n]
+2026-10-12T15:09:33.5904593Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5905094Z   omit [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5905252Z 
+2026-10-12T15:09:33.5905468Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5906306Z warning: QubitAdditivity/BetaComparison.lean:252:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.pairing_sub`:
+2026-10-12T15:09:33.5906921Z   [DecidableEq n]
+2026-10-12T15:09:33.5907351Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5907830Z   omit [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5908004Z 
+2026-10-12T15:09:33.5908212Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5908954Z warning: QubitAdditivity/BetaComparison.lean:256:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.pairing_add`:
+2026-10-12T15:09:33.5909592Z   [DecidableEq n]
+2026-10-12T15:09:33.5910026Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5910513Z   omit [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5910681Z 
+2026-10-12T15:09:33.5910898Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5911648Z warning: QubitAdditivity/BetaComparison.lean:260:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaComparison.pairing_smul_matrix`:
+2026-10-12T15:09:33.5912259Z   [DecidableEq n]
+2026-10-12T15:09:33.5912697Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5913183Z   omit [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5913349Z 
+2026-10-12T15:09:33.5913557Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5914119Z warning: QubitAdditivity/BetaComparison.lean:275:11: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.5914475Z 
+2026-10-12T15:09:33.5914703Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.5915218Z ⚠ [3305/3361] Replayed QubitAdditivity.BetaBarrier
+2026-10-12T15:09:33.5915569Z warning: QubitAdditivity/BetaBarrier.lean:71:2: Try this: 
+2026-10-12T15:09:33.5915929Z   letI̵
+2026-10-12T15:09:33.5916036Z 
+2026-10-12T15:09:33.5916281Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T15:09:33.5916709Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T15:09:33.5917146Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T15:09:33.5917384Z 
+2026-10-12T15:09:33.5917601Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T15:09:33.5918090Z warning: QubitAdditivity/BetaBarrier.lean:48:26: This simp argument is unused:
+2026-10-12T15:09:33.5918454Z   smul_smul
+2026-10-12T15:09:33.5918569Z 
+2026-10-12T15:09:33.5918686Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5919240Z   [apply] simp only [B₁, C, B, Matrix.add_mul, Matrix.smul_mul, Matrix.mul_smul, Matrix.one_mul]
+2026-10-12T15:09:33.5919623Z 
+2026-10-12T15:09:33.5919835Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5920368Z warning: QubitAdditivity/BetaBarrier.lean:53:26: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.5920698Z 
+2026-10-12T15:09:33.5920923Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.5921533Z warning: QubitAdditivity/BetaBarrier.lean:53:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.5921862Z 
+2026-10-12T15:09:33.5922078Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.5922629Z warning: QubitAdditivity/BetaBarrier.lean:56:26: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.5922949Z 
+2026-10-12T15:09:33.5923169Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.5923625Z ⚠ [3306/3361] Replayed QubitAdditivity.BetaBlocks
+2026-10-12T15:09:33.5923976Z warning: QubitAdditivity/BetaBlocks.lean:27:2: Try this: 
+2026-10-12T15:09:33.5924291Z   letI̵
+2026-10-12T15:09:33.5924396Z 
+2026-10-12T15:09:33.5924569Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T15:09:33.5924976Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T15:09:33.5925408Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T15:09:33.5925640Z 
+2026-10-12T15:09:33.5925852Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T15:09:33.5926499Z warning: QubitAdditivity/BetaBlocks.lean:95:2: Try this: 
+2026-10-12T15:09:33.5926865Z   letI̵
+2026-10-12T15:09:33.5926978Z 
+2026-10-12T15:09:33.5927149Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T15:09:33.5927556Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T15:09:33.5927985Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T15:09:33.5928222Z 
+2026-10-12T15:09:33.5928428Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T15:09:33.5928883Z ⚠ [3307/3361] Replayed QubitAdditivity.BetaStrict
+2026-10-12T15:09:33.5929508Z warning: QubitAdditivity/BetaStrict.lean:15:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaStrict.posDef_of_le`:
+2026-10-12T15:09:33.5930091Z   [Fintype n]
+2026-10-12T15:09:33.5930304Z   [DecidableEq n]
+2026-10-12T15:09:33.5930757Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5931274Z   omit [Fintype n] [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.5931471Z 
+2026-10-12T15:09:33.5931688Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5932123Z warning: QubitAdditivity/BetaStrict.lean:27:4: Try this: 
+2026-10-12T15:09:33.5932433Z   letI̵
+2026-10-12T15:09:33.5932535Z 
+2026-10-12T15:09:33.5932701Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T15:09:33.5933111Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T15:09:33.5933546Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T15:09:33.5933771Z 
+2026-10-12T15:09:33.5933981Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T15:09:33.5934404Z warning: QubitAdditivity/BetaStrict.lean:32:4: Try this: 
+2026-10-12T15:09:33.5934705Z   letI̵
+2026-10-12T15:09:33.5934814Z 
+2026-10-12T15:09:33.5934980Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T15:09:33.5935385Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T15:09:33.5935800Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T15:09:33.5936034Z 
+2026-10-12T15:09:33.5936382Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T15:09:33.5936933Z ⚠ [3308/3361] Replayed QubitAdditivity.BetaEndpoints
+2026-10-12T15:09:33.5937593Z warning: QubitAdditivity/BetaEndpoints.lean:59:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaEndpoints.gap_blocks_posDef`:
+2026-10-12T15:09:33.5938189Z   [Fintype r]
+2026-10-12T15:09:33.5938402Z   [Fintype s]
+2026-10-12T15:09:33.5938606Z   [DecidableEq r]
+2026-10-12T15:09:33.5938887Z   [DecidableEq s]
+2026-10-12T15:09:33.5939314Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5939943Z   omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+2026-10-12T15:09:33.5940201Z 
+2026-10-12T15:09:33.5940425Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5940870Z ⚠ [3310/3361] Replayed QubitAdditivity.BetaKM
+2026-10-12T15:09:33.5941245Z warning: QubitAdditivity/BetaKM.lean:40:12: this tactic is never executed
+2026-10-12T15:09:33.5941519Z 
+2026-10-12T15:09:33.5941739Z Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-12T15:09:33.5942251Z warning: QubitAdditivity/BetaKM.lean:40:2: Unused tactic linter: `all_goals rfl` does nothing
+2026-10-12T15:09:33.5942565Z 
+2026-10-12T15:09:33.5942757Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-12T15:09:33.5943216Z ⚠ [3312/3361] Replayed QubitAdditivity.BetaResolvent
+2026-10-12T15:09:33.5943578Z warning: QubitAdditivity/BetaResolvent.lean:20:2: Try this: 
+2026-10-12T15:09:33.5943894Z   letI̵
+2026-10-12T15:09:33.5944005Z 
+2026-10-12T15:09:33.5944165Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T15:09:33.5944578Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T15:09:33.5945000Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T15:09:33.5945233Z 
+2026-10-12T15:09:33.5945447Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T15:09:33.5945874Z warning: QubitAdditivity/BetaResolvent.lean:21:2: Try this: 
+2026-10-12T15:09:33.5946285Z   letI̵
+2026-10-12T15:09:33.5946391Z 
+2026-10-12T15:09:33.5946555Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T15:09:33.5946950Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T15:09:33.5947381Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T15:09:33.5947602Z 
+2026-10-12T15:09:33.5947810Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T15:09:33.5948239Z warning: QubitAdditivity/BetaResolvent.lean:22:2: Try this: 
+2026-10-12T15:09:33.5948546Z   letI̵
+2026-10-12T15:09:33.5948654Z 
+2026-10-12T15:09:33.5948817Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T15:09:33.5949222Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T15:09:33.5949642Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T15:09:33.5949872Z 
+2026-10-12T15:09:33.5950071Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T15:09:33.5950783Z warning: QubitAdditivity/BetaResolvent.lean:40:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaResolvent.shift_posDef`:
+2026-10-12T15:09:33.5951374Z   [Fintype n]
+2026-10-12T15:09:33.5951795Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5952281Z   omit [Fintype n] in theorem ...
+2026-10-12T15:09:33.5952434Z 
+2026-10-12T15:09:33.5952654Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5953347Z warning: QubitAdditivity/BetaResolvent.lean:47:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaResolvent.shift_sub`:
+2026-10-12T15:09:33.5954001Z   [Fintype n]
+2026-10-12T15:09:33.5954428Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.5954913Z   omit [Fintype n] in theorem ...
+2026-10-12T15:09:33.5955072Z 
+2026-10-12T15:09:33.5955284Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.5955727Z ⚠ [3313/3361] Replayed QubitAdditivity.BetaLog
+2026-10-12T15:09:33.5956191Z warning: QubitAdditivity/BetaLog.lean:31:2: Try this: 
+2026-10-12T15:09:33.5956506Z   letI̵
+2026-10-12T15:09:33.5956615Z 
+2026-10-12T15:09:33.5956771Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T15:09:33.5957181Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T15:09:33.5957597Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T15:09:33.5957830Z 
+2026-10-12T15:09:33.5958030Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T15:09:33.5958445Z warning: QubitAdditivity/BetaLog.lean:32:2: Try this: 
+2026-10-12T15:09:33.5958746Z   letI̵
+2026-10-12T15:09:33.5958848Z 
+2026-10-12T15:09:33.5959012Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T15:09:33.5959413Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T15:09:33.5959822Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T15:09:33.5960061Z 
+2026-10-12T15:09:33.5960271Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T15:09:33.5960676Z warning: QubitAdditivity/BetaLog.lean:33:2: Try this: 
+2026-10-12T15:09:33.5960969Z   letI̵
+2026-10-12T15:09:33.5961075Z 
+2026-10-12T15:09:33.5961237Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T15:09:33.5961634Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T15:09:33.5962044Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T15:09:33.5962281Z 
+2026-10-12T15:09:33.5962481Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T15:09:33.5963012Z warning: QubitAdditivity/BetaLog.lean:106:89: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.5963329Z 
+2026-10-12T15:09:33.5963557Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.5964103Z warning: QubitAdditivity/BetaLog.lean:126:78: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.5964427Z 
+2026-10-12T15:09:33.5964662Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.5965190Z warning: QubitAdditivity/BetaLog.lean:126:87: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.5965509Z 
+2026-10-12T15:09:33.5965722Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.5966672Z warning: QubitAdditivity/BetaLog.lean:148:38: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+2026-10-12T15:09:33.5967447Z warning: QubitAdditivity/BetaLog.lean:150:9: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+2026-10-12T15:09:33.5968054Z warning: QubitAdditivity/BetaLog.lean:192:19: This simp argument is unused:
+2026-10-12T15:09:33.5968418Z   Matrix.smul_mul
+2026-10-12T15:09:33.5968549Z 
+2026-10-12T15:09:33.5968680Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5968976Z   [apply] simp [segment]
+2026-10-12T15:09:33.5969126Z 
+2026-10-12T15:09:33.5969335Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5969802Z warning: QubitAdditivity/BetaLog.lean:193:12: this tactic is never executed
+2026-10-12T15:09:33.5970072Z 
+2026-10-12T15:09:33.5970299Z Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-12T15:09:33.5970962Z warning: QubitAdditivity/BetaLog.lean:193:2: Unused tactic linter: `all_goals exact BetaPowers.continuousOn_spectrum _ _` does nothing
+2026-10-12T15:09:33.5971473Z 
+2026-10-12T15:09:33.5971681Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-12T15:09:33.5972335Z warning: QubitAdditivity/BetaLog.lean:266:38: `ContinuousLinearMap.add_apply` has been deprecated: Use `_root_.add_apply` instead
+2026-10-12T15:09:33.5972755Z 
+2026-10-12T15:09:33.5973158Z Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `_root_.add_apply x`).
+2026-10-12T15:09:33.5974025Z warning: QubitAdditivity/BetaLog.lean:267:6: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
+2026-10-12T15:09:33.5974453Z 
+2026-10-12T15:09:33.5974853Z Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
+2026-10-12T15:09:33.5975660Z warning: QubitAdditivity/BetaLog.lean:267:38: `ContinuousLinearMap.neg_apply` has been deprecated: Use `_root_.neg_apply` instead
+2026-10-12T15:09:33.5976163Z 
+2026-10-12T15:09:33.5976549Z Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.neg_apply` to `_root_.neg_apply x`).
+2026-10-12T15:09:33.5977196Z warning: QubitAdditivity/BetaLog.lean:268:6: This simp argument is unused:
+2026-10-12T15:09:33.5977564Z   hp.unit_spec
+2026-10-12T15:09:33.5977698Z 
+2026-10-12T15:09:33.5977817Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5978338Z   [apply] simp only [hu, kernelDeriv_apply, ContinuousLinearMap.add_apply, ContinuousLinearMap.comp_apply,
+2026-10-12T15:09:33.5979103Z     ContinuousLinearMap.smul_apply, ContinuousLinearMap.neg_apply, ContinuousLinearMap.mulLeftRight_apply,
+2026-10-12T15:09:33.5979841Z     ← Matrix.nonsing_inv_eq_ringInverse, L, inclusion_apply, Function.comp_apply]
+2026-10-12T15:09:33.5980129Z 
+2026-10-12T15:09:33.5980340Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5980833Z warning: QubitAdditivity/BetaLog.lean:274:47: This simp argument is unused:
+2026-10-12T15:09:33.5981204Z   Matrix.neg_mul
+2026-10-12T15:09:33.5981334Z 
+2026-10-12T15:09:33.5981453Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.5981966Z   [apply] simp only [Matrix.mul_smul, Matrix.smul_mul, Matrix.mul_neg, Matrix.mul_assoc] at hh ⊢
+2026-10-12T15:09:33.5982284Z 
+2026-10-12T15:09:33.5982510Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.5982985Z warning: QubitAdditivity/BetaLog.lean:388:12: this tactic is never executed
+2026-10-12T15:09:33.5983256Z 
+2026-10-12T15:09:33.5983474Z Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-12T15:09:33.5984144Z warning: QubitAdditivity/BetaLog.lean:388:2: Unused tactic linter: `all_goals exact BetaPowers.continuousOn_spectrum _ _` does nothing
+2026-10-12T15:09:33.5984569Z 
+2026-10-12T15:09:33.5984776Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-12T15:09:33.5985312Z warning: QubitAdditivity/BetaLog.lean:433:58: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.5985647Z 
+2026-10-12T15:09:33.5985877Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.5986502Z warning: QubitAdditivity/BetaLog.lean:438:58: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.5986847Z 
+2026-10-12T15:09:33.5987072Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.5987721Z warning: QubitAdditivity/BetaLog.lean:477:29: `ContinuousLinearMap.neg_apply` has been deprecated: Use `_root_.neg_apply` instead
+2026-10-12T15:09:33.5988151Z 
+2026-10-12T15:09:33.5988537Z Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.neg_apply` to `_root_.neg_apply x`).
+2026-10-12T15:09:33.5989163Z warning: QubitAdditivity/BetaLog.lean:486:28: this tactic is never executed
+2026-10-12T15:09:33.5989495Z 
+2026-10-12T15:09:33.5989706Z Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-12T15:09:33.5990316Z warning: QubitAdditivity/BetaLog.lean:486:28: Unused tactic linter: `exact BetaPowers.continuousOn_spectrum _ _` does nothing
+2026-10-12T15:09:33.5990703Z 
+2026-10-12T15:09:33.5990906Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-12T15:09:33.5991568Z warning: QubitAdditivity/BetaLog.lean:505:15: `ContinuousLinearMap.neg_apply` has been deprecated: Use `_root_.neg_apply` instead
+2026-10-12T15:09:33.5991977Z 
+2026-10-12T15:09:33.5992361Z Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.neg_apply` to `_root_.neg_apply x`).
+2026-10-12T15:09:33.5993122Z warning: QubitAdditivity/BetaLog.lean:506:6: `ContinuousLinearMap.add_apply` has been deprecated: Use `_root_.add_apply` instead
+2026-10-12T15:09:33.5993527Z 
+2026-10-12T15:09:33.5993892Z Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `_root_.add_apply x`).
+2026-10-12T15:09:33.5994517Z ⚠ [3314/3361] Replayed QubitAdditivity.BetaLogMean
+2026-10-12T15:09:33.5994982Z warning: QubitAdditivity/BetaLogMean.lean:23:33: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.5995315Z 
+2026-10-12T15:09:33.5995531Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.5996142Z warning: QubitAdditivity/BetaLogMean.lean:23:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.5996478Z 
+2026-10-12T15:09:33.5996706Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.5997165Z ⚠ [3315/3361] Replayed QubitAdditivity.BetaLogKM
+2026-10-12T15:09:33.5997514Z warning: QubitAdditivity/BetaLogKM.lean:44:2: Try this: 
+2026-10-12T15:09:33.5997852Z   letI̵
+2026-10-12T15:09:33.5997956Z 
+2026-10-12T15:09:33.5998130Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T15:09:33.5998539Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T15:09:33.5998959Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T15:09:33.5999197Z 
+2026-10-12T15:09:33.5999410Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T15:09:33.5999837Z warning: QubitAdditivity/BetaLogKM.lean:45:2: Try this: 
+2026-10-12T15:09:33.6000142Z   letI̵
+2026-10-12T15:09:33.6000252Z 
+2026-10-12T15:09:33.6000416Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T15:09:33.6000823Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T15:09:33.6001247Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T15:09:33.6001481Z 
+2026-10-12T15:09:33.6001683Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T15:09:33.6002114Z warning: QubitAdditivity/BetaLogKM.lean:46:2: Try this: 
+2026-10-12T15:09:33.6002417Z   letI̵
+2026-10-12T15:09:33.6002527Z 
+2026-10-12T15:09:33.6002683Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T15:09:33.6003087Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T15:09:33.6003514Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T15:09:33.6003748Z 
+2026-10-12T15:09:33.6003960Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T15:09:33.6004431Z warning: QubitAdditivity/BetaLogKM.lean:71:22: This simp argument is unused:
+2026-10-12T15:09:33.6004835Z   Unitary.conjStarAlgAut_symm_apply
+2026-10-12T15:09:33.6005003Z 
+2026-10-12T15:09:33.6005124Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6005485Z   [apply] simp [coordinates, Matrix.mul_smul, Matrix.smul_mul]
+2026-10-12T15:09:33.6005712Z 
+2026-10-12T15:09:33.6005992Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6006724Z warning: QubitAdditivity/BetaLogKM.lean:71:56: This simp argument is unused:
+2026-10-12T15:09:33.6007103Z   Matrix.mul_smul
+2026-10-12T15:09:33.6007235Z 
+2026-10-12T15:09:33.6007349Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6007766Z   [apply] simp [coordinates, Unitary.conjStarAlgAut_symm_apply, Matrix.smul_mul]
+2026-10-12T15:09:33.6008161Z 
+2026-10-12T15:09:33.6008370Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6008840Z warning: QubitAdditivity/BetaLogKM.lean:71:72: This simp argument is unused:
+2026-10-12T15:09:33.6009195Z   Matrix.smul_mul
+2026-10-12T15:09:33.6009323Z 
+2026-10-12T15:09:33.6009445Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6009852Z   [apply] simp [coordinates, Unitary.conjStarAlgAut_symm_apply, Matrix.mul_smul]
+2026-10-12T15:09:33.6010117Z 
+2026-10-12T15:09:33.6010325Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6010853Z warning: QubitAdditivity/BetaLogKM.lean:197:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.6011192Z 
+2026-10-12T15:09:33.6011417Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.6011894Z ⚠ [3316/3361] Replayed QubitAdditivity.BetaEntropy
+2026-10-12T15:09:33.6012514Z warning: QubitAdditivity/BetaEntropy.lean:63:33: `ContinuousLinearMap.coe_comp'` has been deprecated: Use `ContinuousLinearMap.coe_comp` instead
+2026-10-12T15:09:33.6013197Z warning: QubitAdditivity/BetaEntropy.lean:63:33: This simp argument is unused:
+2026-10-12T15:09:33.6013611Z   ContinuousLinearMap.coe_comp'
+2026-10-12T15:09:33.6013772Z 
+2026-10-12T15:09:33.6013895Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6014446Z   [apply] simp only [psiGradient_apply, Function.comp_apply, ContinuousLinearMap.mulLeftRight_apply, Matrix.mul_one,
+2026-10-12T15:09:33.6014980Z     BetaLog.traceRe_apply, L]
+2026-10-12T15:09:33.6015135Z 
+2026-10-12T15:09:33.6015352Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6016301Z warning: QubitAdditivity/BetaEntropy.lean:66:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaEntropy.trace_mul_eq_vector_pairing`:
+2026-10-12T15:09:33.6016975Z   [DecidableEq n]
+2026-10-12T15:09:33.6017439Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6017960Z   omit [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.6018142Z 
+2026-10-12T15:09:33.6018365Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6018845Z ⚠ [3319/3361] Replayed QubitAdditivity.BetaDual
+2026-10-12T15:09:33.6019457Z warning: QubitAdditivity/BetaDual.lean:41:8: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDual.diagonal_mat`:
+2026-10-12T15:09:33.6020031Z   [Fintype r]
+2026-10-12T15:09:33.6020243Z   [Fintype s]
+2026-10-12T15:09:33.6020466Z   [DecidableEq r]
+2026-10-12T15:09:33.6020683Z   [DecidableEq s]
+2026-10-12T15:09:33.6021124Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6021730Z   omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+2026-10-12T15:09:33.6022007Z 
+2026-10-12T15:09:33.6022233Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6022956Z warning: QubitAdditivity/BetaDual.lean:70:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDual.trace_diagonal_mul`:
+2026-10-12T15:09:33.6023548Z   [DecidableEq r]
+2026-10-12T15:09:33.6023773Z   [DecidableEq s]
+2026-10-12T15:09:33.6024211Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6024821Z   omit [DecidableEq r] [DecidableEq s] in theorem ...
+2026-10-12T15:09:33.6025031Z 
+2026-10-12T15:09:33.6025247Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6025749Z warning: QubitAdditivity/BetaDual.lean:144:38: This simp argument is unused:
+2026-10-12T15:09:33.6026190Z   Matrix.mul_smul
+2026-10-12T15:09:33.6026331Z 
+2026-10-12T15:09:33.6026454Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6027064Z   [apply] simp [Matrix.mul_sub, Matrix.mul_add, Matrix.mul_one, Matrix.trace_sub, Matrix.trace_add, Matrix.trace_smul]
+2026-10-12T15:09:33.6027441Z 
+2026-10-12T15:09:33.6027657Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6028142Z warning: QubitAdditivity/BetaDual.lean:144:54: This simp argument is unused:
+2026-10-12T15:09:33.6028514Z   Matrix.mul_one
+2026-10-12T15:09:33.6028652Z 
+2026-10-12T15:09:33.6028774Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6029301Z   [apply] simp [Matrix.mul_sub, Matrix.mul_add, Matrix.mul_smul, Matrix.trace_sub, Matrix.trace_add, Matrix.trace_smul]
+2026-10-12T15:09:33.6029659Z 
+2026-10-12T15:09:33.6029862Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6030483Z warning: QubitAdditivity/BetaDual.lean:152:22: `ContinuousLinearMap.sub_apply` has been deprecated: Use `_root_.sub_apply` instead
+2026-10-12T15:09:33.6030898Z 
+2026-10-12T15:09:33.6031285Z Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `_root_.sub_apply x`).
+2026-10-12T15:09:33.6032058Z warning: QubitAdditivity/BetaDual.lean:152:52: `ContinuousLinearMap.add_apply` has been deprecated: Use `_root_.add_apply` instead
+2026-10-12T15:09:33.6032470Z 
+2026-10-12T15:09:33.6032837Z Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `_root_.add_apply x`).
+2026-10-12T15:09:33.6033624Z warning: QubitAdditivity/BetaDual.lean:182:28: `ContinuousLinearMap.zero_apply` has been deprecated: Use `_root_.zero_apply` instead
+2026-10-12T15:09:33.6034040Z 
+2026-10-12T15:09:33.6034415Z Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.zero_apply` to `_root_.zero_apply x`).
+2026-10-12T15:09:33.6035266Z warning: QubitAdditivity/BetaDual.lean:242:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDual.total_gap_posDef`:
+2026-10-12T15:09:33.6035847Z   [Fintype r]
+2026-10-12T15:09:33.6036157Z   [Fintype s]
+2026-10-12T15:09:33.6036614Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6037136Z   omit [Fintype r] [Fintype s] in theorem ...
+2026-10-12T15:09:33.6037323Z 
+2026-10-12T15:09:33.6037551Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6038274Z warning: QubitAdditivity/BetaDual.lean:269:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDual.diagonal_injective`:
+2026-10-12T15:09:33.6038872Z   [Fintype r]
+2026-10-12T15:09:33.6039086Z   [Fintype s]
+2026-10-12T15:09:33.6039293Z   [DecidableEq r]
+2026-10-12T15:09:33.6039511Z   [DecidableEq s]
+2026-10-12T15:09:33.6039956Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6040585Z   omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+2026-10-12T15:09:33.6040845Z 
+2026-10-12T15:09:33.6041073Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6041720Z warning: QubitAdditivity/BetaDual.lean:296:22: `ContinuousLinearMap.sub_apply` has been deprecated: Use `_root_.sub_apply` instead
+2026-10-12T15:09:33.6042138Z 
+2026-10-12T15:09:33.6042526Z Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `_root_.sub_apply x`).
+2026-10-12T15:09:33.6043385Z warning: QubitAdditivity/BetaDual.lean:296:52: `ContinuousLinearMap.add_apply` has been deprecated: Use `_root_.add_apply` instead
+2026-10-12T15:09:33.6043809Z 
+2026-10-12T15:09:33.6044190Z Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `_root_.add_apply x`).
+2026-10-12T15:09:33.6045045Z warning: QubitAdditivity/BetaDual.lean:321:33: `ContinuousLinearMap.sub_apply` has been deprecated: Use `_root_.sub_apply` instead
+2026-10-12T15:09:33.6045469Z 
+2026-10-12T15:09:33.6045857Z Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `_root_.sub_apply x`).
+2026-10-12T15:09:33.6046597Z ⚠ [3320/3361] Replayed QubitAdditivity.BetaDualConvex
+2026-10-12T15:09:33.6047101Z warning: QubitAdditivity/BetaDualConvex.lean:45:64: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.6047463Z 
+2026-10-12T15:09:33.6047702Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.6048206Z ⚠ [3321/3361] Replayed QubitAdditivity.BetaDualExistence
+2026-10-12T15:09:33.6048940Z warning: QubitAdditivity/BetaDualExistence.lean:54:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDualExistence.isClosed_positiveCone`:
+2026-10-12T15:09:33.6049620Z   [DecidableEq r]
+2026-10-12T15:09:33.6049847Z   [DecidableEq s]
+2026-10-12T15:09:33.6050291Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6050833Z   omit [DecidableEq r] [DecidableEq s] in theorem ...
+2026-10-12T15:09:33.6051044Z 
+2026-10-12T15:09:33.6051270Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6051852Z warning: QubitAdditivity/BetaDualExistence.lean:69:35: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.6052203Z 
+2026-10-12T15:09:33.6052416Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.6052992Z warning: QubitAdditivity/BetaDualExistence.lean:103:63: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.6053340Z 
+2026-10-12T15:09:33.6053561Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.6054332Z warning: QubitAdditivity/BetaDualExistence.lean:145:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDualExistence.diagonal_posSemidef`:
+2026-10-12T15:09:33.6054966Z   [DecidableEq r]
+2026-10-12T15:09:33.6055175Z   [DecidableEq s]
+2026-10-12T15:09:33.6055598Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6056180Z   omit [DecidableEq r] [DecidableEq s] in theorem ...
+2026-10-12T15:09:33.6056392Z 
+2026-10-12T15:09:33.6056609Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6057358Z warning: QubitAdditivity/BetaDualExistence.lean:161:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDualExistence.trace_diagonal`:
+2026-10-12T15:09:33.6057985Z   [DecidableEq r]
+2026-10-12T15:09:33.6058197Z   [DecidableEq s]
+2026-10-12T15:09:33.6058629Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6059155Z   omit [DecidableEq r] [DecidableEq s] in theorem ...
+2026-10-12T15:09:33.6059356Z 
+2026-10-12T15:09:33.6059568Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6060333Z warning: QubitAdditivity/BetaDualExistence.lean:164:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDualExistence.blockTrace_nonneg`:
+2026-10-12T15:09:33.6060973Z   [DecidableEq r]
+2026-10-12T15:09:33.6061184Z   [DecidableEq s]
+2026-10-12T15:09:33.6061672Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6062202Z   omit [DecidableEq r] [DecidableEq s] in theorem ...
+2026-10-12T15:09:33.6062394Z 
+2026-10-12T15:09:33.6062609Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6063173Z warning: QubitAdditivity/BetaDualExistence.lean:223:81: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.6063581Z 
+2026-10-12T15:09:33.6063802Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.6064299Z ⚠ [3322/3361] Replayed QubitAdditivity.BetaBoundaryEntropy
+2026-10-12T15:09:33.6064827Z warning: QubitAdditivity/BetaBoundaryEntropy.lean:44:66: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.6065183Z 
+2026-10-12T15:09:33.6065398Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.6066028Z warning: QubitAdditivity/BetaBoundaryEntropy.lean:92:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+2026-10-12T15:09:33.6066727Z If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+2026-10-12T15:09:33.6067115Z ```
+2026-10-12T15:09:33.6067328Z open Lean.Parser.Tactic in
+2026-10-12T15:09:33.6067643Z macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+2026-10-12T15:09:33.6068011Z   `(tactic| push $cfg:optConfig Not $[$loc]?)
+2026-10-12T15:09:33.6068274Z ```
+2026-10-12T15:09:33.6068577Z ⚠ [3323/3361] Replayed QubitAdditivity.BetaDualInterior
+2026-10-12T15:09:33.6069083Z warning: QubitAdditivity/BetaDualInterior.lean:68:59: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.6069423Z 
+2026-10-12T15:09:33.6069647Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.6070213Z warning: QubitAdditivity/BetaDualInterior.lean:95:59: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.6070571Z 
+2026-10-12T15:09:33.6070791Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.6071273Z ⚠ [3328/3361] Replayed QubitAdditivity.BetaDualDerivative
+2026-10-12T15:09:33.6071723Z warning: QubitAdditivity/BetaDualDerivative.lean:164:10: This simp argument is unused:
+2026-10-12T15:09:33.6072114Z   inner_add_left
+2026-10-12T15:09:33.6072249Z 
+2026-10-12T15:09:33.6072370Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6072636Z   [apply] simp
+2026-10-12T15:09:33.6072759Z 
+2026-10-12T15:09:33.6072960Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6073419Z ⚠ [3329/3361] Replayed QubitAdditivity.BetaMinimizer
+2026-10-12T15:09:33.6073900Z warning: QubitAdditivity/BetaMinimizer.lean:112:74: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.6074243Z 
+2026-10-12T15:09:33.6074470Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.6074958Z ⚠ [3331/3361] Replayed QubitAdditivity.BetaValueHessian
+2026-10-12T15:09:33.6075416Z warning: QubitAdditivity/BetaValueHessian.lean:66:50: This simp argument is unused:
+2026-10-12T15:09:33.6075832Z   Fintype.sum_prod_type
+2026-10-12T15:09:33.6075978Z 
+2026-10-12T15:09:33.6076166Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6076742Z   [apply] simp [blockInclusion, coordinateInclusion, Matrix.mulVec, dotProduct, Matrix.one_apply, blockCoordinates,
+2026-10-12T15:09:33.6077295Z     Matrix.conjTranspose_apply, ite_and]
+2026-10-12T15:09:33.6077471Z 
+2026-10-12T15:09:33.6077690Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6078201Z warning: QubitAdditivity/BetaValueHessian.lean:66:72: This simp argument is unused:
+2026-10-12T15:09:33.6078604Z   ite_and
+2026-10-12T15:09:33.6078707Z 
+2026-10-12T15:09:33.6078827Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6079432Z   [apply] simp [blockInclusion, coordinateInclusion, Matrix.mulVec, dotProduct, Matrix.one_apply, blockCoordinates,
+2026-10-12T15:09:33.6079990Z     Matrix.conjTranspose_apply, Fintype.sum_prod_type]
+2026-10-12T15:09:33.6080208Z 
+2026-10-12T15:09:33.6080421Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6081141Z warning: QubitAdditivity/BetaValueHessian.lean:88:8: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaValueHessian.vector_add`:
+2026-10-12T15:09:33.6081805Z   [Fintype n]
+2026-10-12T15:09:33.6082231Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6082739Z   omit [Fintype n] in theorem ...
+2026-10-12T15:09:33.6082898Z 
+2026-10-12T15:09:33.6083120Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6083873Z warning: QubitAdditivity/BetaValueHessian.lean:89:8: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaValueHessian.blockVector_sub`:
+2026-10-12T15:09:33.6084493Z   [Fintype r]
+2026-10-12T15:09:33.6084696Z   [Fintype s]
+2026-10-12T15:09:33.6084902Z   [DecidableEq r]
+2026-10-12T15:09:33.6085115Z   [DecidableEq s]
+2026-10-12T15:09:33.6085554Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6086225Z   omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+2026-10-12T15:09:33.6086498Z 
+2026-10-12T15:09:33.6086713Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6087197Z ⚠ [3332/3361] Replayed QubitAdditivity.BetaDualConcave
+2026-10-12T15:09:33.6087695Z warning: QubitAdditivity/BetaDualConcave.lean:59:64: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.6088039Z 
+2026-10-12T15:09:33.6088261Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.6088739Z ⚠ [3333/3361] Replayed QubitAdditivity.BetaDualBoundary
+2026-10-12T15:09:33.6089323Z warning: QubitAdditivity/BetaDualBoundary.lean:206:29: This simp argument is unused:
+2026-10-12T15:09:33.6089728Z   HermitianMat.mat_zero
+2026-10-12T15:09:33.6089869Z 
+2026-10-12T15:09:33.6089983Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6090450Z   [apply] simp only [hz, zero_sub, Matrix.trace_zero, Complex.zero_re, mul_zero, add_zero, sub_zero]
+2026-10-12T15:09:33.6090782Z 
+2026-10-12T15:09:33.6090992Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6091486Z warning: QubitAdditivity/BetaDualBoundary.lean:206:51: This simp argument is unused:
+2026-10-12T15:09:33.6091868Z   Matrix.trace_zero
+2026-10-12T15:09:33.6091998Z 
+2026-10-12T15:09:33.6092119Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6092602Z   [apply] simp only [hz, zero_sub, HermitianMat.mat_zero, Complex.zero_re, mul_zero, add_zero, sub_zero]
+2026-10-12T15:09:33.6092937Z 
+2026-10-12T15:09:33.6093136Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6093619Z warning: QubitAdditivity/BetaDualBoundary.lean:206:69: This simp argument is unused:
+2026-10-12T15:09:33.6094009Z   Complex.zero_re
+2026-10-12T15:09:33.6094128Z 
+2026-10-12T15:09:33.6094247Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6094733Z   [apply] simp only [hz, zero_sub, HermitianMat.mat_zero, Matrix.trace_zero, mul_zero, add_zero, sub_zero]
+2026-10-12T15:09:33.6095068Z 
+2026-10-12T15:09:33.6095275Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6095764Z warning: QubitAdditivity/BetaDualBoundary.lean:207:8: This simp argument is unused:
+2026-10-12T15:09:33.6096224Z   mul_zero
+2026-10-12T15:09:33.6096342Z 
+2026-10-12T15:09:33.6096452Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6096968Z   [apply] simp only [hz, zero_sub, HermitianMat.mat_zero, Matrix.trace_zero, Complex.zero_re, add_zero, sub_zero]
+2026-10-12T15:09:33.6097398Z 
+2026-10-12T15:09:33.6097613Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6098107Z warning: QubitAdditivity/BetaDualBoundary.lean:207:17: This simp argument is unused:
+2026-10-12T15:09:33.6098503Z   add_zero
+2026-10-12T15:09:33.6098611Z 
+2026-10-12T15:09:33.6098732Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6099293Z   [apply] simp only [hz, zero_sub, HermitianMat.mat_zero, Matrix.trace_zero, Complex.zero_re, mul_zero, sub_zero]
+2026-10-12T15:09:33.6099650Z 
+2026-10-12T15:09:33.6099847Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6100342Z warning: QubitAdditivity/BetaDualBoundary.lean:207:26: This simp argument is unused:
+2026-10-12T15:09:33.6100718Z   sub_zero
+2026-10-12T15:09:33.6100826Z 
+2026-10-12T15:09:33.6100935Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6101433Z   [apply] simp only [hz, zero_sub, HermitianMat.mat_zero, Matrix.trace_zero, Complex.zero_re, mul_zero, add_zero]
+2026-10-12T15:09:33.6101786Z 
+2026-10-12T15:09:33.6101993Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6102766Z warning: QubitAdditivity/BetaDualBoundary.lean:249:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaDualBoundary.regularization_posDef`:
+2026-10-12T15:09:33.6103411Z   [Fintype k]
+2026-10-12T15:09:33.6103842Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6104326Z   omit [Fintype k] in theorem ...
+2026-10-12T15:09:33.6104491Z 
+2026-10-12T15:09:33.6104702Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6105175Z ⚠ [3334/3361] Replayed QubitAdditivity.BetaTC4Convex
+2026-10-12T15:09:33.6105851Z warning: QubitAdditivity/BetaTC4Convex.lean:44:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Convex.convex_positiveCone`:
+2026-10-12T15:09:33.6106545Z   [Fintype r]
+2026-10-12T15:09:33.6106750Z   [Fintype s]
+2026-10-12T15:09:33.6107174Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6107678Z   omit [Fintype r] [Fintype s] in theorem ...
+2026-10-12T15:09:33.6107865Z 
+2026-10-12T15:09:33.6108084Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6108562Z ⚠ [3336/3361] Replayed QubitAdditivity.BetaTC4Structure
+2026-10-12T15:09:33.6109243Z warning: QubitAdditivity/BetaTC4Structure.lean:59:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Structure.trace_diagonal`:
+2026-10-12T15:09:33.6109845Z   [DecidableEq r]
+2026-10-12T15:09:33.6110056Z   [DecidableEq s]
+2026-10-12T15:09:33.6110487Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6111028Z   omit [DecidableEq r] [DecidableEq s] in theorem ...
+2026-10-12T15:09:33.6111223Z 
+2026-10-12T15:09:33.6111439Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6112204Z warning: QubitAdditivity/BetaTC4Structure.lean:75:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Structure.smul_mem_positiveCone`:
+2026-10-12T15:09:33.6112863Z   [Fintype r]
+2026-10-12T15:09:33.6113067Z   [Fintype s]
+2026-10-12T15:09:33.6113275Z   [DecidableEq r]
+2026-10-12T15:09:33.6113490Z   [DecidableEq s]
+2026-10-12T15:09:33.6113934Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6114544Z   omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+2026-10-12T15:09:33.6114803Z 
+2026-10-12T15:09:33.6115033Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6115856Z warning: QubitAdditivity/BetaTC4Structure.lean:151:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Structure.sum_posSemidef`:
+2026-10-12T15:09:33.6116566Z   [Fintype r]
+2026-10-12T15:09:33.6116780Z   [Fintype s]
+2026-10-12T15:09:33.6117210Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6117795Z   omit [Fintype r] [Fintype s] in theorem ...
+2026-10-12T15:09:33.6117989Z 
+2026-10-12T15:09:33.6118213Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6118702Z ⚠ [3338/3361] Replayed QubitAdditivity.BetaSignFrame
+2026-10-12T15:09:33.6119378Z warning: QubitAdditivity/BetaSignFrame.lean:56:8: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSignFrame.flip_apply_same`:
+2026-10-12T15:09:33.6120000Z   [Fintype n]
+2026-10-12T15:09:33.6120434Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6120951Z   omit [Fintype n] in theorem ...
+2026-10-12T15:09:33.6121123Z 
+2026-10-12T15:09:33.6121337Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6122153Z warning: QubitAdditivity/BetaSignFrame.lean:59:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSignFrame.flip_apply_ne`:
+2026-10-12T15:09:33.6122760Z   [Fintype n]
+2026-10-12T15:09:33.6123200Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6123701Z   omit [Fintype n] in theorem ...
+2026-10-12T15:09:33.6123861Z 
+2026-10-12T15:09:33.6124080Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6124829Z warning: QubitAdditivity/BetaSignFrame.lean:139:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSignFrame.imageFrame_gram`:
+2026-10-12T15:09:33.6125446Z   [Fintype m]
+2026-10-12T15:09:33.6125667Z   [DecidableEq m]
+2026-10-12T15:09:33.6126174Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6126717Z   omit [Fintype m] [DecidableEq m] in theorem ...
+2026-10-12T15:09:33.6126918Z 
+2026-10-12T15:09:33.6127132Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6127625Z ⚠ [3339/3361] Replayed QubitAdditivity.BetaGramSplit
+2026-10-12T15:09:33.6128289Z warning: QubitAdditivity/BetaGramSplit.lean:51:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.outer_posSemidef`:
+2026-10-12T15:09:33.6128906Z   [DecidableEq m]
+2026-10-12T15:09:33.6129353Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6129858Z   omit [DecidableEq m] in theorem ...
+2026-10-12T15:09:33.6130042Z 
+2026-10-12T15:09:33.6130254Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6131007Z warning: QubitAdditivity/BetaGramSplit.lean:54:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.outer_rank_le_one`:
+2026-10-12T15:09:33.6131629Z   [DecidableEq m]
+2026-10-12T15:09:33.6132078Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6132629Z   omit [DecidableEq m] in theorem ...
+2026-10-12T15:09:33.6132824Z 
+2026-10-12T15:09:33.6133057Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6133826Z warning: QubitAdditivity/BetaGramSplit.lean:62:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.sum_outer_columns`:
+2026-10-12T15:09:33.6134457Z   [DecidableEq n]
+2026-10-12T15:09:33.6134918Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6135514Z   omit [DecidableEq n] in theorem ...
+2026-10-12T15:09:33.6135683Z 
+2026-10-12T15:09:33.6135914Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6136758Z warning: QubitAdditivity/BetaGramSplit.lean:78:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.rightGram_trace`:
+2026-10-12T15:09:33.6137458Z   [DecidableEq n]
+2026-10-12T15:09:33.6137687Z   [DecidableEq r]
+2026-10-12T15:09:33.6138145Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6138692Z   omit [DecidableEq n] [DecidableEq r] in theorem ...
+2026-10-12T15:09:33.6138909Z 
+2026-10-12T15:09:33.6139137Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6139911Z warning: QubitAdditivity/BetaGramSplit.lean:102:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.rightGram_pairing`:
+2026-10-12T15:09:33.6140552Z   [DecidableEq n]
+2026-10-12T15:09:33.6140775Z   [DecidableEq r]
+2026-10-12T15:09:33.6141231Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6141779Z   omit [DecidableEq n] [DecidableEq r] in theorem ...
+2026-10-12T15:09:33.6141996Z 
+2026-10-12T15:09:33.6142220Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6142983Z warning: QubitAdditivity/BetaGramSplit.lean:134:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.outer_trace`:
+2026-10-12T15:09:33.6143596Z   [DecidableEq m]
+2026-10-12T15:09:33.6144042Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6144558Z   omit [DecidableEq m] in theorem ...
+2026-10-12T15:09:33.6144744Z 
+2026-10-12T15:09:33.6144974Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6145733Z warning: QubitAdditivity/BetaGramSplit.lean:166:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.outer_sqrt_smul`:
+2026-10-12T15:09:33.6146453Z   [DecidableEq m]
+2026-10-12T15:09:33.6146927Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6147456Z   omit [DecidableEq m] in theorem ...
+2026-10-12T15:09:33.6147626Z 
+2026-10-12T15:09:33.6147858Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6148630Z warning: QubitAdditivity/BetaGramSplit.lean:219:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaGramSplit.gramPair_trace`:
+2026-10-12T15:09:33.6149272Z   [DecidableEq n]
+2026-10-12T15:09:33.6149499Z   [DecidableEq r]
+2026-10-12T15:09:33.6149720Z   [DecidableEq s]
+2026-10-12T15:09:33.6150164Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6150762Z   omit [DecidableEq n] [DecidableEq r] [DecidableEq s] in theorem ...
+2026-10-12T15:09:33.6151014Z 
+2026-10-12T15:09:33.6151243Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6151747Z ⚠ [3340/3361] Replayed QubitAdditivity.BetaTC4Gram
+2026-10-12T15:09:33.6152422Z warning: QubitAdditivity/BetaTC4Gram.lean:51:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Gram.gram_posSemidef`:
+2026-10-12T15:09:33.6153038Z   [DecidableEq r]
+2026-10-12T15:09:33.6153489Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6154006Z   omit [DecidableEq r] in theorem ...
+2026-10-12T15:09:33.6154185Z 
+2026-10-12T15:09:33.6154555Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6155334Z warning: QubitAdditivity/BetaTC4Gram.lean:54:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Gram.gram_trace`:
+2026-10-12T15:09:33.6155920Z   [DecidableEq r]
+2026-10-12T15:09:33.6156611Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6157201Z   omit [DecidableEq r] in theorem ...
+2026-10-12T15:09:33.6157373Z 
+2026-10-12T15:09:33.6157606Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6158385Z warning: QubitAdditivity/BetaTC4Gram.lean:88:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Gram.gramPair_posSemidef`:
+2026-10-12T15:09:33.6158991Z   [DecidableEq r]
+2026-10-12T15:09:33.6159213Z   [DecidableEq s]
+2026-10-12T15:09:33.6159652Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6160188Z   omit [DecidableEq r] [DecidableEq s] in theorem ...
+2026-10-12T15:09:33.6160399Z 
+2026-10-12T15:09:33.6160623Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6161355Z warning: QubitAdditivity/BetaTC4Gram.lean:91:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Gram.pinchLeft_gramPair`:
+2026-10-12T15:09:33.6162005Z   [Fintype r]
+2026-10-12T15:09:33.6162228Z   [Fintype s]
+2026-10-12T15:09:33.6162445Z   [DecidableEq r]
+2026-10-12T15:09:33.6162669Z   [DecidableEq s]
+2026-10-12T15:09:33.6163107Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6163713Z   omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+2026-10-12T15:09:33.6163971Z 
+2026-10-12T15:09:33.6164192Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6164938Z warning: QubitAdditivity/BetaTC4Gram.lean:97:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Gram.pinchRight_gramPair`:
+2026-10-12T15:09:33.6165550Z   [Fintype r]
+2026-10-12T15:09:33.6165768Z   [Fintype s]
+2026-10-12T15:09:33.6165981Z   [DecidableEq r]
+2026-10-12T15:09:33.6166283Z   [DecidableEq s]
+2026-10-12T15:09:33.6166710Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6167302Z   omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] in theorem ...
+2026-10-12T15:09:33.6167548Z 
+2026-10-12T15:09:33.6167766Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6168483Z warning: QubitAdditivity/BetaTC4Gram.lean:108:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Gram.tc4Matrix_eq_fromCols`:
+2026-10-12T15:09:33.6169095Z   [Fintype r]
+2026-10-12T15:09:33.6169288Z   [Fintype s]
+2026-10-12T15:09:33.6169485Z   [Fintype k]
+2026-10-12T15:09:33.6169677Z   [Fintype l]
+2026-10-12T15:09:33.6169868Z   [Fintype t]
+2026-10-12T15:09:33.6170072Z   [DecidableEq r]
+2026-10-12T15:09:33.6170280Z   [DecidableEq s]
+2026-10-12T15:09:33.6170706Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6171375Z   omit [Fintype r] [Fintype s] [Fintype k] [Fintype l] [Fintype t] [DecidableEq r] [DecidableEq s] in theorem ...
+2026-10-12T15:09:33.6171703Z 
+2026-10-12T15:09:33.6171919Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6172413Z ⚠ [3341/3361] Replayed QubitAdditivity.BetaTC4Unitary
+2026-10-12T15:09:33.6172838Z warning: QubitAdditivity/BetaTC4Unitary.lean:71:10: This simp argument is unused:
+2026-10-12T15:09:33.6173218Z   pinchLeft
+2026-10-12T15:09:33.6173328Z 
+2026-10-12T15:09:33.6173449Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6174015Z   [apply] simp [HermitianMat.conj_apply_mat, blockUnitary, Matrix.submatrix_apply, Matrix.mul_apply,
+2026-10-12T15:09:33.6174591Z     Fintype.sum_sum_type, Matrix.fromBlocks, Matrix.conjTranspose_apply]
+2026-10-12T15:09:33.6174855Z 
+2026-10-12T15:09:33.6175077Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6175576Z warning: QubitAdditivity/BetaTC4Unitary.lean:71:20: This simp argument is unused:
+2026-10-12T15:09:33.6176036Z   HermitianMat.conj_apply_mat
+2026-10-12T15:09:33.6176327Z 
+2026-10-12T15:09:33.6176462Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6176963Z   [apply] simp [pinchLeft, blockUnitary, Matrix.submatrix_apply, Matrix.mul_apply, Fintype.sum_sum_type,
+2026-10-12T15:09:33.6177476Z     Matrix.fromBlocks, Matrix.conjTranspose_apply]
+2026-10-12T15:09:33.6177677Z 
+2026-10-12T15:09:33.6177884Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6178384Z warning: QubitAdditivity/BetaTC4Unitary.lean:78:10: This simp argument is unused:
+2026-10-12T15:09:33.6178766Z   pinchRight
+2026-10-12T15:09:33.6178887Z 
+2026-10-12T15:09:33.6179000Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6179483Z   [apply] simp [HermitianMat.conj_apply_mat, blockUnitary, Matrix.submatrix_apply, Matrix.mul_apply,
+2026-10-12T15:09:33.6180056Z     Fintype.sum_sum_type, Matrix.fromBlocks, Matrix.conjTranspose_apply]
+2026-10-12T15:09:33.6180309Z 
+2026-10-12T15:09:33.6180521Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6181003Z warning: QubitAdditivity/BetaTC4Unitary.lean:78:21: This simp argument is unused:
+2026-10-12T15:09:33.6181405Z   HermitianMat.conj_apply_mat
+2026-10-12T15:09:33.6181557Z 
+2026-10-12T15:09:33.6181678Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6182178Z   [apply] simp [pinchRight, blockUnitary, Matrix.submatrix_apply, Matrix.mul_apply, Fintype.sum_sum_type,
+2026-10-12T15:09:33.6182698Z     Matrix.fromBlocks, Matrix.conjTranspose_apply]
+2026-10-12T15:09:33.6182902Z 
+2026-10-12T15:09:33.6183110Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6183606Z ⚠ [3342/3361] Replayed QubitAdditivity.BetaIsometryEntropy
+2026-10-12T15:09:33.6184348Z warning: QubitAdditivity/BetaIsometryEntropy.lean:27:8: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaIsometryEntropy.embeddingHom_apply`:
+2026-10-12T15:09:33.6185019Z   [DecidableEq m]
+2026-10-12T15:09:33.6185453Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6185953Z   omit [DecidableEq m] in theorem ...
+2026-10-12T15:09:33.6186195Z 
+2026-10-12T15:09:33.6186416Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6187197Z warning: QubitAdditivity/BetaIsometryEntropy.lean:42:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaIsometryEntropy.trace_isometry`:
+2026-10-12T15:09:33.6187838Z   [DecidableEq m]
+2026-10-12T15:09:33.6188263Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6188756Z   omit [DecidableEq m] in theorem ...
+2026-10-12T15:09:33.6188944Z 
+2026-10-12T15:09:33.6189160Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6189645Z ⚠ [3343/3361] Replayed QubitAdditivity.BetaBlockIsometry
+2026-10-12T15:09:33.6190379Z warning: QubitAdditivity/BetaBlockIsometry.lean:50:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBlockIsometry.blockEmbedding_isometry`:
+2026-10-12T15:09:33.6190484Z   [Fintype a]
+2026-10-12T15:09:33.6190580Z   [Fintype b]
+2026-10-12T15:09:33.6190674Z   [DecidableEq r]
+2026-10-12T15:09:33.6190773Z   [DecidableEq s]
+2026-10-12T15:09:33.6191098Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6191391Z   omit [Fintype a] [Fintype b] [DecidableEq r] [DecidableEq s] in theorem ...
+2026-10-12T15:09:33.6191398Z 
+2026-10-12T15:09:33.6191617Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6192123Z warning: QubitAdditivity/BetaBlockIsometry.lean:63:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBlockIsometry.diagonal_embedBlocks`:
+2026-10-12T15:09:33.6192269Z   [Fintype r]
+2026-10-12T15:09:33.6192367Z   [Fintype s]
+2026-10-12T15:09:33.6192468Z   [DecidableEq r]
+2026-10-12T15:09:33.6192561Z   [DecidableEq s]
+2026-10-12T15:09:33.6192659Z   [DecidableEq a]
+2026-10-12T15:09:33.6192748Z   [DecidableEq b]
+2026-10-12T15:09:33.6193066Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6193384Z   omit [Fintype r] [Fintype s] [DecidableEq r] [DecidableEq s] [DecidableEq a] [DecidableEq b] in theorem ...
+2026-10-12T15:09:33.6193393Z 
+2026-10-12T15:09:33.6193599Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6194127Z warning: QubitAdditivity/BetaBlockIsometry.lean:69:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBlockIsometry.embedBlocks_mem_positiveCone`:
+2026-10-12T15:09:33.6194229Z   [DecidableEq r]
+2026-10-12T15:09:33.6194321Z   [DecidableEq s]
+2026-10-12T15:09:33.6194421Z   [DecidableEq a]
+2026-10-12T15:09:33.6194516Z   [DecidableEq b]
+2026-10-12T15:09:33.6194823Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6195073Z   omit [DecidableEq r] [DecidableEq s] [DecidableEq a] [DecidableEq b] in theorem ...
+2026-10-12T15:09:33.6195078Z 
+2026-10-12T15:09:33.6195289Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6195838Z warning: QubitAdditivity/BetaBlockIsometry.lean:73:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBlockIsometry.compressBlocks_mem_positiveCone`:
+2026-10-12T15:09:33.6195939Z   [DecidableEq r]
+2026-10-12T15:09:33.6196036Z   [DecidableEq s]
+2026-10-12T15:09:33.6196201Z   [DecidableEq a]
+2026-10-12T15:09:33.6196307Z   [DecidableEq b]
+2026-10-12T15:09:33.6196620Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6196878Z   omit [DecidableEq r] [DecidableEq s] [DecidableEq a] [DecidableEq b] in theorem ...
+2026-10-12T15:09:33.6196884Z 
+2026-10-12T15:09:33.6197097Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6197336Z ⚠ [3344/3361] Replayed QubitAdditivity.BetaTC4Regularization
+2026-10-12T15:09:33.6197861Z warning: QubitAdditivity/BetaTC4Regularization.lean:60:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Regularization.rowEmbedding_mul`:
+2026-10-12T15:09:33.6197963Z   [Fintype k]
+2026-10-12T15:09:33.6198271Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6198390Z   omit [Fintype k] in theorem ...
+2026-10-12T15:09:33.6198396Z 
+2026-10-12T15:09:33.6198607Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6199151Z warning: QubitAdditivity/BetaTC4Regularization.lean:70:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Regularization.blockMass_regularized`:
+2026-10-12T15:09:33.6199243Z   [DecidableEq r]
+2026-10-12T15:09:33.6199557Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6199686Z   omit [DecidableEq r] in theorem ...
+2026-10-12T15:09:33.6199691Z 
+2026-10-12T15:09:33.6199894Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6200206Z warning: QubitAdditivity/BetaTC4Regularization.lean:73:4: This simp argument is unused:
+2026-10-12T15:09:33.6200311Z   Fin.sum_univ_one
+2026-10-12T15:09:33.6200317Z 
+2026-10-12T15:09:33.6200430Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6200780Z   [apply] simp [regularized, blockMass_eq_sum_normSq, Matrix.fromBlocks, Fintype.sum_sum_type, Matrix.one_apply,
+2026-10-12T15:09:33.6201030Z     Complex.real_smul, Complex.normSq_ofReal, pow_two]
+2026-10-12T15:09:33.6201036Z 
+2026-10-12T15:09:33.6201240Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6201759Z warning: QubitAdditivity/BetaTC4Regularization.lean:75:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Regularization.gram_fromCols_zero`:
+2026-10-12T15:09:33.6201852Z   [Fintype r]
+2026-10-12T15:09:33.6201943Z   [DecidableEq r]
+2026-10-12T15:09:33.6202259Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6202412Z   omit [Fintype r] [DecidableEq r] in theorem ...
+2026-10-12T15:09:33.6202417Z 
+2026-10-12T15:09:33.6202620Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6203110Z warning: QubitAdditivity/BetaTC4Regularization.lean:82:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Regularization.gram_mul`:
+2026-10-12T15:09:33.6203211Z   [DecidableEq r]
+2026-10-12T15:09:33.6203514Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6203640Z   omit [DecidableEq r] in theorem ...
+2026-10-12T15:09:33.6203645Z 
+2026-10-12T15:09:33.6203857Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6204385Z warning: QubitAdditivity/BetaTC4Regularization.lean:99:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaTC4Regularization.continuous_regularized`:
+2026-10-12T15:09:33.6204486Z   [Fintype r]
+2026-10-12T15:09:33.6204578Z   [Fintype k]
+2026-10-12T15:09:33.6204667Z   [DecidableEq r]
+2026-10-12T15:09:33.6204981Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6205168Z   omit [Fintype r] [Fintype k] [DecidableEq r] in theorem ...
+2026-10-12T15:09:33.6205177Z 
+2026-10-12T15:09:33.6205384Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6205708Z warning: QubitAdditivity/BetaTC4Regularization.lean:123:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.6205714Z 
+2026-10-12T15:09:33.6205937Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.6206261Z warning: QubitAdditivity/BetaTC4Regularization.lean:202:79: This simp argument is unused:
+2026-10-12T15:09:33.6206393Z   Matrix.cons_val_zero
+2026-10-12T15:09:33.6206399Z 
+2026-10-12T15:09:33.6206524Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6206832Z   [apply] simp only [tc4ScalarMatrix, Matrix.of_apply, Matrix.cons_val_one, Matrix.cons_val_fin_one]
+2026-10-12T15:09:33.6206838Z 
+2026-10-12T15:09:33.6207052Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6207310Z warning: QubitAdditivity/BetaTC4Regularization.lean:203:6: This simp argument is unused:
+2026-10-12T15:09:33.6207417Z   Matrix.cons_val_one
+2026-10-12T15:09:33.6207423Z 
+2026-10-12T15:09:33.6207545Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6207863Z   [apply] simp only [tc4ScalarMatrix, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_fin_one]
+2026-10-12T15:09:33.6207870Z 
+2026-10-12T15:09:33.6208075Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6208335Z warning: QubitAdditivity/BetaTC4Regularization.lean:203:26: This simp argument is unused:
+2026-10-12T15:09:33.6208512Z   Matrix.cons_val_fin_one
+2026-10-12T15:09:33.6208518Z 
+2026-10-12T15:09:33.6208633Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6208936Z   [apply] simp only [tc4ScalarMatrix, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one]
+2026-10-12T15:09:33.6208943Z 
+2026-10-12T15:09:33.6209152Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6209402Z ⚠ [3345/3361] Replayed QubitAdditivity.BetaLogOrder
+2026-10-12T15:09:33.6209704Z warning: QubitAdditivity/BetaLogOrder.lean:104:66: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-12T15:09:33.6209710Z 
+2026-10-12T15:09:33.6209939Z Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-12T15:09:33.6210144Z ⚠ [3346/3361] Replayed QubitAdditivity.BetaScalarMinimum
+2026-10-12T15:09:33.6210335Z warning: QubitAdditivity/BetaScalarMinimum.lean:42:2: Try this: 
+2026-10-12T15:09:33.6210473Z   letI̵
+2026-10-12T15:09:33.6210480Z 
+2026-10-12T15:09:33.6210653Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T15:09:33.6210861Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T15:09:33.6211045Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T15:09:33.6211051Z 
+2026-10-12T15:09:33.6211262Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T15:09:33.6211456Z warning: QubitAdditivity/BetaScalarMinimum.lean:43:2: Try this: 
+2026-10-12T15:09:33.6211566Z   letI̵
+2026-10-12T15:09:33.6211572Z 
+2026-10-12T15:09:33.6211737Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T15:09:33.6211940Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T15:09:33.6212123Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T15:09:33.6212128Z 
+2026-10-12T15:09:33.6212343Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T15:09:33.6212534Z warning: QubitAdditivity/BetaScalarMinimum.lean:44:2: Try this: 
+2026-10-12T15:09:33.6212635Z   letI̵
+2026-10-12T15:09:33.6212641Z 
+2026-10-12T15:09:33.6212802Z The goal is a proposition, so `let` is preferred over `letI`.
+2026-10-12T15:09:33.6213001Z The difference between `let` and `letI` is that `letI` inlines the value.
+2026-10-12T15:09:33.6213190Z But this is not relevant for proofs because of proof irrelevance.
+2026-10-12T15:09:33.6213195Z 
+2026-10-12T15:09:33.6213399Z Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+2026-10-12T15:09:33.6213619Z ⚠ [3347/3361] Replayed QubitAdditivity.BetaNormalizedOuter
+2026-10-12T15:09:33.6214172Z warning: QubitAdditivity/BetaNormalizedOuter.lean:49:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaNormalizedOuter.vecMass_star_dotProduct`:
+2026-10-12T15:09:33.6214269Z   [DecidableEq r]
+2026-10-12T15:09:33.6214605Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6214748Z   omit [DecidableEq r] in theorem ...
+2026-10-12T15:09:33.6214753Z 
+2026-10-12T15:09:33.6214968Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6215493Z warning: QubitAdditivity/BetaNormalizedOuter.lean:52:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaNormalizedOuter.vecMass_zero_iff`:
+2026-10-12T15:09:33.6215603Z   [DecidableEq r]
+2026-10-12T15:09:33.6215919Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6216116Z   omit [DecidableEq r] in theorem ...
+2026-10-12T15:09:33.6216129Z 
+2026-10-12T15:09:33.6216357Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6216596Z warning: QubitAdditivity/BetaNormalizedOuter.lean:77:13: This simp argument is unused:
+2026-10-12T15:09:33.6216761Z   star_smul
+2026-10-12T15:09:33.6216766Z 
+2026-10-12T15:09:33.6216891Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6217055Z   [apply] simp only [star_trivial, Complex.real_smul]
+2026-10-12T15:09:33.6217061Z 
+2026-10-12T15:09:33.6217276Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6217526Z warning: QubitAdditivity/BetaNormalizedOuter.lean:77:23: This simp argument is unused:
+2026-10-12T15:09:33.6217683Z   star_trivial
+2026-10-12T15:09:33.6217689Z 
+2026-10-12T15:09:33.6217814Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6217973Z   [apply] simp only [star_smul, Complex.real_smul]
+2026-10-12T15:09:33.6217979Z 
+2026-10-12T15:09:33.6218181Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6218736Z warning: QubitAdditivity/BetaNormalizedOuter.lean:92:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaNormalizedOuter.normalizedColumn_mul_sqrt`:
+2026-10-12T15:09:33.6218846Z   [DecidableEq r]
+2026-10-12T15:09:33.6219165Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6219297Z   omit [DecidableEq r] in theorem ...
+2026-10-12T15:09:33.6219302Z 
+2026-10-12T15:09:33.6219518Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6219761Z warning: QubitAdditivity/BetaNormalizedOuter.lean:96:50: This simp argument is unused:
+2026-10-12T15:09:33.6219870Z   Fin.sum_univ_one
+2026-10-12T15:09:33.6219875Z 
+2026-10-12T15:09:33.6219996Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6220345Z   [apply] simp [normalizedColumn, Matrix.mulVec, dotProduct, Complex.real_smul, Complex.ofReal_inv, mul_comm,
+2026-10-12T15:09:33.6220487Z     mul_left_comm, mul_assoc, hs]
+2026-10-12T15:09:33.6220493Z 
+2026-10-12T15:09:33.6220703Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6220947Z warning: QubitAdditivity/BetaNormalizedOuter.lean:97:13: This simp argument is unused:
+2026-10-12T15:09:33.6221049Z   mul_left_comm
+2026-10-12T15:09:33.6221055Z 
+2026-10-12T15:09:33.6221174Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6221539Z   [apply] simp [normalizedColumn, Matrix.mulVec, dotProduct, Fin.sum_univ_one, Complex.real_smul, Complex.ofReal_inv,
+2026-10-12T15:09:33.6221676Z     mul_comm, mul_assoc, hs]
+2026-10-12T15:09:33.6221682Z 
+2026-10-12T15:09:33.6221890Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6222125Z warning: QubitAdditivity/BetaNormalizedOuter.lean:97:27: This simp argument is unused:
+2026-10-12T15:09:33.6222221Z   mul_assoc
+2026-10-12T15:09:33.6222226Z 
+2026-10-12T15:09:33.6222344Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6222714Z   [apply] simp [normalizedColumn, Matrix.mulVec, dotProduct, Fin.sum_univ_one, Complex.real_smul, Complex.ofReal_inv,
+2026-10-12T15:09:33.6222850Z     mul_comm, mul_left_comm, hs]
+2026-10-12T15:09:33.6222856Z 
+2026-10-12T15:09:33.6223062Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6223536Z warning: QubitAdditivity/BetaNormalizedOuter.lean:99:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaNormalizedOuter.outer_conj`:
+2026-10-12T15:09:33.6223640Z   [DecidableEq r]
+2026-10-12T15:09:33.6223737Z   [DecidableEq s]
+2026-10-12T15:09:33.6224044Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6224208Z   omit [DecidableEq r] [DecidableEq s] in theorem ...
+2026-10-12T15:09:33.6224214Z 
+2026-10-12T15:09:33.6224426Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6224721Z warning: QubitAdditivity/BetaNormalizedOuter.lean:112:47: Variable name `hx` is not explicitly referenced.
+2026-10-12T15:09:33.6224771Z 
+2026-10-12T15:09:33.6225167Z Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+2026-10-12T15:09:33.6225266Z   [apply] _hx
+2026-10-12T15:09:33.6225271Z 
+2026-10-12T15:09:33.6225474Z Note: This linter can be disabled with `set_option linter.unusedVariables false`
+2026-10-12T15:09:33.6225773Z warning: QubitAdditivity/BetaNormalizedOuter.lean:112:60: Variable name `hz` is not explicitly referenced.
+2026-10-12T15:09:33.6225834Z 
+2026-10-12T15:09:33.6226271Z Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+2026-10-12T15:09:33.6226372Z   [apply] _hz
+2026-10-12T15:09:33.6226377Z 
+2026-10-12T15:09:33.6226588Z Note: This linter can be disabled with `set_option linter.unusedVariables false`
+2026-10-12T15:09:33.6227092Z warning: QubitAdditivity/BetaNormalizedOuter.lean:121:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaNormalizedOuter.pinchLeft_outer`:
+2026-10-12T15:09:33.6227191Z   [DecidableEq r]
+2026-10-12T15:09:33.6227292Z   [DecidableEq s]
+2026-10-12T15:09:33.6227613Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6227771Z   omit [DecidableEq r] [DecidableEq s] in theorem ...
+2026-10-12T15:09:33.6227776Z 
+2026-10-12T15:09:33.6227995Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6228504Z warning: QubitAdditivity/BetaNormalizedOuter.lean:125:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaNormalizedOuter.pinchRight_outer`:
+2026-10-12T15:09:33.6228597Z   [DecidableEq r]
+2026-10-12T15:09:33.6228696Z   [DecidableEq s]
+2026-10-12T15:09:33.6229011Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6229164Z   omit [DecidableEq r] [DecidableEq s] in theorem ...
+2026-10-12T15:09:33.6229173Z 
+2026-10-12T15:09:33.6229424Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6229641Z ⚠ [3349/3361] Replayed QubitAdditivity.BetaReflection
+2026-10-12T15:09:33.6229866Z warning: QubitAdditivity/BetaReflection.lean:82:34: This simp argument is unused:
+2026-10-12T15:09:33.6229964Z   smul_smul
+2026-10-12T15:09:33.6229978Z 
+2026-10-12T15:09:33.6230103Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6230453Z   [apply] simp only [Matrix.sub_mul, Matrix.mul_sub, Matrix.smul_mul, Matrix.mul_smul, Matrix.one_mul, Matrix.mul_one,
+2026-10-12T15:09:33.6230575Z     Matrix.mul_assoc]
+2026-10-12T15:09:33.6230580Z 
+2026-10-12T15:09:33.6230794Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6230982Z ⚠ [3350/3361] Replayed QubitAdditivity.BetaSupport
+2026-10-12T15:09:33.6231448Z warning: QubitAdditivity/BetaSupport.lean:53:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSupport.rangeProjection_sq`:
+2026-10-12T15:09:33.6231564Z   [DecidableEq m]
+2026-10-12T15:09:33.6231874Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6232015Z   omit [DecidableEq m] in theorem ...
+2026-10-12T15:09:33.6232021Z 
+2026-10-12T15:09:33.6232236Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6232708Z warning: QubitAdditivity/BetaSupport.lean:58:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSupport.rangeProjection_mul`:
+2026-10-12T15:09:33.6232815Z   [DecidableEq m]
+2026-10-12T15:09:33.6233135Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6233261Z   omit [DecidableEq m] in theorem ...
+2026-10-12T15:09:33.6233267Z 
+2026-10-12T15:09:33.6233486Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6234056Z warning: QubitAdditivity/BetaSupport.lean:85:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSupport.complementBlocks_mem_positiveCone`:
+2026-10-12T15:09:33.6234148Z   [DecidableEq a]
+2026-10-12T15:09:33.6234248Z   [DecidableEq b]
+2026-10-12T15:09:33.6234582Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6234805Z   omit [DecidableEq a] [DecidableEq b] in theorem ...
+2026-10-12T15:09:33.6234810Z 
+2026-10-12T15:09:33.6235037Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6235514Z warning: QubitAdditivity/BetaSupport.lean:89:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSupport.block_complement_eq`:
+2026-10-12T15:09:33.6235609Z   [Fintype r]
+2026-10-12T15:09:33.6235714Z   [Fintype s]
+2026-10-12T15:09:33.6235821Z   [DecidableEq a]
+2026-10-12T15:09:33.6235917Z   [DecidableEq b]
+2026-10-12T15:09:33.6236313Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6236569Z   omit [Fintype r] [Fintype s] [DecidableEq a] [DecidableEq b] in theorem ...
+2026-10-12T15:09:33.6236575Z 
+2026-10-12T15:09:33.6236791Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6237034Z ⚠ [3351/3361] Replayed QubitAdditivity.BetaSupportMinimum
+2026-10-12T15:09:33.6237567Z warning: QubitAdditivity/BetaSupportMinimum.lean:55:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaSupportMinimum.embed_compress_eq`:
+2026-10-12T15:09:33.6237666Z   [DecidableEq r]
+2026-10-12T15:09:33.6237767Z   [DecidableEq s]
+2026-10-12T15:09:33.6237863Z   [DecidableEq a]
+2026-10-12T15:09:33.6237966Z   [DecidableEq b]
+2026-10-12T15:09:33.6238302Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6238552Z   omit [DecidableEq r] [DecidableEq s] [DecidableEq a] [DecidableEq b] in theorem ...
+2026-10-12T15:09:33.6238558Z 
+2026-10-12T15:09:33.6238767Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6238973Z ⚠ [3352/3361] Replayed QubitAdditivity.BetaBalancedValue
+2026-10-12T15:09:33.6239451Z warning: QubitAdditivity/BetaBalancedValue.lean:51:0: automatically included section variable(s) unused in theorem `QubitAdditivity.BetaBalancedValue.outer_zero`:
+2026-10-12T15:09:33.6239550Z   [DecidableEq r]
+2026-10-12T15:09:33.6239854Z consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+2026-10-12T15:09:33.6239975Z   omit [DecidableEq r] in theorem ...
+2026-10-12T15:09:33.6239980Z 
+2026-10-12T15:09:33.6240190Z Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+2026-10-12T15:09:33.6240431Z warning: QubitAdditivity/BetaBalancedValue.lean:104:39: this tactic is never executed
+2026-10-12T15:09:33.6240436Z 
+2026-10-12T15:09:33.6240634Z Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-12T15:09:33.6240912Z warning: QubitAdditivity/BetaBalancedValue.lean:104:39: Unused tactic linter: `ring` does nothing
+2026-10-12T15:09:33.6240918Z 
+2026-10-12T15:09:33.6241115Z Note: This linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-12T15:09:33.6241313Z ⚠ [3353/3361] Replayed QubitAdditivity.BetaScalarValue
+2026-10-12T15:09:33.6241533Z warning: QubitAdditivity/BetaScalarValue.lean:47:69: This simp argument is unused:
+2026-10-12T15:09:33.6241638Z   Fin.sum_univ_one
+2026-10-12T15:09:33.6241643Z 
+2026-10-12T15:09:33.6241756Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6241998Z   [apply] simp [scalarBlock, Matrix.trace, Matrix.smul_apply, Complex.real_smul]
+2026-10-12T15:09:33.6242003Z 
+2026-10-12T15:09:33.6242333Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6242550Z warning: QubitAdditivity/BetaScalarValue.lean:53:57: This simp argument is unused:
+2026-10-12T15:09:33.6242654Z   Fin.sum_univ_one
+2026-10-12T15:09:33.6242660Z 
+2026-10-12T15:09:33.6242778Z Hint: Omit it from the simp argument list.
+2026-10-12T15:09:33.6242976Z   [apply] simp [Matrix.trace, Matrix.smul_apply, Complex.real_smul]
+2026-10-12T15:09:33.6243044Z 
+2026-10-12T15:09:33.6243242Z Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+2026-10-12T15:09:33.6722972Z Build completed successfully (3361 jobs).
+2026-10-12T15:11:59.8102776Z Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, QubitHolevo.strong_additivity, QubitHolevo.power_additivity, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from QubitAdditivity.FCPresentation
+2026-10-12T15:11:59.8104245Z Running Lean default kernel on solution.
+2026-10-12T15:11:59.8104548Z Lean default kernel accepts the solution
+2026-10-12T15:11:59.8104822Z Your solution is okay!
+2026-10-12T15:11:59.8498028Z Finished with result: success
+2026-10-12T15:11:59.8498599Z Main processes terminated with: code=exited/status=0
+2026-10-12T15:11:59.8499146Z Service runtime: 2min 49.464s
+2026-10-12T15:11:59.8499442Z CPU time consumed: 2min 46.665s
+2026-10-12T15:11:59.8499758Z Memory peak: 5.8M
+2026-10-12T15:11:59.8499983Z Memory swap peak: 0B
+2026-10-12T15:11:59.9218841Z Input check passed: 2 targets, 154 unchanged release inputs; FC checkout compatibility pending.
+2026-10-12T15:12:03.1302850Z 'QubitHolevo.strong_additivity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-12T15:12:03.1307201Z 'QubitHolevo.power_additivity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-12T15:12:03.1308378Z 'QubitAdditivity.GeneralResult.generalQubitStrongAdditivity' depends on axioms: [propext, Classical.choice, Quot.sound]

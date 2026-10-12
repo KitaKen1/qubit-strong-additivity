@@ -258,6 +258,7 @@ The four-block inequality takes 53 of the 80 modules.
 | [PDF/](PDF/) | — | Manuscript (public draft of 11 October 2026), with an OpenTimestamps proof (`.ots`) |
 | [comparator/](comparator/) | Checks the proof with `v4.34.1` | Input pins, comparison scripts, runner preparation and verification guide |
 | [.github/workflows/](.github/workflows/) | GitHub-hosted Linux | Comparator verification workflow |
+| [ComparatorLog20261012/](ComparatorLog20261012/) | — | Records of the public Comparator run: original artifacts, receipts and GitHub run data |
 | [docs/](docs/) | — | Scope of each check, third-party sources and earlier notes |
 
 Inside [lean/QubitAdditivity/](lean/QubitAdditivity/):
@@ -301,7 +302,7 @@ python3 lean/scripts/check_publication.py
 
 They replay every declaration in a fresh environment, compile the one-file proof, check the
 copy without Comparator files, and check that the Formal Conjectures statement agrees with the
-proof. The Comparator workflow has not been run on the public repository yet; see the
+proof. The Comparator workflow passed on the public repository; see the
 [Appendix](#appendix-verification-by-lean-comparator-on-github-ci-runner).
 [docs/verification.md](docs/verification.md) lists what each check covers.
 
@@ -452,30 +453,32 @@ Lean Comparator and GitHub CI enable the following:
 
 ### Certification Within 90 days: CI results
 
-The verification workflow has not been run on the public repository yet, so there is no CI
-result to inspect. This section will link the public run, with its date and tested commit, once
-it exists.
-
-Readers can then check the Comparator execution and the axiom audit in the CI logs for 90 days.
-In particular, `#print axioms` should report the three axioms for both targets, as it does in
-the local audit ([axioms.log](lean/verification/axioms.log)):
+Readers who want to inspect the verification results can check the Comparator execution
+and axiom audit in the CI logs within 90 days. In particular, `#print axioms` reports the
+three axioms for both targets and for the original theorem:
 
 ```text
 'QubitHolevo.strong_additivity' depends on axioms: [propext, Classical.choice, Quot.sound]
 'QubitHolevo.power_additivity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.GeneralResult.generalQubitStrongAdditivity' depends on axioms: [propext, Classical.choice, Quot.sound]
 ```
+
+The [public CI run](https://github.com/KitaKen1/qubit-strong-additivity/actions/runs/38265719873)
+on `main` passed on 12 October 2026 (UTC; tested commit `00e8210`); its logs and artifacts can be
+inspected on GitHub until 10 January 2027.
 
 ### Certification After 90 days: archive
 
 After the [90-day retention period](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/download-workflow-artifacts)
-for CI logs and artifacts expires, readers inspect the same results in an archive. The run
-records, logs, artifacts and checksums of the public run will be kept in this repository under
-`ComparatorLogYYYYMMDD/`. No archive exists yet.
+for CI logs and artifacts expires, readers can inspect the same results in the archive.
+Archived CI run records, logs, artifacts and checksums also allow file integrity checks.
+The archive is [ComparatorLog20261012/38265719873-attempt1/](ComparatorLog20261012/38265719873-attempt1/); see its
+[guide](ComparatorLog20261012/38265719873-attempt1/README.md).
 
 ### Reproduce the verification
 
 To run the verification yourself, clone the repository, push it to a GitHub repository
 you control, and run the [verification workflow](.github/workflows/comparator.yml) from
 **Actions → Run workflow**. Your CI runner executes the same checks; compare the Comparator
-result and the three-axiom output with the lines above.
+result and the three-axiom output with the recorded results.
 Setup and commands are in [comparator/README.md](comparator/README.md).

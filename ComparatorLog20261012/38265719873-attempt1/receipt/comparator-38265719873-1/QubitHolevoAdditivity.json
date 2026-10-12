@@ -1,0 +1,15 @@
+{
+  "challenge_module": "ComparatorChallenges.QubitHolevoAdditivity",
+  "solution_module": "QubitAdditivity.FCPresentation",
+  "theorem_names": [
+    "QubitHolevo.strong_additivity",
+    "QubitHolevo.power_additivity"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": false
+}

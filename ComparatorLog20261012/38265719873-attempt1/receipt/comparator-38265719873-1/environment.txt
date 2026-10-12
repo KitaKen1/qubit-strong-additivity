@@ -1,0 +1,18 @@
+run_url=https://github.com/KitaKen1/qubit-strong-additivity/actions/runs/38265719873
+run_attempt=1
+tested_commit=00e82103c022243203f9bfc2da428cc32eea3c78
+started_utc=2026-10-12T15:09:08Z
+Linux runnervmmprz5 6.17.0-1022-azure #22-Ubuntu SMP Mon Jul 27 17:24:03 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+uid=1001(runner) gid=1001(runner) groups=1001(runner),4(adm),100(users),118(docker),999(systemd-journal)
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+comparator_commit=ca04cfc72b550331658ec314bf47685281bfd4bf
+landrun_commit=811cfff51ceaf3d9843708aa6d22e9b84ccac8b4
+lean4export_commit=076e8e57707e813375e8f9da8bf989799ace9680
+diff --git a/lean-toolchain b/lean-toolchain
+index 12359f9..ba8ebf2 100644
+--- a/lean-toolchain
++++ b/lean-toolchain
+@@ -1 +1 @@
+-leanprover/lean4:v4.34.0
++leanprover/lean4:v4.34.1
+sandbox: unprivileged uid/gid, RestrictAddressFamilies=~AF_UNIX, NoNewPrivileges=yes

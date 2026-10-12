@@ -1,0 +1,3 @@
+'QubitHolevo.strong_additivity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitHolevo.power_additivity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QubitAdditivity.GeneralResult.generalQubitStrongAdditivity' depends on axioms: [propext, Classical.choice, Quot.sound]
