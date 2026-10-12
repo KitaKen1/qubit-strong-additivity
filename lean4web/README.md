@@ -59,13 +59,13 @@ and are replaced as new releases appear, so a later server project may require
 a separate port and revalidation. The [server's URL documentation](https://github.com/leanprover-community/lean4web/blob/main/doc/Usage.md)
 describes `#url=...` and `project=...`.
 
-This edition is much larger than a small Lean4Web example. On 2026-10-12 one
-manual run in that project processed the file to the end and reported only the
-three standard axioms for the four final theorems; an earlier attempt lost its
-connection to the server at about 92% of the file. Those runs used the file as
-it was before its last 470 or so lines, which hold the statement definitions and the
-final theorems, were regenerated; the current file has not been run on the
-server. These observations and the server's project list are recorded in
+This edition is much larger than a small Lean4Web example. On 2026-10-12 (UTC)
+the current file, opened through the link above, was processed to the end in
+that project: 270 messages, none of them an error, and only the three standard
+axioms for the four final theorems. Earlier the same day, with the file as it
+was before its last 470 or so lines were regenerated, one manual run completed
+in the same way and one lost its connection to the server at about 92% of the
+file. These observations and the server's project list are recorded in
 [`hosted-status.json`](hosted-status.json).
 A local build is the reproducible check; server resource limits and version
 compatibility are separate from proof correctness.

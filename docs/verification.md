@@ -17,7 +17,7 @@ an external service or a separate kernel has run.
 | Local Comparator precheck | `python3 comparator/local-precheck.py --receipt-dir DIR` | Declaration equality of challenge and solution with the pinned Comparator's rules, and the solution's axioms; no sandbox, not a Comparator run |
 | Lean Comparator | `.github/workflows/comparator.yml`, `comparator/run-check.sh` | Pinned Comparator in a sandbox on a fresh GitHub runner: both targets, permitted axioms, kernel acceptance; then `leanchecker --fresh`. Passed on public `main` on 12 October 2026 (UTC), run 38265719873; records in `ComparatorLog20261012/38265719873-attempt1/` |
 | GitHub Actions | `.github/workflows/` | Manual workflows; success requires a hosted run |
-| Hosted Lean4Web | `lean4web/hosted-status.json` | Manual browser runs on the public server; one run completed on 2026-10-12, which is an observation and not a reproducible check |
+| Hosted Lean4Web | `lean4web/hosted-status.json` | Manual browser runs on the public server; the current file was processed to the end on 2026-10-12 (UTC), which is an observation and not a reproducible check |
 | Formal Conjectures submission | `FClikelean/README.md` | Draft; compile and lint inside the destination checkout before submitting |
 
 The package's local audit may reuse the pinned Mathlib dependency cache and

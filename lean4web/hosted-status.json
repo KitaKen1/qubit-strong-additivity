@@ -1,9 +1,9 @@
 {
-  "status": "manual_run_completed_for_an_earlier_version",
-  "summary": "On 2026-10-12 (JST) the complete single file, as it was then, was processed to the end once in the public Lean4Web server project mathlib-stable. The file was regenerated afterwards, when the statement definitions were simplified; the current file has not been run on the server. This is a manual observation in a browser, not a reproducible or archived check.",
+  "status": "manual_run_completed",
+  "summary": "On 2026-10-12 (UTC) the complete single file, as published at commit 00e8210, was processed to the end in the public Lean4Web server project mathlib-stable, opened through the link in the README: 270 messages, none of them an error, and the four final #print axioms commands reported only the three standard axioms. Three earlier runs on the same day used the file as it was before its last lines were regenerated. These are manual observations in a browser, not reproducible or archived checks.",
   "project_that_completed": "mathlib-stable",
-  "observed_single_file_sha256": "a31891f48afce50758ad5e00cd59e8c0df0a076a35c964becf38ed0550930b06",
-  "difference_from_current_file": "Lines 1-38925 are identical. The remaining lines, which hold the statement definitions, their identification with bundled channels and the final theorems, were regenerated.",
+  "observed_single_file_sha256": "29f5aa533d8f8eba2e0487e8ae640442174ea88fd3b73c8b34895017849e28a0",
+  "difference_from_current_file": "None for the fourth run below, which used the current file. The first three runs used an earlier file: lines 1-38925 are identical, and the remaining lines, which hold the statement definitions, their identification with bundled channels and the final theorems, were regenerated afterwards.",
   "manual_browser_runs": [
     {
       "date_jst": "2026-10-12",
@@ -25,9 +25,17 @@
       "display_name": "Stable Release (v4.34.0 with mathlib, cslib)",
       "outcome": "processed to the end",
       "detail": "The four final #print axioms commands at lines 39368-39371 each reported [propext, Classical.choice, Quot.sound], and the warnings shown before them match the end of the local build log. The total message count was not captured."
+    },
+    {
+      "date_jst": "2026-10-13",
+      "project": "mathlib-stable",
+      "display_name": "Stable Release (v4.34.0 with mathlib, cslib)",
+      "outcome": "processed to the end",
+      "detail": "The current file, opened through https://live.lean-lang.org/#project=mathlib-stable&url= followed by the raw URL of lean4web/QubitStrongAdditivityLean4Web.lean at commit 00e82103c022243203f9bfc2da428cc32eea3c78. The server reported 270 messages and none was an error. The four final #print axioms commands at lines 39388-39391 each reported [propext, Classical.choice, Quot.sound].",
+      "single_file_sha256": "29f5aa533d8f8eba2e0487e8ae640442174ea88fd3b73c8b34895017849e28a0"
     }
   ],
-  "evidence": "Screenshots of the browser taken by the author during the runs. They are not stored in this repository.",
+  "evidence": "Screenshots of the browser taken by the author during the first three runs, and the message list read from the page during the fourth. They are not stored in this repository.",
   "relation_to_pinned_environment": "The pinned Mathlib revision is Mathlib tag v4.34.1, which is tag v4.34.0 plus one commit that changes only lean-toolchain, and all 138 imports of the single file exist at tag v4.34.0. The server project is labelled v4.34.0; its exact Mathlib commit was not inspected.",
   "source": "https://live.lean-lang.org/api/projects",
   "inventory_saved_utc": "2026-10-11T23:55:41.392130+00:00",
@@ -63,5 +71,5 @@
       "display_name": "Lean v4.31.0 with Verso"
     }
   ],
-  "scope": "Server project names and three manual browser runs. The server's projects are not pinned by this repository and are replaced as new releases appear, so a later run may behave differently. The local build and CI remain the reproducible checks."
+  "scope": "Server project names and four manual browser runs. The server's projects are not pinned by this repository and are replaced as new releases appear, so a later run may behave differently. The local build and CI remain the reproducible checks."
 }
